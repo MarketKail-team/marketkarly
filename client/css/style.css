@@ -1,0 +1,8 @@
+@import url(./common/normalize.css);
+@import url(./common/a11y.css);
+@import url(./common/theme.css);
+@import url(./common/base.css);
+
+/* 각 기능을 include 폴더에서 작업한 뒤, 아래에 import 부탁드립니다 */
+@import url(./include/header.css);
+@import url(./include/footer.css);

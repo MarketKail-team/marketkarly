@@ -1,0 +1,31 @@
+/* Base Style */
+
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+[class] {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  min-width: var(--container-width);
+  font: inherit;
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.is-active {
+  display: block;
+}
