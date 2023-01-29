@@ -1,4 +1,151 @@
+@import url(../common/normalize.css);
+@import url(../common/a11y.css);
+@import url(../common/theme.css);
+@import url(../common/base.css);
+
+
+/* 공통요소 */
+.divider {
+  color: #D9D9D9;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+/* header */
 .header {
   max-width: var(--container-width);
   margin: 0 auto;
+  height: 42px;
+}
+
+.header__inner {
+  /* background-color: yellow; */
+  display: flex;
+  padding: 0 0 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+}
+
+/* logo */
+.header__logo {
+  display: flex;
+  margin-top: 63px;
+  /* background-color: darkgray; */
+
+}
+.switch {
+  /* background-color: blueviolet; */
+  margin-left: var(--spacing-sm);
+  display: flex;
+}
+.switch h2{
+  font-size: var(--text-lg);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-weight: 600;
+}
+.switch--market {
+  color:var(--primary);
+}
+
+.switch--beauty {
+  margin-left: var(--spacing-sm);
+  color:var(--gray-400)
+}
+
+.switch--beauty:hover{
+  color:var(--primary)
+}
+
+/* search form */
+.search-form fieldset{
+  width:400px;
+  padding: 0;
+  border: 0;
+  position: relative;
+  margin: 52px 0 0 63px;
+}
+.search-form__input{
+width: 100%;
+height: 60px;
+padding: 12px 20px;
+border-radius: 4px;
+border: 1px solid var(--primary);
+font-size: var(--text-lg);
+}
+.search-form__input:focus {
+  outline: none;
+}
+.search-form__button{
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  right: var(--spacing-sm);
+  margin-top: -18px;
+  cursor: pointer;
+  }
+
+/* header menu */
+.header__menu{
+  /* background-color: chartreuse; */
+  position: absolute;
+  margin-top: 12px;
+  top:0;
+  right: 0;
+}
+.header__menu li {
+  display: inline-block;
+  font-size: var(--text-xs);
+  /* background-color: wheat     ; */
+}
+.header__menu a{
+  padding : 4px 10px; 
+  display : inline-block;
+  /* background-color: darkorange; */
+  
+}
+.header__menu li:first-child{
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.header__menu li:last-child ::after{
+  content: ' ▼';
+}
+
+/* header submenu */
+.header__submenu{
+  /* background-color: salmon; */
+  list-style: none;
+  display: none;
+}
+.header__submenu .is-active{
+  display: block;
+}
+
+
+/* header button */
+.header__button__wrapper{
+/* background-color: darkmagenta; */
+display: flex;
+margin-top: 66px;
+gap: 20px;
+}
+.header__button__wrapper button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.header__button__wrapper img{
+  width: 36px;
+  height: 36px;
 }
