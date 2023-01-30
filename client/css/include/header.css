@@ -85,14 +85,17 @@ border: 1px solid var(--primary);
 font-size: var(--text-lg);
 }
 .search-form__input:focus {
-  outline: none;
+  outline: none;  
 }
 .search-form__button{
+  background: url(/client/assets/sprites.png) no-repeat -319px -286px; ;
   background-color: transparent;
+  width: 20px;
+	height: 20px;
   border: 0;
   position: absolute;
   top: 50%;
   right: var(--spacing-sm);
-  margin-top: -18px;
+  margin-top: -10px;
   cursor: pointer;
   }
