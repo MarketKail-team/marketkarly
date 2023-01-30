@@ -12,22 +12,23 @@
     <ul class="best-product__nav__list">
       <li class="best-product__nav__item">
         <button type="button" class="best-product__nav__button">필터</button>
-        <button type="button" class="best-product__nav__button nav__button--reset">초기화</button>
+        <button type="button" class="best-product__nav__button best-product__nav__button--reset">초기화</button>
       </li>
       <li class="best-product__nav__item">
-        <button type="button" class="best-product__nav__button">카테고리</button>
-        <p class="best-product__nav__item--cnt" data-category="1">1</p>
+        <button type="button" class="best-product__nav__button">카테고리<p class="best-product__nav__item--category-cnt" data-category="1">1</p></button>
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
           class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
           <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2"></path>
         </svg>
       </li>
-      <li class="best-product__nav__item best-product__nav__item--focused">
-        <button type="button" class="best-product__nav__button">브랜드</button>
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
-          <path d="M13 11L9 7L5 11" stroke="#999999" stroke-width="1.2"></path>
-        </svg>
+      <li class="best-product__nav__item--focused">
+        <div class="best-product__nav__item--focused-title">
+          <button type="button" class="best-product__nav__button">브랜드</button>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+            <path d="M13 11L9 7L5 11" stroke="#999999" stroke-width="1.2"></path>
+          </svg>
+        </div>
         <ul>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +46,8 @@
                 </clipPath>
               </defs>
             </svg>
-            감자밭
-            <p class="best-product__nav__item--cnt" data-gamjabat="1">1</p>
+            <p class="best-product__nav__item--name">감자밭<p class="best-product__nav__item--name-cnt" data-gamjabat="1">1</p>
+            </p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +65,7 @@
                 </clipPath>
               </defs>
             </svg>
-            강남면옥
-            <p class="best-product__nav__item--cnt" data-gangnammyeonok="1">1</p>
+            <p class="best-product__nav__item--name">강남면옥<p class="best-product__nav__item--name-cnt" data-gangnammyeonog="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +83,8 @@
                 </clipPath>
               </defs>
             </svg>
-            경남제약
-            <p class="best-product__nav__item--cnt" data-gyeongnamjeyag="1">1</p>
+            <p class="best-product__nav__item--name">경남제약<p class="best-product__nav__item--name-cnt" data-gamjabat="1">1
+              </p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +102,7 @@
                 </clipPath>
               </defs>
             </svg>
-            경복궁
-            <p class="best-product__nav__item--cnt" data-gyeongboggung="1">1</p>
+            <p class="best-product__nav__item--name">경복궁<p class="best-product__nav__item--name-cnt" data-gyeongboggung="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -121,8 +120,7 @@
                 </clipPath>
               </defs>
             </svg>
-            고래사
-            <p class="best-product__nav__item--cnt" data-golaesa="1">1</p>
+            <p class="best-product__nav__item--name">고래사<p class="best-product__nav__item--name-cnt" data-golaesa="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -140,8 +138,7 @@
                 </clipPath>
               </defs>
             </svg>
-            고메공방
-            <p class="best-product__nav__item--cnt" data-gomegongbang="1">1</p>
+            <p class="best-product__nav__item--name">고메공방<p class="best-product__nav__item--name-cnt" data-gomegongbang="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -159,8 +156,7 @@
                 </clipPath>
               </defs>
             </svg>
-            고온어다이어트
-            <p class="best-product__nav__item--cnt" data-gooneodaieoteu="1">1</p>
+            <p class="best-product__nav__item--name">고온어다이어트<p class="best-product__nav__item--name-cnt" data-gooneodiet="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -178,8 +174,7 @@
                 </clipPath>
               </defs>
             </svg>
-            교토마블
-            <p class="best-product__nav__item--cnt" data-gyotomabeul="1">1</p>
+            <p class="best-product__nav__item--name">교토마블<p class="best-product__nav__item--name-cnt" data-gyotomabeul="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -197,8 +192,7 @@
                 </clipPath>
               </defs>
             </svg>
-            그래놀라 하우스
-            <p class="best-product__nav__item--cnt" data-geulaenollahauseu="1">1</p>
+            <p class="best-product__nav__item--name">그래놀라 하우스<p class="best-product__nav__item--name-cnt" data-geulaenollahouse="1">1</p>
           </li>
           <li>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -216,11 +210,10 @@
                 </clipPath>
               </defs>
             </svg>
-            그리츠 시그니처 램
-            <p class="best-product__nav__item--cnt" data-geulicheusigeunicheolaem="1">1</p>
+            <p class="best-product__nav__item--name">그리츠 시그니처 램<p class="best-product__nav__item--name-cnt" data-gritssignalram="1">1</p>
           </li>
           <div>
-            브랜드 더보기
+            <p>브랜드 더보기</p>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
               class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
               <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
