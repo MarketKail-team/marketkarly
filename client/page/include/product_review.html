@@ -12,25 +12,31 @@
 <body>
   <section class="product-review">
     <header class="product-review__header">
-      <h3>상품후기</h3>
+      <div class="product-review__header-text">
+        <h3>상품후기</h3>
+        <ul class="product-review__header__list">
+          <p>글후기 50원 적립금 혜택이 있어요</p>
+          <li class="product-review__header__item">• 퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</li>
+          <li class="product-review__header__item">• 후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
+          <li class="product-review__header__item">• 작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
+        </ul>
+      </div>
       <button type="button" class="product-review__header__button">후기 작성하기</button>
     </header>
-    <article class="product-review__article">
-      <ul class="product-review__article__list">
-        글후기 50원 적립금 혜택이 있어요
-        <li class="product-review__article__item">퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</li>
-        <li class="product-review__article__item">후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
-        <li class="product-review__article__item">작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
-      </ul>
-    </article>
-    <nav class="product-review__nav">
-      <p class="product-review__nav__cnt" data-total="2">총 2개</p>
-      <button type="button" class="product-review__nav__button--focused">추천순</button>
-      <button type="button" class="product-review__nav__button">최근 등록순</button>
-    </nav>
-    <main class="product-review__main">
-      <div class="swiper mySwiper">
+    <main class=".product-review__main">
+      <div class="product-review--info">
+        <p class="product-review--info--cnt" data-total="2">총 2개</p>
+        <div class="product-review--info-select">
+          <button type="button" class="product-review--info__button--focused">추천순</button>
+          <div></div>
+          <button type="button" class="product-review--info__button">최근 등록순</button>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper mySwiper product-review__main--swiper">
+        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
+          <!-- Slides -->
           <div class="swiper-slide">
             <ul class="product-review__main__list">
               <li class="product-review__main__item--notice">
@@ -44,43 +50,57 @@
             </ul>
             <ul class="product-review__main__list">
               <li class="product-review__main__item--review">
-                <p class="review--label-best">베스트</p>
-                <p class="review--label-rank">퍼플</p>
-                <p class="review-user" data-userName="김*진">김*진</p>
-                <div class="product-review__review--info">
+                <div class="review--person-rank">
+                  <p class="review--label-best">베스트</p>
+                  <p class="review--label-rank">퍼플</p>
+                  <p class="review-user" data-userName="김*진">김*진</p>
+                </div>
+                <div class="review--info">
                   <p class="review--product-name" data-productName="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</p>
-                  <p class="review--description">너무 맛있어여~</p>
-                  <p class="review--description">면이 쫄깃하고 양념도 짱맛나요!!</p>
+                  <p class="review--description">
+                    너무 맛있어여~ <br/>
+                    면이 쫄깃하고 양념도 짱맛나요!!
+                  </p>
                   <p class="review--date">2022.11.10</p>
                 </div>
               </li>
-              <li class="product-review__main__item-review">
-                <p class="review--label-best">베스트</p>
-                <p class="review--label-rank">퍼플</p>
-                <p class="review--user" data-userName="김*진">김*진</p>
-                <div class="product-review__review--info">
+              <li class="product-review__main__item--review">
+                <div class="review--person-rank">
+                  <p class="review--label-best">베스트</p>
+                  <p class="review--label-rank">퍼플</p>
+                  <p class="review-user" data-userName="김*진">김*식</p>
+                </div>
+                <div class="review--info">
                   <p class="review--product-name" data-productName="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</p>
-                  <p class="review--description">너무 맛있어여~</p>
-                  <p class="review--description">면이 쫄깃하고 양념도 짱맛나요!!</p>
+                  <p class="review--description">
+                    또 주문할것 같습니다. <br />
+                    너무 맛있어요 내스타일이야~!
+                  </p>
                   <p class="review--date">2022.11.10</p>
                 </div>
               </li>
-              <li class="product-review__main__item-review">
-                <p class="review--label-best">베스트</p>
-                <p class="review--label-rank">퍼플</p>
-                <p class="review--user" data-userName="김*진">김*진</p>
-                <div class="product-review__review--info">
+              <li class="product-review__main__item--review">
+                <div class="review--person-rank">
+                  <p class="review--label-best">베스트</p>
+                  <p class="review--label-rank">퍼플</p>
+                  <p class="review-user" data-userName="김*진">김*범</p>
+                </div>
+                <div class="review--info">
                   <p class="review--product-name" data-productName="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</p>
-                  <p class="review--description">너무 맛있어여~</p>
-                  <p class="review--description">면이 쫄깃하고 양념도 짱맛나요!!</p>
+                  <p class="review--description">
+                    너무 맛있어여~ <br />
+                    면이 쫄깃하고 양념도 짱맛나요!!
+                  </p>
                   <p class="review--date">2022.11.10</p>
                 </div>
               </li>
             </ul>
           </div>
+          <div class="swiper-slide">Slide 2</div>
         </div>
-<!--         <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </main>
   </section>
