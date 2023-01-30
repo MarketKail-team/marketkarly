@@ -15,8 +15,6 @@
   <title>Header</title>
 </head>
 
-
-
 <header class="header">
   <div class="header__inner">
     <div class="header__logo">
@@ -43,13 +41,9 @@
     <form action="/" method="GET" class="search-form">
       <fieldset>
         <legend>검색</legend>
-
         <label for="search" class="a11yHidden search-form__label">검색어</label>
         <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
-        <button class="search-form__button" type="submit">
-          <img src="/client/assets/icons/Icon/Icon/Search.png" alt="검색 버튼" />
-        </button>
-
+        <button class="search-form__button" type="submit"></button>
       </fieldset>
     </form>
     <ul class="header__menu">
@@ -64,10 +58,10 @@
         </ul>
       </li>
     </ul>
-    <ul class="header__button__wrapper">
-      <li><button type="submit"><img src="/client/assets/icons/Icon/Icon/Location.png" alt="배송지" /></button></li>
-      <li><button type="submit"><img src="/client/assets/icons/Icon/Icon/Heart.png" alt="찜한 상품" /></button></li>
-      <li><button type="submit"><img src="/client/assets/icons/Icon/Icon/Cart-1.png" alt="장바구니" /></button></li>
+    <ul class="header__list__wrapper">
+      <li><a href="/" aria-label="배송지"></a></li>
+      <li><a href="/" aria-label="찜한 상품"></a></li>
+      <li><a href="/" aria-label="장바구니"></a></li>
     </ul>
   </div>
 </header>
