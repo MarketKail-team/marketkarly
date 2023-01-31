@@ -1,0 +1,275 @@
+.product-inquiry{
+  width:var(--container-width);
+}
+
+/* product-inquiry__header 영역 */
+.product-inquiry__header{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  align-items:top;
+  margin-bottom:56px;
+}
+
+.product-inquiry__header h3{
+  width:99px;
+  height:40px;
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:24px;
+}
+
+.product-inquiry__header__item{
+  font-size:12px;
+  font-weight:600;
+  color:var(--gray-500);
+  line-height:18px;
+  list-style-type:disc;
+}
+
+.product-inquiry__header__button{
+  all:unset;
+  width:155px;
+  height:44px;
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  padding:10px 34px;
+  text-align:center;
+  background:var(--primary);
+  color:var(--white);
+  border-radius:4px;
+}
+
+/* product-inquiry__main 영역 */
+.product-inquiry__main__table{
+  width:var(--container-width);
+}
+
+/* thead 영역 */
+.product-inquiry__main__table-thead{
+  width:100%;
+  height:58px;
+  border-top:2px solid var(--black);
+  border-bottom:1px solid var(--black);
+  line-height:58px;
+}
+
+.product-inquiry__main__table-thead--content-title{
+  width:750px;
+  font-size:16px;
+  font-weight:600;
+  color:var(--black);
+}
+
+.product-inquiry__main__table-thead--content-writer,
+.product-inquiry__main__table-thead--content-date,
+.product-inquiry__main__table-thead--content-status{
+  width:100px;
+  font-size:16px;
+  font-weight:600;
+  color:var(--black);
+}
+
+/* common */
+.product-inquiry__main__table-tr--notice,
+.product-inquiry__main__table-tr--issue,
+.product-inquiry__main__table-tr--secrete{
+  width:100%;
+  height:58px;
+  border-bottom:1px solid var(--gray-100);
+}
+
+/* tr-notice 영역 */
+.product-inquiry__main__table-td--notice-title{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:start;
+  align-items:center;
+  gap:20px;
+  padding:20px 0 20px 20px;
+}
+
+.product-inquiry__main__table-td--notice-label{
+  width:37px;
+  height:18px;
+  padding:0 8px;
+  background:var(--gray-100);
+  border-radius:1px;
+  font-size:12px;
+  font-weight:600;
+  line-height:18px;
+}
+
+.product-inquiry__main__table-td--notice-info{
+  width:290px;
+  height:24px;
+  line-height:24px;
+  font-size:16px;
+  font-weight:600;
+}
+
+.product-inquiry__main__table-td--notice-writer{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+  padding:17px 36px;
+}
+
+.product-inquiry__main__table-td--notice-date{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+  padding:17px 10px;
+}
+
+.product-inquiry__main__table-td--notice-status{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+  padding:17px 46px;
+}
+
+/* tr-issue 영역 */
+.product-inquiry__main__table-td--issue-title{
+  padding:17px 0 17px 20px;
+}
+
+.product-inquiry__main__table-td--issue-title p{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+}
+
+.product-inquiry__main__table-td--issue-writer,
+.product-inquiry__main__table-td--secrete-writer{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+  text-align:center;
+}
+
+.product-inquiry__main__table-td--issue-date,
+.product-inquiry__main__table-td--secrete-date{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+  text-align:center;
+}
+
+.product-inquiry__main__table-td--issue-status,
+.product-inquiry__main__table-td--secrete-status{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+  text-align:center;
+}
+
+/* issue-content 영역 */
+.product-inquiry__main__table-tr--issue-content{
+  background:var(--gray-50);
+}
+
+.product-inquiry__main__table-tr--issue-content td{
+  padding:20px;
+}
+
+.product-inquiry__main__table--question{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:start;
+  gap:12px;
+  margin-bottom:40px;
+}
+
+.product-inquiry__main__table--question p{
+  font-size:12px;
+  font-weight:600;
+  line-height:18px;
+}
+
+.product-inquiry__main__table--answer{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:start;
+  gap:12px;
+}
+
+.product-inquiry__main__table--answer-content{
+  font-size:12px;
+  font-weight:600;
+  line-height:18px;
+  margin-bottom:12px;
+}
+
+.product-inquiry__main__table--answer-date{
+  font-size:12px;
+  font-weight:600;
+  line-height:18px;
+  color:var(--gray-400);
+}
+
+/* tr-secrete 영역 */
+.product-inquiry__main__table-td--secrete-title{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:start;
+  align-items:center;
+  gap:20px;
+  padding:17px 0 17px 20px;
+}
+
+.product-inquiry__main__table-td--secrete-title p{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--gray-400);
+}
+
+.product-inquiry__main__table-td--secrete-status-ok{
+  font-size:16px;
+  font-weight:600;
+  line-height:24px;
+  color:var(--primary);
+  text-align:center;
+}
+
+/* swiper button */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.product-inquiry__button{
+  margin-top:16px;
+  position:relative;
+}
+
+.product-inquiry__button-wrapper{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:start;
+  gap:16px;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.product-inquiry__button-prev,
+.product-inquiry__button-next{
+  width:56px;
+  height:56px;
+  border:1px solid var(--gray-100);
+  border-radius:4px;
+  padding:4px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:center;
+  align-items:center;
+}
