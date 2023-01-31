@@ -1,5 +1,80 @@
-<nav class="navigation">
-  <ul>
-    <li></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <title>Karly : 마켓 칼리</title>
+</head>
+<body style="background-color: #aaa">
+
+
+  <nav class="nav">
+    <h2 class="a11yHidden">메인 메뉴</h2>
+    <ul class="nav__list" role="tablist">
+      <li class="nav__item--category">
+        <button class="category__btn" aria-label="카테고리 열기">
+          <div class="category__burger">
+            <span class="category__burger--top"></span>
+            <span class="category__burger--mid"></span>
+            <span class="category__burger--bot"></span>
+          </div>
+          카테고리
+        </button>
+        <ul class="category__map">
+          <li><a href="/" class="category__link--gift">선물하기</a></li>
+          <li><a href="/" class="category__link--vege">채소</a></li>
+          <li><a href="/" class="category__link--fruit">과일・견과・쌀</a></li>
+          <li><a href="/" class="category__link--sea">수산・해산・건어물</a></li>
+          <li><a href="/" class="category__link--meet">정육・계란</a></li>
+          <li><a href="/" class="category__link--dish">국・반찬・메인요리</a></li>
+          <li><a href="/" class="category__link--salad">샐러드・간편식</a></li>
+          <li><a href="/" class="category__link--salt">면・양념・오일</a></li>
+          <li><a href="/" class="category__link--drink">생수・음료・우유・커피</a></li>
+          <li><a href="/" class="category__link--snack">간식・과자・떡</a></li>
+          <li><a href="/" class="category__link--bread">베이커리・치즈・델리</a></li>
+          <li><a href="/" class="category__link--health">건강식품</a></li>
+          <li><a href="/" class="category__link--wine">와인</a></li>
+          <li><a href="/" class="category__link--liq">전통주</a></li>
+          <li><a href="/" class="category__link--liv">생활용품・리빙・캠핑</a></li>
+          <li><a href="/" class="category__link--cos">스킨케어・메이크업</a></li>
+          <li><a href="/" class="category__link--hair">헤어・바디・구강</a></li>
+          <li><a href="/" class="category__link--kit">주방용품</a></li>
+          <li><a href="/" class="category__link--elec">가전제품</a></li>
+          <li><a href="/" class="category__link--pet">반려동물</a></li>
+          <li><a href="/" class="category__link--baby">베이비・키즈・완구</a></li>
+          <li><a href="/" class="category__link--tour">여행・티켓</a></li>
+        </ul>
+      </li>
+      <li class="nav__item"><a href="/" class="nav__link">신상품</a></li>
+      <li class="nav__item"><a href="/" class="nav__link">베스트</a></li>
+      <li class="nav__item"><a href="/" class="nav__link">알뜰쇼핑</a></li>
+      <li class="nav__item"><a href="/" class="nav__link">특가/혜택</a></li>
+      <li class="nav__item--noti">
+        <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 연습용 스크립트 -->
+  <script>
+    const category = document.querySelector(".nav__item--category");
+    const categoryBtn = category.querySelector("button");
+    const categoryMap = category.querySelector("ul")
+    function openCategoryMap(){
+      categoryMap.classList.replace("category__map", "category__map--active");
+      categoryBtn.classList.replace("category__btn", "category__btn--active");
+    }
+    function closeCategoryMap(){
+      categoryMap.classList.replace("category__map--active", "category__map");
+      categoryBtn.classList.replace("category__btn--active", "category__btn");
+    }
+    category.addEventListener("mouseover", openCategoryMap);
+    category.addEventListener("mouseleave", closeCategoryMap);
+    // 모듈함수 사용하며 보완 필요
+    // 접근성 관련 추가 고려 필요 : tab키로 카테고리 버튼에 도달한 경우에도 메뉴가 열리도록 제어
+  </script>
+
+</body>
+</html>
