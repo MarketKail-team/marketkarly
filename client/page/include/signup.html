@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <title>Karly : 마켓 칼리</title>
+</head>
+
+<body style="background-color: #aaa">
+  <header class="header" style="background-color: #ddd">header</header>
+  <nav class="navigation" style="background-color: #bbb">navigation</nav>
+
+
+  <main class="main">
+    <section class="signup">
+      <h2 class="signup__title">회원가입</h2>
+      <span class="signup__desc">필수입력사항</span>
+      <form class="signup__form" method="POST" action="">
+        <fieldset>
+          <legend>신규 회원가입 폼</legend>
+          <div class="signup-form__item=">
+            <label for="userId" class="signup-form__title--required">아이디</label>
+            <input type="text" id="userId" name="userId" class="signup-form__input" placeholder="아이디를 입력해주세요" required>
+            <button type="button" class="signup-form__button">중복확인</button>
+          </div>
+          <div class="signup-form__item">
+            <label for="userPw" class="signup-form__title--required">비밀번호</label>
+            <input type="text" id="userPw" name="userPw" class="signup-form__input" placeholder="비밀번호를 입력해주세요" required>
+          </div>
+          <div class="signup-form__item">
+            <label for="userPw2" class="signup-form__title--required">비밀번호 확인</label>
+            <input type="text" id="userPw2" name="userPw2" class="signup-form__input" placeholder="비밀번호를 한번 더 입력해주세요" required>
+          </div>
+          <div class="signup-form__item">
+            <label for="userName" class="signup-form__title--required">이름</label>
+            <input type="text" id="userName" name="userName" class="signup-form__input" placeholder="이름을 입력해주세요" required>
+          </div>
+          <div class="signup-form__item">
+            <label for="userEmail" class="signup-form__title--required">이메일</label>
+            <input type="text" id="userEmail" name="userEmail" class="signup-form__input" placeholder="예) marketkarly@karly.com" required>
+            <button type="button" class="signup-form__button">중복확인</button>
+          </div>
+          <div class="signup-form__item">
+            <label for="userPhone" class="signup-form__title--required">휴대폰</label>
+            <input type="text" id="userPhone" name="userPhone" class="signup-form__input" placeholder="숫자만 입력해주세요" required>
+            <button type="button" class="signup-form__button">인증번호 받기</button>
+          </div>
+          <div class="signup-form__item">
+            <span class="signup-form__title--required">주소</span>
+            <button type="button" class="signup-form__button--large">주소 검색</button>
+            <p class="signup-form__desc">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+          </div>
+          <div class="signup-form__item">
+            <span class="signup-form__title">성별</span>
+            <label for="isMan" class="signup-form__label-gender">
+              <input type="radio" id="isMan" name="userGender" class="signup-form__input-gender" value="MALE">
+              <i class="signup-form__ico-radio"></i>
+              <span aria-labelledby="isMan" class="signup-form__text-gender">남자</span>
+            </label>
+            <label for="isWoman" class="signup-form__label-gender">
+              <input type="radio" id="isWoman" name="userGender" class="signup-form__input-gender" value="FEMALE">
+              <i class="signup-form__ico-radio"></i>
+              <span aria-labelledby="isWoman" class="signup-form__text-gender">여자</span>
+            </label>
+            <label for="isNone" class="signup-form__label-gender">
+              <input type="radio" id="isNone" name="userGender" class="signup-form__input-gender" value="NONE">
+              <i class="signup-form__ico-radio"></i>
+              <span aria-labelledby="isNone" class="signup-form__text-gender">선택안함</span>
+            </label>
+          </div>
+          <div class="signup-form__item">
+            <span class="signup-form__title">생년월일</span>
+            <div class="signup-form__input">
+              <label for="userBirthYear" class="signup-form__label-birth">년</label>
+              <input type="text" id="userBirthYear" name="userBirthYear" class="signup-form__input-birth" placeholder="YYYY">
+              <label for="userBirthMonth" class="signup-form__label-birth">월</label>
+              <input type="text" id="userBirthMonth" name="userBirthMonth" class="signup-form__input-birth" placeholder="MM">
+              <label for="userBirthDay" class="signup-form__label-birth">일</label>
+              <input type="text" id="userBirthDay" name="userBirthDay" class="signup-form__input-birth" placeholder="DD">
+            </div>
+          </div>
+          <div class="signup-form__item">
+            <span class="signup-form__title">추가입력 사항</span>
+            <label for="recommanderId" class="signup-form__label-extra">
+              <input type="radio" id="recommanderId" name="extra" class="signup-form__input-extra" value="RECOMMANDER">
+              <i class="signup-form__ico-radio"></i>
+              <span aria-labelledby="recommanderId" class="signup-form__text-extra">친구초대 추천인 아이디</span>
+            </label>
+            <label for="eventName" class="signup-form__label-extra">
+              <input type="radio" id="eventName" name="extra" class="signup-form__input-extra" value="EVENT">
+              <i class="signup-form__ico-radio"></i>
+              <span aria-labelledby="eventName" class="signup-form__text-extra">참여 이벤트명</span>
+            </label>
+          </div>
+          <div class="signup-form__terms">
+            <span class="signup-form__title--required">이용약관동의</span>
+            <div class="signup-form__check-terms">
+              <label for="termsAll" class="signup-form__label-terms">
+                <input type="checkbox" id="termsAll" name="terms" class="signup-form__input-terms">
+                <i class="signup-form__ico-check"></i>
+                <p aria-labelledby="termsAll" class="signup-form__text-terms--all">전체 동의합니다.</p>
+                <span class="signup-form__text-terms-desc">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
+              </label>
+              <label for="terms1" class="signup-form__label-terms">
+                <input type="checkbox" id="terms1" name="terms" class="signup-form__input-terms required">
+                <i class="signup-form__ico-check"></i>
+                <span aria-labelledby="terms1" class="signup-form__text-terms">이용약관 동의 (필수)</span>
+                <button type="button" class="signup-form__btn-terms">약관보기</button>
+              </label>
+              <label for="terms2" class="signup-form__label-terms">
+                <input type="checkbox" id="terms2" name="terms" class="signup-form__input-terms required">
+                <i class="signup-form__ico-check"></i>
+                <span aria-labelledby="terms2" class="signup-form__text-terms">개인정보 수집 · 이용 동의 (필수)</span>
+                <button type="button" class="signup-form__btn-terms">약관보기</button>
+              </label>
+              <label for="terms3" class="signup-form__label-terms">
+                <input type="checkbox" id="terms3" name="terms" class="signup-form__input-terms">
+                <i class="signup-form__ico-check"></i>
+                <span aria-labelledby="terms3" class="signup-form__text-terms">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+                <button type="button" class="signup-form__btn-terms">약관보기</button>
+              </label>
+              <label for="terms4" class="signup-form__label-terms">
+                <input type="checkbox" id="terms4" name="terms" class="signup-form__input-terms required">
+                <i class="signup-form__ico-check"></i>
+                <span aria-labelledby="terms4" class="signup-form__text-terms">본인은 만 14세 이상입니다. (필수)</span>
+                <button type="button" class="signup-form__btn-terms">약관보기</button>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="signup-form__button">가입하기</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+
+  <footer class="footer" style="background-color: #ccc">footer</footer>
+</body>
+</html>
