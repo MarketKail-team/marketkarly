@@ -1,0 +1,42 @@
+.main-banner {
+  position: relative;
+  width: 1900px;
+}
+
+.main-banner__pagination {
+  position: absolute;
+  top: 324px;
+  left: 1300px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.15);
+  width: 55px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 12px;
+  color: var(--white);
+  font-size: var(--text-sm);
+}
+
+.main-banner__button-prev {
+  background: url('../../assets/sprites.png') no-repeat -331px -163px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 100;
+  top: 147px;
+  left: 350px;
+  border: 0;
+}
+
+.main-banner__button-next {
+  background: url('../../assets/sprites.png') no-repeat -331px -163px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 100;
+  rotate: 180deg;
+  top: 147px;
+  left: 1500px;
+  border: 0;
+}
