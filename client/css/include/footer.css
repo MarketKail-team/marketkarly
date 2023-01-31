@@ -1,4 +1,159 @@
-.footer {
-  max-width: var(--container-width);
+footer {
   margin: 0 auto;
+  border-top: 1px solid var(--gray-50);
+  color: var(--content);
+}
+
+/* ----- .footer-inner ----- */
+.footer-inner {
+  width: var(--container-width);
+  margin: var(--spacing-xl) auto;
+}
+
+/* --- .footer-inner-top --- */
+.footer-inner-top {
+  padding-bottom: var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .customer-center */
+.customer-center__title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 140%;
+}
+.customer-center__contact {
+  display: flex;
+  align-items: center;
+}
+.customer-center__contact-tel {
+  margin: var(--spacing-md) 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 140%;
+}
+.customer-center__contact-info {
+  margin-left: var(--spacing-xs);
+  font-size: var(--text-base);
+  line-height: 150%;
+}
+.customer-center__item {
+  width: 477px;
+  margin-bottom: var(--spacing-base);
+  display: flex;
+  align-items: center;
+}
+.customer-center__item-title {
+  width: 140px;
+  height: 40px;
+  border: 1px solid var(--gray-100);
+  border-radius: 3px;
+  font-size: var(--text-sm);
+  text-align: center;
+  line-height: 40px;
+}
+.customer-center__item-info {
+  width: 440px;
+  margin-left: 8px;
+  color: var(--gray-400);
+  font-size: var(--text-sm);
+  line-height: 150%;
+}
+.customer-center__item-info p span:nth-child(1)::after {
+  display: inline-block;
+  content: "";
+  background-color: var(--gray-300);
+  width: 1px;
+  height: 10px;
+  margin: 0 3px 0 7px;
+}
+.customer-center__item--non-member-inquiry {
+  color: var(--gray-400);
+  font-size: var(--text-xs);
+}
+.customer-center__item--non-member-inquiry p:nth-child(1) {
+  margin-bottom: 5px;
+}
+.customer-center__item--non-member-inquiry a {
+  color: var(--primary);
+}
+
+/* .about-karly */
+.about-karly__link {
+  width: 500px;
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-base);
+}
+.about-karly__link li {
+  margin-right: var(--spacing-base);
+}
+.about-karly__link li:last-child {
+  margin-right: 0;
+}
+.about-karly__link li:nth-child(5) {
+  font-weight: 500;
+}
+.about-karly__info {
+  margin-bottom: var(--spacing-xl);
+  color: var(--gray-400);
+  font-size: var(--text-xs);
+  line-height: 140%;
+}
+.about-karly__info li span:nth-child(1):after {
+  display: inline-block;
+  content: "";
+  background-color: var(--gray-300);
+  width: 1px;
+  height: 10px;
+  margin: 0 2px -1px 5px;
+}
+.about-karly__info a {
+  color: var(--primary);
+}
+.about-karly__social-media {
+  display: flex;
+}
+.about-karly__social-media li {
+  margin-right: 10px;
+}
+.about-karly__social-media li a img {
+  width: 32px;
+}
+
+/* --- .footer-inner-bottom --- */
+.footer-inner-bottom {
+  width: 100%;
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner-bottom button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--gray-400);
+  font-size: 10px;
+  line-height: 140%;
+  text-align: left;
+}
+.footer-inner-bottom button img {
+  margin-right: var(--spacing-sm);
+}
+
+/* ----- .footer-bottom ----- */
+.footer-bottom {
+  padding: var(--spacing-lg);
+  background-color: var(--gray-50);
+  color: var(--gray-400);
+  font-size: 10px;
+  line-height: 140%;
+  text-align: center;
+}
+.footer-bottom p {
+  margin-bottom: var(--spacing-xs);
 }
