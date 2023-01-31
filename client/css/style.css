@@ -8,3 +8,10 @@
 /* 각 기능을 include 폴더에서 작업한 뒤, 아래에 import 부탁드립니다 */
 @import url(./include/header.css);
 @import url(./include/footer.css);
+
+
+
+
+
+
+@import url(./include/main.css);
