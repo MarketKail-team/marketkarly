@@ -28,6 +28,10 @@ img {
 }
 button {
   background-color: #fff;
+  cursor: pointer;
+}
+fieldset {
+  padding: 0;
 }
 .is-active {
   display: block;
