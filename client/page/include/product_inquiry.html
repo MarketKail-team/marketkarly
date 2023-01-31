@@ -14,50 +14,53 @@
 <body>
   <section class="product-inquiry">
     <header class="product-inquiry__header">
-      <h3>상품문의</h3>
-      <button type="button" class="header__button">문의하기</button>
+      <div class="product-inquiry__header--text">
+        <h3>상품문의</h3>
+        <ul class="product-inquiry__header__list">
+          <li class="product-inquiry__header__item">• 상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.
+          </li>
+          <li class="product-inquiry__header__item">• 배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</li>
+        </ul>
+      </div>
+      <button type="button" class="product-inquiry__header__button">문의하기</button>
     </header>
-    <article class="product-inquiry__article">
-      <ul class="article__list">
-        <li class="article__item">상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
-        <li class="article__item">배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</li>
-      </ul>
-    </article>
     <main class="product-inquiry__main">
+      <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <table>
-              <thead>
+            <table class="product-inquiry__main__table">
+              <thead class="product-inquiry__main__table-thead">
                 <tr>
-                  <th>제목</th>
-                  <th>작성자</th>
-                  <th>작성일</th>
-                  <th>답변상태</th>
+                  <th class="product-inquiry__main__table-thead--content-title">제목</th>
+                  <th class="product-inquiry__main__table-thead--content-writer">작성자</th>
+                  <th class="product-inquiry__main__table-thead--content-date">작성일</th>
+                  <th class="product-inquiry__main__table-thead--content-status">답변상태</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="main--notice">
-                  <td>
-                    <p class="main--label-notice">공지</p>
-                    <p>판매(일시)중단 제품 안내 (22.11.10 업데이트)</p>
+              <tbody class="product-inquiry__main__table-tbody">
+                <tr  class="product-inquiry__main__table-tr--notice">
+                  <td class="product-inquiry__main__table-td--notice-title">
+                    <p class="product-inquiry__main__table-td--notice-label">공지</p>
+                    <p class="product-inquiry__main__table-td--notice-info">판매(일시)중단 제품 안내 (22.11.10 업데이트)</p>
                   </td>
-                  <td>칼리</td>
-                  <td>2017.02.01</td>
-                  <td>-</td>
+                  <td class="product-inquiry__main__table-td--notice-writer">칼리</td>
+                  <td class="product-inquiry__main__table-td--notice-date">2017.02.01</td>
+                  <td class="product-inquiry__main__table-td--notice-status">-</td>
                 </tr>
-                <tr class="main--issue">
-                  <td>
+                <tr class="product-inquiry__main__table-tr--issue">
+                  <td class="product-inquiry__main__table-td--issue-title">
                     <p>팩이 터져서 왔어요</p>
                   </td>
-                  <td>김*식</td>
-                  <td>2022.11.11</td>
-                  <td>답변대기</td>
+                  <td class="product-inquiry__main__table-td--issue-writer">김*식</td>
+                  <td class="product-inquiry__main__table-td--issue-date">2022.11.11</td>
+                  <td class="product-inquiry__main__table-td--issue-status">답변대기</td>
                 </tr>
-                <tr class="main--issue-content">
+                <tr class="product-inquiry__main__table-tr--issue-content">
                   <td colspan="4">
-                    <div class="main--question">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <div class="product-inquiry__main__table--question">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
                         <g clip-path="url(#clip0_549_2633)">
                           <path
@@ -78,8 +81,9 @@
                         환불 요청합니다.
                       </p>
                     </div>
-                    <div class="main--answer">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <div class="product-inquiry__main__table--answer">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
                         <g clip-path="url(#clip0_549_2643)">
                           <path
@@ -95,22 +99,27 @@
                           </clipPath>
                         </defs>
                       </svg>
-                      <p class="answer-content">
-                        안녕하세요. 칼리입니다. <br />
-                        믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다. <br /><br />
-                        더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다. <br /><br />
-                        다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다. <br /><br />
-                        불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다. <br /><br />
-                        칼리 드림.
-                      </p>
-                      <p class="answer-date">2022.11.11</p>
+                      <div>
+                        <p class="product-inquiry__main__table--answer-content">
+                          안녕하세요. 칼리입니다. <br />
+                          믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다. <br /><br />
+                          더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다.
+                          <br /><br />
+                          다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다. <br /><br />
+                          불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다.
+                          <br /><br />
+                          칼리 드림.
+                        </p>
+                        <p class="product-inquiry__main__table--answer-date">2022.11.11</p>
+                      </div>
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <td>
+                <tr class="product-inquiry__main__table-tr--secrete">
+                  <td class="product-inquiry__main__table-td--secrete-title">
                     <p>비밀글입니다.</p>
-                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       class="flex-grow-0 flex-shrink-0 w-3 h-3.5 relative" preserveAspectRatio="none">
                       <g clip-path="url(#clip0_549_2565)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -127,14 +136,15 @@
                       </defs>
                     </svg>
                   </td>
-                  <td>김*진</td>
-                  <td>2022.10.09</td>
-                  <td>답변대기</td>
+                  <td class="product-inquiry__main__table-td--secrete-writer">김*진</td>
+                  <td class="product-inquiry__main__table-td--secrete-date">2022.10.09</td>
+                  <td class="product-inquiry__main__table-td--secrete-status">답변대기</td>
                 </tr>
-                <tr>
-                  <td>
+                <tr class="product-inquiry__main__table-tr--secrete">
+                  <td class="product-inquiry__main__table-td--secrete-title">
                     <p>비밀글입니다.</p>
-                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       class="flex-grow-0 flex-shrink-0 w-3 h-3.5 relative" preserveAspectRatio="none">
                       <g clip-path="url(#clip0_549_2565)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -151,14 +161,15 @@
                       </defs>
                     </svg>
                   </td>
-                  <td>김*범</td>
-                  <td>2022.09.13</td>
-                  <td>답변완료</td>
+                  <td class="product-inquiry__main__table-td--secrete-writer">김*범</td>
+                  <td class="product-inquiry__main__table-td--secrete-date">2022.10.13</td>
+                  <td class="product-inquiry__main__table-td--secrete-status-ok">답변완료</td>
                 </tr>
-                <tr>
-                  <td>
+                <tr class="product-inquiry__main__table-tr--secrete">
+                  <td class="product-inquiry__main__table-td--secrete-title">
                     <p>비밀글입니다.</p>
-                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       class="flex-grow-0 flex-shrink-0 w-3 h-3.5 relative" preserveAspectRatio="none">
                       <g clip-path="url(#clip0_549_2565)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -175,14 +186,15 @@
                       </defs>
                     </svg>
                   </td>
-                  <td>심*범</td>
-                  <td>2022.08.30</td>
-                  <td>답변완료</td>
+                  <td class="product-inquiry__main__table-td--secrete-writer">심*범</td>
+                  <td class="product-inquiry__main__table-td--secrete-date">2022.08.30</td>
+                  <td class="product-inquiry__main__table-td--secrete-status-ok">답변완료</td>
                 </tr>
-                <tr>
-                  <td>
+                <tr class="product-inquiry__main__table-tr--secrete">
+                  <td class="product-inquiry__main__table-td--secrete-title">
                     <p>비밀글입니다.</p>
-                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       class="flex-grow-0 flex-shrink-0 w-3 h-3.5 relative" preserveAspectRatio="none">
                       <g clip-path="url(#clip0_549_2565)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -199,14 +211,15 @@
                       </defs>
                     </svg>
                   </td>
-                  <td>야*</td>
-                  <td>2022.08.12</td>
-                  <td>답변완료</td>
+                  <td class="product-inquiry__main__table-td--secrete-writer">야*</td>
+                  <td class="product-inquiry__main__table-td--secrete-date">2022.08.12</td>
+                  <td class="product-inquiry__main__table-td--secrete-status-ok">답변완료</td>
                 </tr>
-                <tr>
-                  <td>
+                <tr class="product-inquiry__main__table-tr--secrete">
+                  <td class="product-inquiry__main__table-td--secrete-title">
                     <p>비밀글입니다.</p>
-                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       class="flex-grow-0 flex-shrink-0 w-3 h-3.5 relative" preserveAspectRatio="none">
                       <g clip-path="url(#clip0_549_2565)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -223,26 +236,39 @@
                       </defs>
                     </svg>
                   </td>
-                  <td>김**사</td>
-                  <td>2022.07.23</td>
-                  <td>답변완료</td>
+                  <td class="product-inquiry__main__table-td--secrete-writer">김**사</td>
+                  <td class="product-inquiry__main__table-td--secrete-date">2022.07.23</td>
+                  <td class="product-inquiry__main__table-td--secrete-status-ok">답변완료</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <div class="swiper-slide">Slide 2</div>
         </div>
-        <!--         <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
       </div>
     </main>
+    <section class="product-inquiry__button">
+      <div class="product-inquiry__button-wrapper">
+        <div class="product-inquiry__button-prev">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
+          </svg>
+        </div>
+        <div class="product-inquiry__button-next">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
+          </svg>
+        </div>
+      </div>
+    </section>
   </section>
 
   <!-- Initialize Swiper -->
   <script>
     const swiper = new Swiper(".mySwiper", {
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".product-inquiry__button-next",
+        prevEl: ".product-inquiry__button-prev",
       },
     });
   </script>
