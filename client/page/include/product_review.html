@@ -97,20 +97,29 @@
             </ul>
           </div>
           <div class="swiper-slide">Slide 2</div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
     </main>
+    <section class="product-review__button">
+      <div class="product-review__button-wrapper">
+        <div class="product-review__button-prev">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
+          </svg>
+        </div>
+        <div class="product-review__button-next">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
+          </svg>
+        </div>
+      </div>
+    </section>
   </section>
 
   <!-- Initialize Swiper -->
   <script>
     const swiper = new Swiper(".mySwiper", {
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".product-review__button-next",
+        prevEl: ".product-review__button-prev",
       },
     });
   </script>

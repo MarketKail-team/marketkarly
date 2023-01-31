@@ -189,22 +189,36 @@
   color:var(--gray-400)
 }
 
-/* swiper-button 영역 */
-.swiper-button-next {
-  background: url('../../assets/sprites.png') o-repeat -406px -292px;
-	width: 6px;
-	height: 11px;
-  /* background-size: 50% auto;
-  background-position: center; */
-}
-
-.swiper-button-prev {
-  background: url('../../assets/sprites.png') o-repeat -406px -292px;
-	width: 6px;
-	height: 11px;
-}
-
+/* swiper button */
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+
+.product-review__button{
+  margin-top:16px;
+  position:relative;
+}
+
+.product-review__button-wrapper{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:start;
+  gap:16px;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.product-review__button-prev,
+.product-review__button-next{
+  width:56px;
+  height:56px;
+  border:1px solid var(--gray-100);
+  border-radius:4px;
+  padding:4px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:center;
+  align-items:center;
 }
