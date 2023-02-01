@@ -2,6 +2,7 @@
 
 .a11yHidden,
 legend {
+  display: inline-block;
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
