@@ -80,6 +80,8 @@
 .main .swiper img{
   max-width: 100%;
 	transition: all 0.5s ease-in-out 0s;
+  /* icon위치 설정을 위한 position */
+  position: relative;
 }
 
 .main .swiper-image {
@@ -128,4 +130,18 @@
   line-height: 160%;
   text-decoration:line-through;
   text-align: left;
+}
+
+/* cart icon */
+.modal--cart-icon {
+  content: '';
+  background: url(../../assets/sprites.png) no-repeat -78px -278px;
+  width: 45px;
+	height: 45px;
+  border: none;
+}
+.main .modal--cart-icon {
+  position: absolute;
+  top:258px;
+  left: 189px;
 }
