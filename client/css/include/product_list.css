@@ -1,15 +1,5 @@
 .product-list {
-  max-width: var(--container-width);
   width: 783px;
-  margin: 0 auto;
-}
-/* title */
-.product-list__title{
-  font-weight: 600;
-  font-size: 21.328px;
-  line-height: 150%;
-  text-align: center;
-  margin: 48px 0;
 }
 /* list sorting */
 .product-list__inner,
@@ -171,6 +161,8 @@ text-decoration: line-through;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 34px;
+  margin-left: -1px;
 }
 
 

@@ -1,0 +1,8 @@
+.best {
+  margin: 48px auto 80px;
+  width: var(--container-width);
+}
+.best__wrap {
+  display: flex;
+  margin-top: 48px;
+}

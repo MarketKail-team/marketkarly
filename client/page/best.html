@@ -117,8 +117,465 @@
       </li>
     </ul>
   </nav>
-  <main class="main" style="background-color: #888">
-    컨텐츠들은 메인 안으로 넣어주세요
+  <main class="main">
+    <section class="best">
+      <h2 class="best__title">베스트</h2>
+      <div class="best__wrap">
+        <!-- BEST-PRODUCT-CONDITION : include/best_product_list.html -->
+        <div class="best-product__condition">
+          <ul class="best-product__condition__list">
+            <li class="best-product__condition__item">
+              <button type="button" class="best-product__condition__button">필터</button>
+              <button type="button"
+                class="best-product__condition__button best-product__condition__button--reset">초기화</button>
+            </li>
+            <li class="best-product__condition__item">
+              <button type="button" class="best-product__condition__button">카테고리<p
+                  class="best-product__condition__item--category-cnt" data-category="1">1</p></button>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2"></path>
+              </svg>
+            </li>
+            <li class="best-product__condition__item--focused">
+              <div class="best-product__condition__item--focused-title">
+                <button type="button" class="best-product__condition__button">브랜드</button>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                  <path d="M13 11L9 7L5 11" stroke="#999999" stroke-width="1.2"></path>
+                </svg>
+              </div>
+              <ul>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">감자밭<p class="best-product__condition__item--name-cnt"
+                      data-gamjabat="1">1</p>
+                  </p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">강남면옥<p class="best-product__condition__item--name-cnt"
+                      data-gangnammyeonog="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">경남제약<p class="best-product__condition__item--name-cnt"
+                      data-gamjabat="1">1
+                    </p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">경복궁<p class="best-product__condition__item--name-cnt"
+                      data-gyeongboggung="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">고래사<p class="best-product__condition__item--name-cnt"
+                      data-golaesa="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">고메공방<p class="best-product__condition__item--name-cnt"
+                      data-gomegongbang="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">고온어다이어트<p class="best-product__condition__item--name-cnt"
+                      data-gooneodiet="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">교토마블<p class="best-product__condition__item--name-cnt"
+                      data-gyotomabeul="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">그래놀라 하우스<p class="best-product__condition__item--name-cnt"
+                      data-geulaenollahouse="1">1</p>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-6 h-6 relative" preserveAspectRatio="none">
+                    <g clip-path="url(#clip0_523_2120)">
+                      <path
+                        d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5Z"
+                        stroke="#C4C4C4"></path>
+                      <path d="M7 12.667L10.385 16L18 8.5" stroke="#C4C4C4" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_523_2120">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="best-product__condition__item--name">그리츠 시그니처 램<p class="best-product__condition__item--name-cnt"
+                      data-gritssignalram="1">1</p>
+                </li>
+                <div>
+                  <p>브랜드 더보기</p>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                    <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
+                  </svg>
+                </div>
+              </ul>
+            </li>
+            <li class="best-product__condition__item">
+              <button type="button" class="best-product__condition__button">가격</button>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2"></path>
+              </svg>
+            </li>
+            <li class="best-product__condition__item">
+              <button type="button" class="best-product__condition__button">혜택</button>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2"></path>
+              </svg>
+            </li>
+            <li class="best-product__condition__item">
+              <button type="button" class="best-product__condition__button">유형</button>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2"></path>
+              </svg>
+            </li>
+            <li class="best-product__condition__item">
+              <button type="button" class="best-product__condition__button">특저상품 제외</button>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                <path d="M5 7L9 11L13 7" stroke="#999999" stroke-width="1.2"></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <!-- PRODUCT-LIST : include/product_list.html -->
+        <div class="product-list">
+          <div class="product-list__inner">
+            <p class="product-list--sum">총 284건</p>
+            <ul class="product-list__sort">
+              <li><a href="/">추천순<span class="circle-icon">
+                    <svg class="question-icon" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0.5 2.21081H1.77027C1.81351 1.55135 2.26216 1.12973 2.95946 1.12973C3.64054 1.12973 4.09459 1.53514 4.09459 2.0973C4.09459 2.58784 3.90383 2.86944 3.35576 3.22524L3.1973 3.32432C2.45135 3.76216 2.13784 4.24865 2.18649 5.05946L2.19189 5.42703H3.44595V5.11892C3.44595 4.58378 3.64595 4.30811 4.35405 3.89189C5.08919 3.45405 5.5 2.87568 5.5 2.04865C5.5 0.85405 4.51081 0 3.02973 0C1.42432 0 0.54324 0.92973 0.5 2.21081ZM2.87838 8.0054C2.33784 8.0054 1.98108 7.6649 1.98108 7.1459C1.98108 6.62162 2.33784 6.28108 2.87838 6.28108C3.42973 6.28108 3.77568 6.62162 3.77568 7.1459C3.77568 7.6649 3.42973 8.0054 2.87838 8.0054Z"
+                        fill="#CCCCCC" />
+                    </svg>
+                  </span>
+                </a></li>
+              <li><a href="/">신상품순</a></li>
+              <li><a href="/">판매량순</a></li>
+              <li><a href="/">혜택순</a></li>
+              <li><a href="/">낮은 가격순</a></li>
+              <li><a href="/">높은 가격순</a></li>
+            </ul>
+          </div>
+          <dl class="product-list__list-wrapper">
+            <div class="product-list__item"><a href="#">
+                <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" />
+                </dd>
+                <dd class="product--price">4,980원</dd>
+                <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
+                    aria-labelledby="jyoleudi_sun_cushion" />
+                </dd>
+                <dd class="product--price">32,500원</dd>
+                <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt=""
+                    aria-labelledby="baby_laundry_detergent" />
+                </dd>
+                <dd class="product--price price--original">18,980원</dd>
+                <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" />
+                </dd>
+                <dd class="product--price">4,980원</dd>
+                <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
+                    aria-labelledby="jyoleudi_sun_cushion" />
+                </dd>
+                <dd class="product--price">32,500원</dd>
+                <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt=""
+                    aria-labelledby="baby_laundry_detergent" />
+                </dd>
+                <dd class="product--price price--original">18,980원</dd>
+                <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" />
+                </dd>
+                <dd class="product--price">4,980원</dd>
+                <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
+                    aria-labelledby="jyoleudi_sun_cushion" />
+                </dd>
+                <dd class="product--price">32,500원</dd>
+                <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt=""
+                    aria-labelledby="baby_laundry_detergent" />
+                </dd>
+                <dd class="product--price price--original">18,980원</dd>
+                <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" />
+                </dd>
+                <dd class="product--price">4,980원</dd>
+                <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
+                    aria-labelledby="jyoleudi_sun_cushion" />
+                </dd>
+                <dd class="product--price">32,500원</dd>
+                <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt=""
+                    aria-labelledby="baby_laundry_detergent" />
+                </dd>
+                <dd class="product--price price--original">18,980원</dd>
+                <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" />
+                </dd>
+                <dd class="product--price">4,980원</dd>
+                <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
+                    aria-labelledby="jyoleudi_sun_cushion" />
+                </dd>
+                <dd class="product--price">32,500원</dd>
+                <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
+              </a>
+            </div>
+            <div class="product-list__item"><a href="#">
+                <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt=""
+                    aria-labelledby="baby_laundry_detergent" />
+                </dd>
+                <dd class="product--price price--original">18,980원</dd>
+                <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
+                <span class="karly-only">Karly Only</span>
+                <span class="limited--bedge">한정수량</span>
+              </a>
+            </div>
+          </dl>
+          <div class="product-list__pagenation">
+            <a href="#">
+              <image
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAHUlEQVR42mNgAIPi/8X/kWkwA8SE0UQIMJAsCKMBBzk27fqtkcYAAAAASUVORK5CYII="
+                alt="처음 페이지로 이동" />
+            </a>
+            <a href="#">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"
+                alt="이전 페이지로 이동"></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg=="
+                alt="다음 페이지로 이동"></a>
+            <a href="#">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAIElEQVR42mMo/l/8n4GBgQFGQ5kgDowmQZCwAMImhDkAb0k27Zcisn8AAAAASUVORK5CYII="
+                alt="마지막 페이지로 이동"></a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
   </main>
   <!-- FOOTER : include/footer.html -->
   <footer>
