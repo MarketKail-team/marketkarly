@@ -1,19 +1,8 @@
-/* html,
-body {
-    position: relative;
-    height: 100%;
-    width: 1050px;
-    margin: 0 auto;
-  } */
-
-.main__recommend-product,
-.main__weeklybanner,
-.main__best-price {
+/* main */
+.main {
   width: 1050px;
   margin: 0 auto;
 }
-
-/* main */
 .main__recommend-product,
 .main__best-price {
     padding: 40px 0;
@@ -131,7 +120,4 @@ body {
   line-height: 160%;
   text-decoration:line-through;
   text-align: left;
-}
-.main__weeklybanner{
-  margin: 40px 0;
 }
