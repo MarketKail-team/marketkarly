@@ -10,6 +10,7 @@
   line-height: 50px;
   position: fixed;
   top: 0;
+  z-index: 200;
 }
 .home__top-banner a {
   display: inline-block;
