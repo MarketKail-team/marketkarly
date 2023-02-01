@@ -1,81 +1,97 @@
-/* common */
-.best-product__condition{
+.product-condition{
   width:267px;
 }
 
-.best-product__condition__item, .best-product__condition__item--focused-title{
+.product-condition__item, .product-condition__item--focused-title{
   width:220px;
   height:52px;
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
   align-items:center;
-  border-bottom:1px solid #e1e1e1;
+  border-bottom:1px solid var(--gray-100);
+  cursor:pointer;
 }
 
-.best-product__condition__button{
+.product-condition__item:first-child{
+  cursor:default;
+}
+
+.product-condition__button{
   width:100%;
   height:24px;
   all:unset;
-  cursor:pointer;
   font-size:16px;
   font-weight:600;
 }
 
-.best-product__condition__item--category-cnt{
+.product-condition__category-cnt{
   display:inline-block;
   font-size:10px;
-  color:#a6a6a6;
+  color:var(--gray-300);
   padding-left:8px;
 }
 
-
-/* best-product__condition__button--reset */
-.best-product__condition__button--reset{
+.product-condition__button--reset{
   width:26px;
   height:16px;
   font-size:10px;
   color:#a6a6a6;
+  cursor:pointer;
 }
 
-/* best-product__condition__item--focused common */
-.best-product__condition__item--focused-title{
+.product-condition__item--focused-title{
   border-bottom:none;
 }
 
-.best-product__condition__item--focused>ul>li{
+.product-condition__label-check{
   width:220px;
   height:50px;
   display:flex;
   flex-flow:row nowrap;
   justify-items:start;
   align-items:center;
+  cursor: pointer;
 }
 
-.best-product__condition__item--name-cnt{
+.product-condition__ico-check {
+  display: inline-block;
+  width: 24px;
+	height: 24px;
+  background: url("./../../assets/sprites.png") no-repeat -285px -226px;
+  margin-right:8px;
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked + .product-condition__ico-check {
+  background-position: -406px -10px;
+}
+
+.product-condition__brand-name-cnt{
   display:inline-block;
   font-size:10px;
-  color:#a6a6a6;
+  color:var(--gray-300);
   padding-left:4px;
 }
 
-.best-product__condition__item--name{
-  padding-left:8px;
-}
-
-/* .best-product__condition__item--focused div:last-child */
-.best-product__condition__item--focused div:last-child{
+.product-condition__item-more{
   width:220px;
   height:42px;
-  border-bottom:1px solid #e1e1e1;
+  border-bottom:1px solid var(--gray-100);
   display:flex;
   flex-flow:row nowrap;
-  padding:6px 68px 18px ;
+  padding:6px 68px 18px;
+  cursor:pointer;
 }
 
-.best-product__condition__item--focused div:last-child p{
+.product-condition__item-more span{
   height:18px;
   font-size:12px;
   line-height:18px;
-  color:#a6a6a6;
+  color:var(--gray-300);
+}
+
+.product-condition__ico-open,
+.product-condition__ico-close{
+  cursor:pointer;
 }
