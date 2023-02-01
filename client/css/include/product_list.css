@@ -277,3 +277,17 @@ top:-3px;
   color: var(--white);
   line-height: 150%;
 }
+
+/* cart icon */
+.modal--cart-icon {
+  content: '';
+  background: url(../../assets/sprites.png) no-repeat -78px -278px;
+  width: 45px;
+	height: 45px;
+  border: none;
+}
+.product-list .modal--cart-icon {
+  position: absolute;
+  top:258px;
+  left: 189px;
+}
