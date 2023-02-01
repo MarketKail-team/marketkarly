@@ -117,6 +117,7 @@ fieldset{
   font-size:var(--text-base);
   font-weight:600;
   line-height:var(--text-xl);
+  cursor:pointer;
 }
 
 .popupForm__button-cancel{
