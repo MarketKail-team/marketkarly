@@ -36,3 +36,9 @@ fieldset {
 .is-active {
   display: block;
 }
+h2[class$="title"] {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
