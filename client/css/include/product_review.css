@@ -36,7 +36,6 @@
   flex-shrink:0;
   width:157px;
   height:46px;
-  box-sizing: border-box;
   border: 1px solid var(--white);
   font-size:var(--text-base);
   font-weight:600;
