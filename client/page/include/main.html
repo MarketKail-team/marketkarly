@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  <main class="main">
+  <main class="main__page">
     <section class="main__recommend-product">
       <h2 class="a11yHidden">추천 상품</h2>
       <p class="main__recommend-product__title">이 상품 어때요?</p>
       <!-- Swiper -->
       <div class="swiper-container">
-        <div class="swiper mySwiper mainSwiper">
+        <div class="swiper mySwiper swiper-recommend">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <figure>
@@ -219,15 +219,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"><svg width="10" height="18" viewBox="0 0 10 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <div class="swiper-button-next swiper-recommend-button-next"><svg width="10" height="18" viewBox="0 0 10 18"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.284995 17.699C0.455221 17.8731 0.683135 17.9792 0.925979 17.9972C1.16882 18.0152 1.40991 17.9441 1.604 17.797L1.69899 17.715L9.69899 9.89799C9.87118 9.72976 9.97689 9.50506 9.99673 9.26515C10.0166 9.02524 9.9492 8.78623 9.80699 8.59199L9.72699 8.49599L2.004 0.313994C1.82947 0.128893 1.59095 0.0172706 1.33701 0.00185431C1.08307 -0.013562 0.832807 0.0683879 0.637168 0.231017C0.441529 0.393645 0.315228 0.624725 0.283984 0.877205C0.25274 1.12969 0.318903 1.38458 0.468997 1.58999L0.548995 1.686L7.598 9.15499L0.300994 16.285C0.126863 16.4552 0.0208302 16.6831 0.00278759 16.926C-0.015255 17.1688 0.055932 17.4099 0.202994 17.604L0.284995 17.699Z"
               fill="#333333" />
           </svg>
         </div>
-        <div class="swiper-button-prev"><svg width="10" height="18" viewBox="0 0 10 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <div class="swiper-button-prev swiper-recommend-button-prev"><svg width="10" height="18" viewBox="0 0 10 18"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.71504 17.699C9.54482 17.8731 9.3169 17.9792 9.07406 17.9972C8.83122 18.0153 8.59013 17.9441 8.39604 17.797L8.30104 17.715L0.301043 9.89801C0.12886 9.72978 0.0231428 9.50507 0.00330353 9.26517C-0.0165358 9.02526 0.0508347 8.78624 0.193043 8.59201L0.273043 8.49601L7.99604 0.314009C8.17057 0.128908 8.40909 0.0172859 8.66303 0.00186956C8.91696 -0.0135467 9.16723 0.0684032 9.36287 0.231032C9.55851 0.39366 9.68481 0.62474 9.71605 0.877221C9.7473 1.1297 9.68114 1.3846 9.53104 1.59001L9.45104 1.68601L2.40204 9.15501L9.69904 16.285C9.87317 16.4552 9.97921 16.6831 9.99725 16.926C10.0153 17.1688 9.94411 17.4099 9.79704 17.604L9.71504 17.699Z"
               fill="var(--content)" />
@@ -245,8 +245,7 @@
       <h2 class="a11yHidden">가격 할인 상품</h2>
       <p class="main__recommend-product__title">놓치면 후회할 가격</p>
       <div class="swiper-container">
-        <div class="swiper mySwiper priceSwiper">
-
+        <div class="swiper mySwiper swiper-best-price">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <figure>
@@ -446,15 +445,15 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"><svg width="10" height="18" viewBox="0 0 10 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <div class="swiper-button-next swiper-best-price-button-next"><svg width="10" height="18" viewBox="0 0 10 18"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.284995 17.699C0.455221 17.8731 0.683135 17.9792 0.925979 17.9972C1.16882 18.0152 1.40991 17.9441 1.604 17.797L1.69899 17.715L9.69899 9.89799C9.87118 9.72976 9.97689 9.50506 9.99673 9.26515C10.0166 9.02524 9.9492 8.78623 9.80699 8.59199L9.72699 8.49599L2.004 0.313994C1.82947 0.128893 1.59095 0.0172706 1.33701 0.00185431C1.08307 -0.013562 0.832807 0.0683879 0.637168 0.231017C0.441529 0.393645 0.315228 0.624725 0.283984 0.877205C0.25274 1.12969 0.318903 1.38458 0.468997 1.58999L0.548995 1.686L7.598 9.15499L0.300994 16.285C0.126863 16.4552 0.0208302 16.6831 0.00278759 16.926C-0.015255 17.1688 0.055932 17.4099 0.202994 17.604L0.284995 17.699Z"
               fill="#333333" />
           </svg>
         </div>
-        <div class="swiper-button-prev"><svg width="10" height="18" viewBox="0 0 10 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <div class="swiper-button-prev swiper-best-price-button-prev"><svg width="10" height="18" viewBox="0 0 10 18"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.71504 17.699C9.54482 17.8731 9.3169 17.9792 9.07406 17.9972C8.83122 18.0153 8.59013 17.9441 8.39604 17.797L8.30104 17.715L0.301043 9.89801C0.12886 9.72978 0.0231428 9.50507 0.00330353 9.26517C-0.0165358 9.02526 0.0508347 8.78624 0.193043 8.59201L0.273043 8.49601L7.99604 0.314009C8.17057 0.128908 8.40909 0.0172859 8.66303 0.00186956C8.91696 -0.0135467 9.16723 0.0684032 9.36287 0.231032C9.55851 0.39366 9.68481 0.62474 9.71605 0.877221C9.7473 1.1297 9.68114 1.3846 9.53104 1.59001L9.45104 1.68601L2.40204 9.15501L9.69904 16.285C9.87317 16.4552 9.97921 16.6831 9.99725 16.926C10.0153 17.1688 9.94411 17.4099 9.79704 17.604L9.71504 17.699Z"
               fill="var(--content)" />
@@ -465,10 +464,82 @@
 
     </section>
   </main>
-  <aside class="main__recent">
-    <section>
-      <h2>최근 본 상품</h2>
-      <div></div>
-    </section>
+
+  <aside class="main__aside">
+    <div class="swiper__container aside__recent">
+      <p class="swiper__container--title">최근 본 상품</p>
+      <div class="swiper mySwiper aside-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="풀무원 탱탱쫄면" /></div>
+          <div class="swiper-slide"><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="프로쉬 아기세탁세제" />
+          </div>
+          <div class="swiper-slide"><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="죠르디 선쿠션" /></div>
+          <div class="swiper-slide"><img src="../../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div>
+          <div class="swiper-slide"><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="풀무원 탱탱쫄면" /></div>
+          <div class="swiper-slide"><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="프로쉬 아기세탁세제" />
+          </div>
+          <div class="swiper-slide"><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="죠르디 선쿠션" /></div>
+          <div class="swiper-slide"><img src="../../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div>
+        </div>
+      </div>
+      <div class="aside-swiper-button-next"></div>
+      <div class="aside-swiper-button-prev"></div>
+      <div class="aside-swiper-pagination"></div>
+    </div>
   </aside>
+
+  <script>
+    const mainSwiper = new Swiper('.swiper-recommend', {
+      slidesPerView: 4,
+      spaceBetween: 18,
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      observer: true,
+      observeParents: true,
+      navigation: {
+        nextEl: '.swiper-recommend-button-next',
+        prevEl: '.swiper-recommend-button-prev'
+      }
+    });
+    mainSwiper = new Swiper('.swiper-best-price', {
+      slidesPerView: 4,
+      spaceBetween: 18,
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-best-price-button-next',
+        prevEl: '.swiper-best-price-button-prev'
+      },
+      observer: true,
+      observeParents: true,
+    });
+
+    // 최근본상품 버튼 동작 안됨 - 수정필요
+    const swiperAside = new Swiper(".swiper-aside", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".aside-swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".aside-swiper-button-next",
+        prevEl: ".aside-swiper-button-prev",
+      }, observer: true,
+      observeParents: true,
+    });
+  </script>
 </body>
