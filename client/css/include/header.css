@@ -1,9 +1,3 @@
-@import url(../common/normalize.css);
-@import url(../common/a11y.css);
-@import url(../common/theme.css);
-@import url(../common/base.css);
-
-
 /* 공통요소 */
 
 /* input search clear 버튼 숨기기 IE */
@@ -44,9 +38,10 @@ input::-webkit-search-results-decoration{
   position: relative;
 }
 .switch h2{
-  font-size: var(--text-lg);
   display: flex;
   flex-flow: row nowrap;
+  font-size: 21.328px;
+  line-height: 150%;
   align-items: center;
   font-weight: 600;
 }
@@ -73,9 +68,9 @@ input::-webkit-search-results-decoration{
   display: inline-block;
   width: 9px;
   height: 9px;
-  background:url(/client/assets/sprites.png) no-repeat -406px -350px;
+  background:url(../../assets/sprites.png) no-repeat -406px -350px;
   margin-left: 6px;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 .switch--beauty:hover{
   color:var(--primary)
@@ -101,7 +96,7 @@ font-size: var(--text-lg);
   outline: none;  
 }
 .search-form__button{
-  background: url(/client/assets/sprites.png) no-repeat -319px -286px; ;
+  background: url(../../assets/sprites.png) no-repeat -319px -286px; ;
   background-color: transparent;
   width: 20px;
 	height: 20px;
@@ -166,7 +161,7 @@ left: 42px;
     display: inline-block;
     width: 9px;
     height: var(--spacing-xs);
-    background: url(/client/assets/sprites.png)  no-repeat -406px -323px;
+    background: url(../../assets/sprites.png)  no-repeat -406px -323px;
     width: 8px;
     height: 7px;
     margin-left: 4px;
@@ -199,18 +194,18 @@ left: 42px;
 }
 .list__shipping-address {
   display: block;
-  background: url(/client/assets/sprites.png) no-repeat -198px -279px;
+  background: url(../../assets/sprites.png) no-repeat -198px -279px;
 	width: 100%;
 	height: 100%;
 }
 .list__favotite-product {
   display: block;
-  background: url(/client/assets/sprites.png) no-repeat -143px -279px;
+  background: url(../../assets/sprites.png) no-repeat -143px -279px;
 	width: 100%;
 	height: 100%;
 }
 .list__shopping-cart {
   display: block;
-  background: url(/client/assets/sprites.png) no-repeat -249px -171px;
+  background: url(../../assets/sprites.png) no-repeat -249px -171px;
 	height: 100%;
 }
