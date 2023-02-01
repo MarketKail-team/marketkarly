@@ -67,7 +67,7 @@ input[type="checkbox"]:checked + .product-condition__ico-check {
   background-position: -406px -10px;
 }
 
-.product-condition__brand-name-cnt{
+.product-condition__brandName--cnt{
   display:inline-block;
   font-size:10px;
   color:var(--gray-300);
