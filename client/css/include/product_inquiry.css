@@ -26,10 +26,11 @@
   list-style-type:disc;
 }
 
-.product-inquiry__header__button{
-  all:unset;
-  width:155px;
-  height:44px;
+[class^="product-inquiry__header__button"] {
+  flex-shrink:0;
+  width:157px;
+  height:46px;
+  border: 1px solid var(--white);
   font-size:var(--text-base);
   font-weight:600;
   line-height:var(--text-xl);
