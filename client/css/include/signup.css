@@ -3,17 +3,20 @@
   margin: 0 auto;
   padding: 80px 0 40px;
 }
+
 .signup__title {
   font-size: 21px;
   font-weight: 700;
   line-height: 32px;
   text-align: center;
 }
+
 .signup__form {
   position: relative;
   width: 640px;
   margin: 10px auto;
 }
+
 .signup-form__noti {
   margin: 6px 0;
   font-size: var(--text-xs);
@@ -21,16 +24,19 @@
   line-height: 1.5;
   text-align: right;
 }
+
 .signup-form__noti::before {
   content: "*";
   padding-right: 4px;
   color: var(--accent-yellow);
 }
+
 .signup-form__list {
   display: block;
   padding-left: 8px;
   border-top: 2px solid black;
 }
+
 .signup-form__item {
   display: flex;
   align-items: center;
@@ -39,15 +45,18 @@
   min-height: 84px;
   padding: 20px 0;
 }
+
 [class^="signup-form__title"] {
   display: inline-block;
   flex-shrink: 0;
   width: 139px;
   font-weight: 700;
 }
+
 .signup-form__title--required {
   position: relative;
 }
+
 .signup-form__title--required::after {
   content: "*";
   position: absolute;
@@ -56,6 +65,7 @@
   color: var(--accent-yellow);
   font-size: var(--text-xs);
 }
+
 .signup-form__input {
   flex-shrink: 0;
   width: 333px;
@@ -64,6 +74,7 @@
   border: 1px solid var(--gray-400);
   border-radius: 4px;
 }
+
 [class^="signup-form__button"] {
   flex-shrink: 0;
   width: 143px;
@@ -71,38 +82,44 @@
   border: 1px solid var(--primary);
   border-radius: 4px;
   font-weight: 700;
-  color:var(--primary);
+  color: var(--primary);
 }
+
 .signup-form__button--loca {
   width: 333px;
 }
+
 .signup-form__desc--loca {
   margin-top: 4px;
   font-size: var(--text-sm);
   line-height: 19px;
 }
+
 .signup-form__label-radio {
   position: relative;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-input[type="checkbox"],
+
+/* input[type="checkbox"],
 input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(0px, 0px, 0px, 0px);
   overflow: hidden;
-}
+} */
 .signup-form__ico-radio {
   width: 24px;
-	height: 24px;
+  height: 24px;
   background: url("./../../assets/sprites.png") no-repeat -406px -54px;
 }
-input[type="radio"]:checked + .signup-form__ico-radio {
+
+input[type="radio"]:checked+.signup-form__ico-radio {
   background-position-y: -98px;
 }
+
 .signup-form__label-birth {
   position: absolute;
   width: 1px;
@@ -110,6 +127,7 @@ input[type="radio"]:checked + .signup-form__ico-radio {
   clip: rect(0px, 0px, 0px, 0px);
   overflow: hidden;
 }
+
 .signup-form__input-birth {
   width: 88px;
   border: 0;
@@ -122,15 +140,18 @@ input[type="radio"]:checked + .signup-form__ico-radio {
   padding: 0 54px 0 8px;
   font-weight: 700;
 }
+
 .signup-form__terms {
   display: flex;
   padding: 20px 8px;
   border-top: 1px solid black;
   border-bottom: 1px solid var(--gray-200);
 }
+
 .signup-form__check-terms {
   width: 100%;
 }
+
 .signup-form__label-check {
   position: relative;
   display: flex;
@@ -139,24 +160,29 @@ input[type="radio"]:checked + .signup-form__ico-radio {
   padding: 12px 0;
   cursor: pointer;
 }
+
 .signup-form__label-check.check-all {
   padding-top: 0;
   margin-bottom: 8px;
 }
+
 .signup-form__ico-check {
   flex-shrink: 0;
   display: inline-block;
   width: 24px;
-	height: 24px;
+  height: 24px;
   background: url("./../../assets/sprites.png") no-repeat -285px -226px;
 }
-input[type="checkbox"]:checked + .signup-form__ico-check {
+
+input[type="checkbox"]:checked+.signup-form__ico-check {
   background-position: -406px -10px;
 }
+
 [class^="signup-form__text-check"] {
   padding: 0 8px;
   margin-right: auto;
 }
+
 .signup-form__text-check--all {
   flex-grow: 1;
   position: relative;
@@ -164,6 +190,7 @@ input[type="checkbox"]:checked + .signup-form__ico-check {
   line-height: 32px;
   font-weight: 700;
 }
+
 .signup-form__text-terms-desc {
   position: absolute;
   bottom: -19px;
@@ -174,12 +201,14 @@ input[type="checkbox"]:checked + .signup-form__ico-check {
   line-height: 19px;
   letter-spacing: -.4px;
 }
+
 .signup-form__btn-terms {
   position: relative;
   border: 0;
   color: var(--primary);
   font-size: var(--text-sm);
 }
+
 .signup-form__btn-terms::after {
   content: "";
   position: absolute;
@@ -191,6 +220,7 @@ input[type="checkbox"]:checked + .signup-form__ico-check {
   border-width: 1px 1px 0 0;
   transform: rotate(45deg) translateY(-50%);
 }
+
 .signup-form__button--submit {
   display: block;
   width: 340px;
