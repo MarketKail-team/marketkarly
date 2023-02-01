@@ -37,97 +37,102 @@
             </svg>
           </i>
         </div>
-        <ul>
-          <li>
-            <label for="brand1" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand1" />
-              <i class="product-condition__ico-check"></i>
-              <span class="product-condition__brandName" data-brandname="gamjabat">감자밭</span>
-              <span class="product-condition__brandName--cnt" data-brand-cnt="1">1</span>
-            </label>            
-          </li>
-          <li>
-            <label for="brand2" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand2" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gangnammyeonog">강남면옥</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand3" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand3" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gyeongnamjeyag">경남제약</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand4" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand4" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gyeongboggung">경복궁</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand5" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand5" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="golaesa">고래사</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand6" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand6" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gomegongbang">고메공방</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand7" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand7" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gooneodiet">고온어다이어트</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand8" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand8" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gyotomabeul">교토마블</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand9" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand9" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="geulaenollahouse">그래놀라 하우스</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <li>
-            <label for="brand9" class="product-condition__label-check">
-              <input type="checkbox" name="brand" id="brand9" />
-              <i class="product-condition__ico-check"></i>
-              <p class="product-condition__brandName" data-brandname="gritssignalram">그리츠 시그니처 램</p>
-              <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
-            </label>            
-          </li>
-          <div class="product-condition__item-more">
-            <span>브랜드 더보기</span>
-            <i class="product-condition_ico-move">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
-                <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
-              </svg>
-            </i>
-          </div>
-        </ul>
+        <form action="#" method="post" class="product-condition-form">
+          <fieldset>
+            <legend>검색 조건 필터</legend>
+            <ul class="product-condition-form__list">
+              <li class="product-condition-form__item">
+                <label for="brand1" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand1" />
+                  <i class="product-condition__ico-check"></i>
+                  <span class="product-condition__brandName" data-brandname="gamjabat">감자밭</span>
+                  <span class="product-condition__brandName--cnt" data-brand-cnt="1">1</span>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand2" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand2" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gangnammyeonog">강남면옥</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand3" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand3" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gyeongnamjeyag">경남제약</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand4" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand4" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gyeongboggung">경복궁</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand5" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand5" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="golaesa">고래사</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand6" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand6" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gomegongbang">고메공방</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand7" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand7" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gooneodiet">고온어다이어트</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand8" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand8" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gyotomabeul">교토마블</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand9" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand9" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="geulaenollahouse">그래놀라 하우스</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <li class="product-condition-form__item">
+                <label for="brand9" class="product-condition__label-check">
+                  <input type="checkbox" name="brand" id="brand9" />
+                  <i class="product-condition__ico-check"></i>
+                  <p class="product-condition__brandName" data-brandname="gritssignalram">그리츠 시그니처 램</p>
+                  <p class="product-condition__brandName--cnt" data-brand-cnt="1">1</p>
+                </label>            
+              </li>
+              <div class="product-condition__item-more">
+                <span>브랜드 더보기</span>
+                <i class="product-condition_ico-move">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                    <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
+                  </svg>
+                </i>
+              </div>
+            </ul>
+          </fieldset>
+        </form>
       </li>
       <li class="product-condition__item">
         <button type="button" class="product-condition__button">가격</button>
