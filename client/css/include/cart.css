@@ -112,6 +112,7 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  border: none;
 }
 
 .shopping-cart__category-inner {
@@ -256,8 +257,10 @@
 .shopping-cart__saving {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   font-weight: 600;
+  font-size: var(--text-xs);
+  line-height: 18px;
   gap: 8px;
 }
 
