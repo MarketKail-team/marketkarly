@@ -78,7 +78,6 @@ margin-bottom: 76px;
 .product-list__item .product--title{
   position:absolute;
   top: 336px;
-  font-size: var(--text-base);
   font-weight: 400;
   line-height: 24px;
   color: var(--content);
@@ -178,7 +177,6 @@ text-decoration: line-through;
 .modal__cart--item-price {
   color: var(--content);
   font-weight: 600;
-  font-size: var(--text-base);
   line-height: 150%;
 }
 .modal__cart--item-title {
@@ -203,7 +201,6 @@ text-decoration: line-through;
   border: none;
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
 .modal__cart--item-count span{
   font-weight: 600;
@@ -261,7 +258,6 @@ top:-3px;
   width: 174px;
   height: 54px;
   border-radius: 4px;
-  cursor: pointer;
 }
 .modal__cart--close {
   background-color: transparent;

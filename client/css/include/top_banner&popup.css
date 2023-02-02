@@ -79,7 +79,6 @@
   float: left;
 	font-size: var(--text-sm);
 	font-weight: 200;
-  cursor: pointer;
 }
 .popup--btn-area button:first-child {
   border-right: 1px solid var(--gray-100);

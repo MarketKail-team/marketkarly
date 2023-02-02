@@ -49,6 +49,7 @@
   flex-shrink: 0;
   width: 139px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .signup-form__title--required {
