@@ -46,12 +46,16 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
   display:none;
 }
-
-
-
 .is-active {
   display: block;
 }
+
+/* main 레이아웃 */
+main.main {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+/* 공통 제목들 */
 h2[class$="title"] {
   font-size: 21px;
   font-weight: 700;

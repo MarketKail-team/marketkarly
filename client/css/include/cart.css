@@ -1,10 +1,5 @@
-.shopping-cart-main {
-  padding: 80px 0;
-}
-
 .shopping-cart {
-  width: var(--container-width);
-  margin: 0 auto;
+  padding: 80px 0 30px;
 }
 
 .shopping-cart__wrapper {
