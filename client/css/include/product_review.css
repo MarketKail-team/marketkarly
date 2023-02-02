@@ -15,14 +15,14 @@
   margin-bottom:25px;
 }
 
-.product-review__header__list{
-  list-style-type:disc;
-}
-
-.product-review__header__list span{
+.product-review__header span{
   font-size:var(--text-base);
   font-weight:600;
   line-height:var(--spacing-lg);
+}
+
+.product-review__header__list{
+  list-style-type:disc;
 }
 
 .product-review__header__item{
@@ -60,7 +60,7 @@
 
 .product-reviewInfo--cnt{
   font-size:var(--spacing-sm);
-  font-weight:600px;
+  font-weight:600;
   line-height:var(--text-md);
 }
 

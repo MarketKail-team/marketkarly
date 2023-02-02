@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../../css/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>Product Review Component</title>
 </head>
@@ -14,8 +14,8 @@
     <header class="product-review__header">
       <div class="product-review__header-info">
         <h2>상품후기</h2>
+        <span>글후기 50원 적립금 혜택이 있어요</span>
         <ul class="product-review__header__list">
-          <span>글후기 50원 적립금 혜택이 있어요</span>
           <li class="product-review__header__item">• 퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</li>
           <li class="product-review__header__item">• 후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
           <li class="product-review__header__item">• 작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
@@ -23,7 +23,7 @@
       </div>
       <button type="button" class="product-review__header__button">후기 작성하기</button>
     </header>
-    <main class=".product-review__main">
+    <div class="product-review__main">
       <div class="product-reviewInfo">
         <span class="product-reviewInfo--cnt" data-total-review="2">총 2개</span>
         <div class="product-reviewInfo--select">
@@ -55,7 +55,7 @@
                 <div class="reviewInfo-detail">
                   <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
                   <span class="reviewInfo-description">
-                    너무 맛있어여~ <br/>
+                    너무 맛있어여~ <br>
                     면이 쫄깃하고 양념도 짱맛나요!!
                   </span>
                   <span class="reviewInfo-date">2022.11.10</span>
@@ -70,7 +70,7 @@
                 <div class="reviewInfo-detail">
                   <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
                   <span class="reviewInfo-description">
-                    또 주문할것 같습니다. <br />
+                    또 주문할것 같습니다. <br>
                     너무 맛있어요 내스타일이야~!
                   </span>
                   <span class="reviewInfo-date">2022.11.10</span>
@@ -85,7 +85,7 @@
                 <div class="reviewInfo-detail">
                   <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
                   <span class="reviewInfo-description">
-                    너무 맛있어여~ <br />
+                    너무 맛있어여~ <br>
                     면이 쫄깃하고 양념도 짱맛나요!!
                   </span>
                   <span class="reviewInfo-date">2022.11.10</span>
@@ -94,8 +94,10 @@
             </ul>
           </div>
           <div class="swiper-slide">Slide 2</div>
-    </main>
-    <section class="product-review__button">
+        </div>
+      </div>
+    </div>
+    <div class="product-review__button">
       <div class="product-review__button-wrapper">
         <div class="product-review__button-prev">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +110,7 @@
           </svg>
         </div>
       </div>
-    </section>
+    </div>
   </section>
 
   <!-- Initialize Swiper -->
