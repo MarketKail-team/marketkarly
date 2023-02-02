@@ -17,6 +17,7 @@ a {
 }
 body {
   min-width: var(--container-width);
+  height: 100%;
   font: inherit;
   font-family: "Pretendard", "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
   color: #333;
