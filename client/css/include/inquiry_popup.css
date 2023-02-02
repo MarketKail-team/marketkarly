@@ -3,7 +3,6 @@
   height:630px;
   padding:32px;
   background:var(--white);
-  border:1px solid #ccc;
   border-radius:16px;
 }
 
@@ -22,7 +21,7 @@
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  gap:24px;
+  gap:var(--spacing-lg);
   border-bottom:1px solid var(--gray-100);
 }
 
@@ -32,7 +31,7 @@
 }
 
 .inquiry-popup__content-name{
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
   color:var(--black);
   line-height:150%;
@@ -42,111 +41,122 @@ fieldset{
   padding:0;
 }
 
-.inquiry-popup-form{
+.inquiry-popupForm{
   width:729px;
-  padding-top:16px;
+  padding-top:var(--spacing-base);
 }
 
-.inquiry-form__group{
+.inquiry-popupForm__group{
   width:729px;
   height:328px;
   border-bottom:1px solid var(--gray-300);
 }
 
-.inquiry-form__group-title{
+.inquiry-popupForm__group-title{
   width:729px;
   height:44px;
-  margin-bottom:12px;
+  margin-bottom:var(--spacing-sm);
 }
 
-.inquiry-title__input__label,
-.inquiry-description__input__label{
+.inquiryPopup-title__input-label,
+.inquiryPopup-description__input-label{
   width:100px;
   padding:8px 64px 10px 8px;
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
-  line-height:24px;
+  line-height:var(--text-xl);
   margin-right:-4px;
 }
 
-.inquiry-title__input{
+.inquiryPopup-title__input{
   width:629px;
   height:44px;
   border:1px solid var(--gray-300);
+  border-radius:4px;
   padding:9px 0 9px 20px;
 }
 
-.inquiry-title__input::placeholder,
-.inquiry-title__input::-ms-input-placeholder,
-.inquiry-description__input::placeholder,
-.inquiry-description__input::-ms-input-placeholder{
+.inquiryPopup-title__input::placeholder,
+.inquiryPopup-title__input::-ms-input-placeholder,
+.inquiryPopup-description__input::placeholder,
+.inquiryPopup-description__input::-ms-input-placeholder{
   color:var(--gray-300);
 }
 
-
-.inquiry-description__input__label{
+.inquiryPopup-description__input-label{
   position:relative;
   top:5px;
 }
 
-.inquiry-form__group-description textarea{
+.inquiry-popupForm__group-description textarea{
   width:629px;
   height:198px;
   vertical-align:top;
-  padding:16px 16px 0 16px ;
-  border:1px solid var(=--gray-300);
+  padding:var(--spacing-base) var(--spacing-base) 0 var(--spacing-base) ;
+  border:1px solid var(--gray-300);
+  border-radius:4px;
+  resize:none;
 }
 
-.inquiry-form--check-secrete{
+.inquiry-popupForm__label-check{
   display:flex;
   flex-flow:row nowrap;
   justify-content:flex-start;
   align-items:center;
-  gap:8px;
+  gap:var(--spacing-xs);
   padding:12px 0 22px 101px;
+  cursor:pointer;
 }
 
-.inquiry-form--check-text{
-  font-size:12px;
+.inquiry-popupForm__ico-check {
+  display: inline-block;
+  width: 24px;
+	height: 24px;
+  background: url("./../../assets/sprites.png") no-repeat -285px -226px;
+  margin-right:var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked + .inquiry-popupForm__ico-check {
+  background-position: -406px -10px;
+}
+
+.inquiry-popupForm__label-text{
+  font-size:var(--text-xs);
   line-height:19.2px;
   color:var(--black);
 }
 
-.inquiry-form--check-icon{
-	background: url('../../assets/sprites.png') no-repeat -285px -226px;
-	width: 24px;
-	height: 24px;
-}
-
-.inquiry-form__button{
+.inquiry-popupForm__button{
   width:729px;
   height:74px;
   display:flex;
   flex-flow:row nowrap;
   justify-content:center;
   align-items:center;
-  gap:12px;
-  padding-top:20px;
+  gap:var(--spacing-sm);
+  padding-top:var(--spacing-md);
 }
 
-.inquiry-form__button-cancel,
-.inquiry-form__button-enroll{
+.inquiry-popupForm__button-cancel,
+.inquiry-popupForm__button-enroll{
   width:186px;
   height:54px;
   border-radius:4px;
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
-  line-height:24px;
+  line-height:var(--text-xl);
+  cursor:pointer;
 }
 
-.inquiry-form__button-cancel{
+.inquiry-popupForm__button-cancel{
   border:1px solid var(--gray-200);
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
-  line-height:24px;
+  line-height:var(--text-xl);
 }
 
-.inquiry-form__button-enroll{
+.inquiry-popupForm__button-enroll{
   border:none;
   background:var(--gray-100);
   color:var(--white);

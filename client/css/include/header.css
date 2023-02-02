@@ -1,23 +1,8 @@
-/* 공통요소 */
-
-/* input search clear 버튼 숨기기 IE */
-input::-ms-clear,
-input::-ms-reveal{
-    display:none;
-}
-/* input search clear 버튼 숨기기 크롬의  */
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button,
-input::-webkit-search-results-button,
-input::-webkit-search-results-decoration{
-    display:none;
-}
-
 /* header */
 .header {
   max-width: var(--container-width);
   margin: 0 auto;
-  height: 42px;
+  height: 132px;
 }
 
 .header__inner {
