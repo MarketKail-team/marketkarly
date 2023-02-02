@@ -3,11 +3,10 @@
   height:630px;
   padding:32px;
   background:var(--white);
-  border:1px solid #ccc;
   border-radius:16px;
 }
 
-.product-review-popup h3{
+.product-review-popup h2{
   width:729px;
   height:60px;
   font-size:28.43px;
@@ -22,7 +21,7 @@
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  gap:24px;
+  gap:var(--spacing-lg);
   border-bottom:1px solid var(--gray-100);
 }
 
@@ -32,7 +31,7 @@
 }
 
 .review-popup__content-name{
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
   color:var(--black);
   line-height:150%;
@@ -42,90 +41,94 @@ fieldset{
   padding:0;
 }
 
-.review-popup-form{
+.review-popupForm{
   width:729px;
-  padding-top:16px;
+  padding-top:var(--spacing-base);
 }
 
-.review-form__group{
+.review-popupForm__group{
   width:729px;
   height:328px;
   border-bottom:1px solid var(--gray-300);
 }
 
-.review-form__group-title{
+.review-popupForm__group-title{
   width:729px;
   height:44px;
-  margin-bottom:12px;
+  margin-bottom:var(--spacing-sm);
 }
 
-.review-title__input__label,
-.review-description__input__label{
+.reviewPopup-title__input-label,
+.reviewPopup-description__input-label{
   width:100px;
   padding:8px 64px 10px 8px;
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
-  line-height:24px;
+  line-height:var(--text-xl);
   margin-right:-4px;
 }
 
-.review-title__input{
+.reviewPopup-title__input{
   width:629px;
   height:44px;
   border:1px solid var(--gray-300);
+  border-radius:4px;
   padding:9px 0 9px 20px;
 }
 
-.review-title__input::placeholder,
-.review-title__input::-ms-input-placeholder,
-.review-description__input::placeholder,
-.review-description__input::-ms-input-placeholder{
+.reviewPopup-title__input::placeholder,
+.reviewPopup-title__input::-ms-input-placeholder,
+.reviewPopup-description__input::placeholder,
+.reviewPopup-description__input::-ms-input-placeholder{
   color:var(--gray-300);
 }
 
 
-.review-description__input__label{
+.reviewPopup-description__input-label{
   position:relative;
   top:5px;
 }
 
-.review-form__group-description textarea{
+.review-popupForm__group-description textarea{
   width:629px;
   height:198px;
   vertical-align:top;
-  padding:16px 16px 0 16px ;
-  border:1px solid var(=--gray-300);
+  padding:var(--spacing-base) var(--spacing-base) 0 var(--spacing-base);
+  border:1px solid var(--gray-300);
+  border-radius:4px;
+  resize:none;
 }
 
-.review-form__button{
+.popupForm__button{
   width:729px;
   height:74px;
   display:flex;
   flex-flow:row nowrap;
   justify-content:center;
   align-items:center;
-  gap:12px;
-  padding-top:20px;
+  gap:var(--spacing-sm);
+  padding-top:var(--spacing-md);
 }
 
-.review-form__button-cancel,
-.review-form__button-enroll{
+.popupForm__button-cancel,
+.popupForm__button-enroll{
   width:186px;
   height:54px;
   border-radius:4px;
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
-  line-height:24px;
+  line-height:var(--text-xl);
+  cursor:pointer;
 }
 
-.review-form__button-cancel{
+.popupForm__button-cancel{
   border:1px solid var(--gray-200);
-  font-size:16px;
+  font-size:var(--text-base);
   font-weight:600;
-  line-height:24px;
+  line-height:var(--text-xl);
 }
 
-.review-form__button-enroll{
+.popupForm__button-enroll{
   border:none;
   background:var(--gray-100);
   color:var(--white);
