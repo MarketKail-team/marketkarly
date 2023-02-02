@@ -1,6 +1,6 @@
 footer {
   margin: 0 auto;
-  border-top: 1px solid var(--gray-50);
+  border-top: 1px solid var(--gray-100);
   color: var(--content);
 }
 /* ----- .footer-inner ----- */

@@ -1,5 +1,4 @@
 .nav {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +16,7 @@
   font-weight: 600;
 }
 .nav__item--category {
+  position: relative;
   margin-right: 75px;
 }
 .nav__item--noti {
@@ -77,6 +77,8 @@
   height: 700px;
   overflow-y: auto;
   background-color: var(--white);
+  border: 1px solid var(--gray-100);
+  z-index: 500;
 }
 [class^="category__link"] {
   position: relative;
