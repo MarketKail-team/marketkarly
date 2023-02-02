@@ -1,7 +1,3 @@
-.product-review{
-  width:var(--container-width);
-}
-
 .product-review__header{
   display:flex;
   flex-flow:row nowrap;
@@ -15,14 +11,9 @@
   margin-bottom:25px;
 }
 
-.product-review__header span{
-  font-size:var(--text-base);
+.product-review__header p{
   font-weight:600;
   line-height:var(--spacing-lg);
-}
-
-.product-review__header__list{
-  list-style-type:disc;
 }
 
 .product-review__header__item{
@@ -30,22 +21,29 @@
   font-weight:600;
   color:var(--gray-500);
   line-height:var(--text-md);
+  position: relative;
+  margin-left: 12px;
+}
+.product-review__header__item::before{
+  content: "•";
+  position: absolute;
+  left: -9px;
 }
 
 [class^="product-review__header__button"] {
   flex-shrink:0;
   width:157px;
   height:46px;
-  border: 1px solid var(--white);
-  font-size:var(--text-base);
+  border: none;
   font-weight:600;
-  line-height:var(--text-xl);
   padding:10px 34px;
-  text-align:center;
   background:var(--primary);
   color:var(--white);
   border-radius:4px;
-  cursor:pointer;
+}
+
+.product-review__swiper {
+  border-top:1px solid var(--black);
 }
 
 /* .product-review__main 영역 */
@@ -97,12 +95,8 @@
   align-items:center;
   gap:var(--spacing-md);
   padding:17px 0px 17px 20px;
+  border: 0;
   border-bottom:1px solid var(--gray-100);
-  cursor:pointer;
-}
-
-.product-review__main__item-notice:first-child{
-  border-top:1px solid var(--black);
 }
 
 .reviewNotice-label{
@@ -203,18 +197,15 @@
 }
 
 .product-review__button{
-  margin-top:var(--text-base);
+  margin: var(--spacing-base) 0 72px;
   position:relative;
 }
 
 .product-review__button-wrapper{
   display:flex;
   flex-flow:row nowrap;
-  justify-content:start;
-  gap:var(--text-base);
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
+  justify-content:center;
+  gap:var(--spacing-base);
 }
 
 .product-review__button-prev,
