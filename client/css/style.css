@@ -7,16 +7,24 @@
 
 
 /* 각 기능을 include 폴더에서 작업한 뒤, 아래에 import 부탁드립니다 */
+/* 공통 */
 @import url(./include/header.css);
 @import url(./include/footer.css);
-@import url(./include/main.css);
-@import url(./include/product_list.css);
-@import url(./include/main_banner.css);
 @import url(./include/navigation.css);
+@import url(./include/top_banner&popup.css);
+/* home.html */
+@import url(./include/main_banner.css);
+@import url(./include/main.css);
+/* best.html */
+@import url(./include/best.css);
 @import url(./include/best_product_list.css);
+@import url(./include/product_list.css);
+/* login.html */
 @import url(./include/login.css);
+/* signup.html */
 @import url(./include/signup.css);
-@import url(./include/review_popup.css);
-@import url(./include/inquiry_popup.css);
+/* product_info.html */
 @import url(./include/product_inquiry.css);
 @import url(./include/product_review.css);
+@import url(./include/review_popup.css);
+@import url(./include/inquiry_popup.css);

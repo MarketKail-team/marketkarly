@@ -1,4 +1,4 @@
-/* Base Style */
+/* Base Style - 공통으로 적용하는게 좋을듯한 스타일 묶음 */
 
 body,
 body::before,
@@ -17,6 +17,7 @@ a {
 }
 body {
   min-width: var(--container-width);
+  height: 100%;
   font: inherit;
   font-family: "Pretendard", "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
   color: #333;
@@ -33,6 +34,21 @@ button {
 fieldset {
   padding: 0;
 }
+/* input search clear 버튼 숨기기 IE */
+input::-ms-clear,
+input::-ms-reveal{
+  display:none;
+}
+/* input search clear 버튼 숨기기 Chrome */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+  display:none;
+}
+
+
+
 .is-active {
   display: block;
 }

@@ -87,8 +87,8 @@
   align-items: center;
   cursor: pointer;
 }
-input[type="checkbox"],
-input[type="radio"] {
+.signup input[type="checkbox"],
+.signup input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -100,7 +100,7 @@ input[type="radio"] {
 	height: 24px;
   background: url("./../../assets/sprites.png") no-repeat -406px -54px;
 }
-input[type="radio"]:checked + .signup-form__ico-radio {
+.signup input[type="radio"]:checked + .signup-form__ico-radio {
   background-position-y: -98px;
 }
 .signup-form__label-birth {
@@ -130,6 +130,7 @@ input[type="radio"]:checked + .signup-form__ico-radio {
 }
 .signup-form__check-terms {
   width: 100%;
+  margin-left: 8px;
 }
 .signup-form__label-check {
   position: relative;
@@ -150,7 +151,7 @@ input[type="radio"]:checked + .signup-form__ico-radio {
 	height: 24px;
   background: url("./../../assets/sprites.png") no-repeat -285px -226px;
 }
-input[type="checkbox"]:checked + .signup-form__ico-check {
+.signup input[type="checkbox"]:checked + .signup-form__ico-check {
   background-position: -406px -10px;
 }
 [class^="signup-form__text-check"] {

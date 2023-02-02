@@ -3,7 +3,6 @@ footer {
   border-top: 1px solid var(--gray-50);
   color: var(--content);
 }
-
 /* ----- .footer-inner ----- */
 .footer-inner {
   width: var(--container-width);
@@ -126,7 +125,7 @@ footer {
 /* --- .footer-inner-bottom --- */
 .footer-inner-bottom {
   width: 100%;
-  padding-top: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
   border-top: 1px solid var(--gray-100);
   display: flex;
   justify-content: space-between;
