@@ -6,7 +6,7 @@
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
-  align-items:top;
+  align-items:flex-start;
   margin-bottom:56px;
 }
 
@@ -138,7 +138,7 @@
   padding:17px 0 17px 20px;
 }
 
-.product-inquiry__td-issue-title span{
+.product-inquiry__td-issue-title p{
   font-size:var(--text-base);
   font-weight:600;
   line-height:var(--text-xl);
@@ -231,7 +231,12 @@
   font-weight:600;
   line-height:var(--text-xl);
   color:var(--gray-400);
-  margin-bottom:var(--spacing-sm);
+}
+
+.secrete__ico-secrete{
+	background: url('../../assets/sprites.png') no-repeat -406px -258px;
+	width: 12px;
+	height: 14px;
 }
 
 .product-inquiry__td-secrete-status-ok{
