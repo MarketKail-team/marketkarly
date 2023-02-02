@@ -1,0 +1,4 @@
+.main.product_info {
+  width: var(--container-width);
+  margin: 44px auto 24px;
+}
