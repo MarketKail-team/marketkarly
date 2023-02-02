@@ -45,6 +45,14 @@
   border-bottom:none;
 }
 
+.product-condition input[type="checkbox"]{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0px, 0px, 0px, 0px);
+  overflow: hidden;
+}
+
 .product-condition__label-check{
   width:220px;
   height:50px;
