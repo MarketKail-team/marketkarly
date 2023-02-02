@@ -101,6 +101,10 @@
   cursor:pointer;
 }
 
+.product-review__main__item-notice:first-child{
+  border-top:1px solid var(--black);
+}
+
 .reviewNotice-label{
   width:37px;
   height:18px;
