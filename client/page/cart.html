@@ -117,8 +117,278 @@
       </li>
     </ul>
   </nav>
-  <main class="main" style="background-color: #888">
-    컨텐츠들은 메인 안으로 넣어주세요
+  <!-- CART : include/cart.html -->
+  <main class="main">
+    <section class="shopping-cart">
+      <h2 class="shopping-cart__title">장바구니</h2>
+      <div class="shopping-cart__wrapper">
+        <div class="shopping-cart__cartlist">
+          <h3 class="a11yHidden">장바구니 속 상품 목록</h3>
+          <div class="shopping-cart__select-items">
+            <div class="shopping-cart__select-all">
+              <input type="checkbox" id="upper-select-all" class="shopping-cart__select-button" />
+              <label for="upper-select-all">전체선택 &#40;3&#47;3&#41;</label>
+            </div>
+            <div class="shopping-cart__delete-selection">
+              <span>선택삭제</span>
+            </div>
+          </div>
+          <ul>
+            <li class="shopping-cart__refrigerated-foods">
+              <button class="shopping-cart__category-outer">
+                <div class="shopping-cart__category-inner">
+                  <span class="shopping-cart__refrigerated-image"></span>
+                  <span>냉장 식품</span>
+                </div>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_603_2715)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13L15 18L20.5 13L19.4 12L15 16L10.6 12L9.5 13Z"
+                      fill="#333333" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_603_2715">
+                      <rect width="6" height="11" fill="white" transform="translate(20.5 12) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <ul>
+                <li class="shopping-cart__each-product">
+                  <label>
+                    <input type="checkbox" class="shopping-cart__select-button" />
+                  </label>
+                  <img src="../assets/for_cart/product_cart.jpg" alt="풀무원 탱탱쫄면 4입" />
+                  <a href="#" class="shopping-cart__product-link">&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a>
+                  <div class="shopping-cart--product-count">
+                    <button type="button" aria-label="수량감소" class="shopping-cart__minus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+                      </svg>
+                    </button>
+                    <div class="shopping-cart--product-quantity">1</div>
+                    <button type="button" aria-label="수량증감" class="shopping-cart__plus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="shopping-cart--product-price">5,000원</div>
+                  <button class="shopping-cart__remove-selected-product">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z"
+                        fill="#CCCCCC" />
+                    </svg>
+                  </button>
+                </li>
+                <li class="shopping-cart__each-product">
+                  <label>
+                    <input type="checkbox" class="shopping-cart__select-button" />
+                  </label>
+                  <img src="../assets/for_cart/product_cart.jpg" alt="풀무원 탱탱쫄면 4입" />
+                  <a href="#" class="shopping-cart__product-link">&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a>
+                  <div class="shopping-cart--product-count">
+                    <button type="button" aria-label="수량감소" class="shopping-cart__minus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+                      </svg>
+                    </button>
+                    <div class="shopping-cart--product-quantity">1</div>
+                    <button type="button" aria-label="수량증감" class="shopping-cart__plus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="shopping-cart--product-price">5,000원</div>
+                  <button class="shopping-cart__remove-selected-product">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z"
+                        fill="#CCCCCC" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="shopping-cart__frozen-food">
+              <button class="shopping-cart__category-outer">
+                <div class="shopping-cart__category-inner">
+                  <span class="shopping-cart__frozen-image"></span>
+                  <span>냉동 식품</span>
+                </div>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_603_2715)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13L15 18L20.5 13L19.4 12L15 16L10.6 12L9.5 13Z"
+                      fill="#333333" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_603_2715">
+                      <rect width="6" height="11" fill="white" transform="translate(20.5 12) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <ul>
+                <li class="shopping-cart__each-product">
+                  <label>
+                    <input type="checkbox" class="shopping-cart__select-button" />
+                  </label>
+                  <img src="../assets/for_cart/product_cart.jpg" alt="풀무원 탱탱쫄면 4입" />
+                  <a href="#" class="shopping-cart__product-link">&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a>
+                  <div class="shopping-cart--product-count">
+                    <button type="button" aria-label="수량감소" class="shopping-cart__minus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+                      </svg>
+                    </button>
+                    <div class="shopping-cart--product-quantity">1</div>
+                    <button type="button" aria-label="수량증감" class="shopping-cart__plus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="shopping-cart--product-price">5,000원</div>
+                  <button class="shopping-cart__remove-selected-product">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z"
+                        fill="#CCCCCC" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="shopping-cart__room-temperature-goods">
+              <button class="shopping-cart__category-outer">
+                <div class="shopping-cart__category-inner">
+                  <span class="shopping-cart__room-temperature-image"></span>
+                  <span>상온 상품</span>
+                </div>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_603_2715)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13L15 18L20.5 13L19.4 12L15 16L10.6 12L9.5 13Z"
+                      fill="#333333" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_603_2715">
+                      <rect width="6" height="11" fill="white" transform="translate(20.5 12) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <ul hidden>
+                <li class="shopping-cart__each-product">
+                  <label>
+                    <input type="checkbox" class="shopping-cart__select-button" />
+                  </label>
+                  <img src="../assets/for_cart/product_cart.jpg" alt="풀무원 탱탱쫄면 4입" />
+                  <a href="#" class="shopping-cart__product-link">&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a>
+                  <div class="shopping-cart--product-count">
+                    <button type="button" aria-label="수량감소" class="shopping-cart__minus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+                      </svg>
+                    </button>
+                    <div class="shopping-cart--product-quantity">1</div>
+                    <button type="button" aria-label="수량증감" class="shopping-cart__plus-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="shopping-cart--product-price">5,000원</div>
+                  <button class="shopping-cart__remove-selected-product">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 0.762L11.238 0L6 5.238L0.762 0L0 0.762L5.238 6L0 11.238L0.762 12L6 6.762L11.238 12L12 11.238L6.762 6L12 0.762Z"
+                        fill="#CCCCCC" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="shopping-cart__select-items">
+            <div class="shopping-cart__select-all">
+              <input type="checkbox" id="lower-select-all" class="shopping-cart__select-button" />
+              <label for="lower-select-all">전체선택 &#40;3&#47;3&#41;</label>
+            </div>
+            <div class="shopping-cart__delete-selection">
+              <span>선택삭제</span>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-cart__order">
+          <div class="shopping-cart__order-information">
+            <div class="shopping-cart__shipping-destination">
+              <h3>
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.0062 30C18.0062 30 8.7002 22.544 8.7002 15.306C8.7002 12.8379 9.68065 10.4709 11.4259 8.72566C13.1711 6.98045 15.5381 6 18.0062 6C20.4743 6 22.8413 6.98045 24.5865 8.72566C26.3317 10.4709 27.3122 12.8379 27.3122 15.306C27.3122 22.544 18.0062 30 18.0062 30Z"
+                    stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M17.9119 17.907C19.4495 17.907 20.6959 16.6606 20.6959 15.123C20.6959 13.5854 19.4495 12.339 17.9119 12.339C16.3744 12.339 15.1279 13.5854 15.1279 15.123C15.1279 16.6606 16.3744 17.907 17.9119 17.907Z"
+                    stroke="#333333" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+                배송지
+              </h3>
+              <p>서울 중랑구 면목로 42길 11 &#40;행운빌딩&#41; 603호</p>
+              <p class="shopping-cart--morning-star-delivery">샛별배송</p>
+              <button type="button">배송지 변경</button>
+            </div>
+            <div class="shopping-cart__order-price">
+              <h3 class="a11yHidden">금액</h3>
+              <div class="shopping-cart__price-details">
+                <div class="shopping-cart__products-price-container">
+                  <span>상품금액</span>
+                  <div class="shopping-cart__products-price">
+                    <span>15,000</span>
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="shopping-cart__products-discount-price-container">
+                  <span>상품할인금액</span>
+                  <div class="shopping-cart__products-discount-price">
+                    <span>-1,500</span>
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="shopping-cart__delivery-charge-container">
+                  <span>배송비</span>
+                  <div class="shopping-cart__delivery-charge">
+                    <span>+3,000</span>
+                    <span>원</span>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-cart__payment">
+                <div class="shopping-cart__payment-amount-container">
+                  <span>결제예정금액</span>
+                  <div class="shopping-cart__payment-amount">
+                    <strong>16,500</strong>
+                    <span>원</span>
+                  </div>
+                </div>
+                <div class="shopping-cart__saving">
+                  <span class="shopping-cart__saving-image">적립</span>
+                  <span>최대 36원 적립 일반 0.1&#37;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="shopping-cart__order-button">주문하기</button>
+          <ul class="shopping-cart__order-additional-information">
+            <li>쿠폰&#47;적립금은 주문서에서 사용 가능합니다&#46;</li>
+            <li>&#91;주문완료&#93; 상태일 경우에만 주문 취소 가능합니다&#46;</li>
+            <li>&#91;마이컬리 &#62; 주문내역 상세페이지&#93; 에서 직접 취소하실 수 있습니다&#46;</li>
+            <li>쿠폰&#44; 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다&#46;</li>
+            <li>상품별로 적립금 지급 기준이 다를 수 있습니다&#46; &#40;상품 상세 페이지에서 확인 가능합니다&#41;</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- FOOTER : include/footer.html -->
   <footer>
@@ -217,27 +487,27 @@
           <ul class="about-karly__social-media">
             <li>
               <a href="https://www.instagram.com/marketkurly/" target="_blank">
-                <img src="../../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기">
+                <img src="../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기">
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/Marketkurly/" target="_blank">
-                <img src="../../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기">
+                <img src="../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기">
               </a>
             </li>
             <li>
               <a href="https://blog.naver.com/marketkurly" target="_blank">
-                <img src="../../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기">
+                <img src="../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기">
               </a>
             </li>
             <li>
               <a href="https://m.post.naver.com/marketkurly" target="_blank">
-                <img src="../../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기">
+                <img src="../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기">
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" target="_blank">
-                <img src="../../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기">
+                <img src="../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기">
               </a>
             </li>
           </ul>
@@ -246,7 +516,7 @@
       <!-- .footer-inner-top -->
       <div class="footer-inner-bottom">
         <button>
-          <img src="../../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기">
+          <img src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기">
           <p>
             [인증범위] 컬리 쇼핑몰 서비스 개발·운영
             <br>(심사받지 않은 물리적 인프라 제외)
@@ -254,21 +524,21 @@
           </p>
         </button>
         <button>
-          <img src="../../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기">
+          <img src="../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기">
           <p>
             개인정보보호 우수 웹 사이트·
             <br>개인정보처리시스템 인증 (ePRIVACY PLUS)
           </p>
         </button>
         <button>
-          <img src="../../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기">
+          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기">
           <p>
             토스페이먼츠 구매안전(에스크로)
             <br>서비스를 이용하실 수 있습니다.
           </p>
         </button>
         <button>
-          <img src="../../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기">
+          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기">
           <p>
             고객님이 현금으로 결제한 금액에 대해
             <br>우리은행과 채무지급보증 계약을 체결하여

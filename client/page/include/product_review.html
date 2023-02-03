@@ -11,18 +11,18 @@
 </head>
 <body>
   <section class="product-review">
-    <header class="product-review__header">
+    <div class="product-review__header">
       <div class="product-review__header-info">
         <h2>상품후기</h2>
-        <span>글후기 50원 적립금 혜택이 있어요</span>
+        <p>글후기 50원 적립금 혜택이 있어요</p>
         <ul class="product-review__header__list">
-          <li class="product-review__header__item">• 퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</li>
-          <li class="product-review__header__item">• 후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
-          <li class="product-review__header__item">• 작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
+          <li class="product-review__header__item">퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원 추가 적립</li>
+          <li class="product-review__header__item">후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
+          <li class="product-review__header__item">작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
         </ul>
       </div>
       <button type="button" class="product-review__header__button">후기 작성하기</button>
-    </header>
+    </div>
     <div class="product-review__main">
       <div class="product-reviewInfo">
         <span class="product-reviewInfo--cnt" data-total-review="2">총 2개</span>
@@ -36,16 +36,20 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <ul class="product-review__main__list">
-              <li class="product-review__main__item-notice">
-                <span class="reviewNotice-label">공지</span>
-                <span class="reviewNotice-info">금주의 베스트 후기 안내</span>
+              <li class="product-review__main__item">
+                <button class="product-review__main__item-notice">
+                  <span class="reviewNotice-label">공지</span>
+                  <span class="reviewNotice-info">금주의 베스트 후기 안내</span>
+                </button>
+                <!-- <div></div> -->
               </li>
-              <li class="product-review__main__item-notice">
-                <span class="reviewNotice-label">공지</span>
-                <span class="reviewNotice-info">상품 후기 적립금 정책 안내</span>
+              <li class="product-review__main__item">
+                <button class="product-review__main__item-notice">
+                  <span class="reviewNotice-label">공지</span>
+                  <span class="reviewNotice-info">상품 후기 적립금 정책 안내</span>
+                </button>
+                <!-- <div></div> -->
               </li>
-            </ul>
-            <ul class="product-review__main__list">
               <li class="product-review__main__item-reviewInfo">
                 <div class="reviewInfo-personRank">
                   <span class="reviewInfo-labelBest">베스트</span>
@@ -54,10 +58,10 @@
                 </div>
                 <div class="reviewInfo-detail">
                   <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
-                  <span class="reviewInfo-description">
+                  <p class="reviewInfo-description">
                     너무 맛있어여~ <br>
                     면이 쫄깃하고 양념도 짱맛나요!!
-                  </span>
+                  </p>
                   <span class="reviewInfo-date">2022.11.10</span>
                 </div>
               </li>
@@ -69,10 +73,10 @@
                 </div>
                 <div class="reviewInfo-detail">
                   <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
-                  <span class="reviewInfo-description">
+                  <p class="reviewInfo-description">
                     또 주문할것 같습니다. <br>
                     너무 맛있어요 내스타일이야~!
-                  </span>
+                  </p>
                   <span class="reviewInfo-date">2022.11.10</span>
                 </div>
               </li>
@@ -84,10 +88,10 @@
                 </div>
                 <div class="reviewInfo-detail">
                   <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
-                  <span class="reviewInfo-description">
+                  <p class="reviewInfo-description">
                     너무 맛있어여~ <br>
                     면이 쫄깃하고 양념도 짱맛나요!!
-                  </span>
+                  </p>
                   <span class="reviewInfo-date">2022.11.10</span>
                 </div>
               </li>

@@ -1,21 +1,10 @@
-.shopping-cart-main {
-  padding: 80px 0;
-}
-
 .shopping-cart {
-  width: var(--container-width);
-  margin: 0 auto;
-}
-
-.shopping-cart h2 {
-  padding: 0 0 44px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 21.328px;
+  padding: 80px 0 30px;
 }
 
 .shopping-cart__wrapper {
   display: flex;
+  padding-top: 44px;
 }
 
 .shopping-cart__cartlist {
@@ -118,6 +107,7 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
+  border: none;
 }
 
 .shopping-cart__category-inner {
@@ -262,8 +252,10 @@
 .shopping-cart__saving {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   font-weight: 600;
+  font-size: var(--text-xs);
+  line-height: 18px;
   gap: 8px;
 }
 

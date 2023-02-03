@@ -1,6 +1,6 @@
 footer {
   margin: 0 auto;
-  border-top: 1px solid var(--gray-50);
+  border-top: 1px solid var(--gray-100);
   color: var(--content);
 }
 /* ----- .footer-inner ----- */
@@ -34,7 +34,6 @@ footer {
 }
 .customer-center__contact-info {
   margin-left: var(--spacing-xs);
-  font-size: var(--text-base);
   line-height: 150%;
 }
 .customer-center__item {
@@ -84,7 +83,6 @@ footer {
   margin-bottom: var(--spacing-xl);
   display: flex;
   justify-content: space-between;
-  font-size: var(--text-base);
 }
 .about-karly__link li {
   margin-right: var(--spacing-base);

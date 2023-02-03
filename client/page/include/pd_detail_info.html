@@ -4,16 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/common/reset.css">
-  <link rel="stylesheet" href="../../css/common/base.css">
-  <link rel="stylesheet" href="../../css/common/normalize.css">
-  <link rel="stylesheet" href="../../css/common/a11y.css">
-  <link rel="stylesheet" href="../../css/common/font.css">
-  <link rel="stylesheet" href="../../css/include/pd_detail_info.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <title>product detail information</title>
 </head>
 <body>
-  <div class="inner">
+  <main class="main product_info">
     <section class="product">
       <h2 class="a11yHidden">탱탱쫄면 상품 상세 페이지</h2>
       <img src="../../assets/product_detail/tangtang/detail_view.jpg" alt="탱탱쫄면 상품 이미지" class="product__img">
@@ -87,19 +82,22 @@
         </div>
       </div>
     </section>
+    <ul class="product-information-tab">
+      <li class="is-active">상품설명</li>
+      <li>상세정보</li>
+      <li>
+        후기<span>(1,000)</span>
+      </li>
+      <li>문의</li>
+    </ul>
     <section class="product-description">
-      <h2 class="a11yHidden">탱탱쫄면 상품 설명 탭</h2>
-      <ul class="tab-list">
-        <li class="is-active">상품설명</li>
-        <li>상세정보</li>
-        <li>
-          후기<span>(1,000)</span>
-        </li>
-        <li>문의</li>
-      </ul>
+      <h2 class="a11yHidden">탱탱쫄면 상품 설명</h2>
       <img src="../../assets/product_detail/tangtang/detail_banner.png" alt="탱탱쫄면 상품 설명">
+    </section>
+    <section class="product-detail">
+      <h2 class="a11yHidden">탱탱쫄면 상세 정보</h2>
       <img src="../../assets/product_detail/tangtang/detail_info.png" alt="탱탱쫄면 상세 정보">
     </section>
-  </div>
+  </main>
 </body>
 </html>

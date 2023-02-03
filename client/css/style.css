@@ -24,8 +24,11 @@
 /* signup.html */
 @import url(./include/signup.css);
 /* product_info.html */
+@import url(./include/product_info.css);
+@import url(./include/pd_detail_info.css);
 @import url(./include/product_inquiry.css);
 @import url(./include/product_review.css);
-@import url(./include/cart.css);
 @import url(./include/review_popup.css);
 @import url(./include/inquiry_popup.css);
+/* cart.html */
+@import url(./include/cart.css);

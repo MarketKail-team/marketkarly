@@ -1,6 +1,5 @@
 .best {
-  margin: 48px auto 80px;
-  width: var(--container-width);
+  padding-top: 48px;
 }
 .best__wrap {
   display: flex;
