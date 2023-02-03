@@ -1,7 +1,7 @@
-
-import { getNode } from "./getNode.js";
+import { getNode } from './getNode.js';
+import { isString } from './../utils/typeOf.js';
 
 export function clearContents(node){
-  if(typeof node === 'string') node = getNode(node);
+  if(isString(node)) node = getNode(node);
   node.textContent = '';
 }
