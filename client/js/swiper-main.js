@@ -35,19 +35,19 @@ mainSwiper = new Swiper('.swiper-best-price', {
 });
 
 // 최근본상품 버튼 동작 안됨 - 수정필요
-const swiperAside = new Swiper(".swiper-aside", {
+const swiperAside = new Swiper('.swiper-aside', {
   slidesPerView: 3,
   spaceBetween: 10,
   slidesPerGroup: 3,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
-    el: ".aside-swiper-pagination",
+    el: '.aside-swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: ".aside-swiper-button-next",
-    prevEl: ".aside-swiper-button-prev",
+    nextEl: '.aside-swiper-button-next',
+    prevEl: '.aside-swiper-button-prev',
   }, observer: true,
   observeParents: true,
 });
