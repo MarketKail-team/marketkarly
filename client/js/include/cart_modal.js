@@ -6,6 +6,7 @@ const modalCartCount = getNode('.modal__cart--count')
 const modalProductPrice = getNode('.modal__cart-product-price')
 const totalPrice = getNode('.modal__cart--total-price')
 const closeModal = getNode('.modal__cart--close')
+const modalCartBtn = getNode('.modal--cart-icon');
 
 // 갯수 증가 & 감소 & 합계 & 천의자리 콤마
 let currentValue = modalCartCount.innerText;
@@ -45,9 +46,17 @@ function modalMinusCount() {
 plusBtn.addEventListener('click', modalPlusCount)
 minusBtn.addEventListener('click', modalMinusCount)
 
+// MODAL CART 등장
+modalCartBtn.addEventListener('click', () => {
+  modalCart.hidden = false;
+  document.body.style.overflow = 'hidden';
+
+});
 
 // modal 창 닫기 버튼
 
 closeModal.addEventListener('click', () => {
   modalCart.hidden = true;
+  document.body.style.removeProperty('overflow');
+
 })
