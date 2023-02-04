@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../js/include/swiper_detail_product.js" type="module" defer></script>
   <script src="../js/main.js" type="module" defer></script>
   <title>상품 정보 - Karly : 마켓 칼리</title>
 </head>
@@ -220,15 +221,15 @@
             <li class="product-review__header__item">작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
           </ul>
         </div>
-        <button type="button" class="product-review__header__button">후기 작성하기</button>
+        <button type="button" class="product-review__header__button" aria-label="후기 작성">후기 작성하기</button>
       </div>
       <div class="product-review__main">
         <div class="product-reviewInfo">
           <span class="product-reviewInfo--cnt" data-total-review="2">총 2개</span>
           <div class="product-reviewInfo--select">
-            <button type="button" class="product-reviewInfo__button--focused">추천순</button>
+            <button type="button" class="product-reviewInfo__button--focused" aria-label="추천순">추천순</button>
             <div></div>
-            <button type="button" class="product-reviewInfo__button">최근 등록순</button>
+            <button type="button" class="product-reviewInfo__button" aria-label="최근 등록순">최근 등록순</button>
           </div>
         </div>
         <div class="swiper product-review__swiper">
@@ -236,14 +237,14 @@
             <div class="swiper-slide">
               <ul class="product-review__main__list">
                 <li class="product-review__main__item">
-                  <button class="product-review__main__item-notice">
+                  <button type="button" class="product-review__main__item-notice">
                     <span class="reviewNotice-label">공지</span>
                     <span class="reviewNotice-info">금주의 베스트 후기 안내</span>
                   </button>
                   <!-- <div></div> -->
                 </li>
                 <li class="product-review__main__item">
-                  <button class="product-review__main__item-notice">
+                  <button type="button" class="product-review__main__item-notice">
                     <span class="reviewNotice-label">공지</span>
                     <span class="reviewNotice-info">상품 후기 적립금 정책 안내</span>
                   </button>
@@ -296,7 +297,69 @@
                 </li>
               </ul>
             </div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">
+              <ul class="product-review__main__list">
+                <li class="product-review__main__item">
+                  <button type="button" class="product-review__main__item-notice">
+                    <span class="reviewNotice-label">공지</span>
+                    <span class="reviewNotice-info">금주의 베스트 후기 안내</span>
+                  </button>
+                  <!-- <div></div> -->
+                </li>
+                <li class="product-review__main__item">
+                  <button type="button" class="product-review__main__item-notice">
+                    <span class="reviewNotice-label">공지</span>
+                    <span class="reviewNotice-info">상품 후기 적립금 정책 안내</span>
+                  </button>
+                  <!-- <div></div> -->
+                </li>
+                <li class="product-review__main__item-reviewInfo">
+                  <div class="reviewInfo-personRank">
+                    <span class="reviewInfo-labelBest">베스트</span>
+                    <span class="reviewInfo-labelRank">퍼플</span>
+                    <span class="reviewInfo-userName" data-user-name="김*진">김*진</span>
+                  </div>
+                  <div class="reviewInfo-detail">
+                    <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
+                    <p class="reviewInfo-description">
+                      너무 맛있어여~ <br>
+                      면이 쫄깃하고 양념도 짱맛나요!!
+                    </p>
+                    <span class="reviewInfo-date">2022.11.10</span>
+                  </div>
+                </li>
+                <li class="product-review__main__item-reviewInfo">
+                  <div class="reviewInfo-personRank">
+                    <span class="reviewInfo-labelBest">베스트</span>
+                    <span class="reviewInfo-labelRank">퍼플</span>
+                    <span class="reviewInfo-userName" data-user-name="김*진">김*식</span>
+                  </div>
+                  <div class="reviewInfo-detail">
+                    <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
+                    <p class="reviewInfo-description">
+                      또 주문할것 같습니다. <br>
+                      너무 맛있어요 내스타일이야~!
+                    </p>
+                    <span class="reviewInfo-date">2022.11.10</span>
+                  </div>
+                </li>
+                <li class="product-review__main__item-reviewInfo">
+                  <div class="reviewInfo-personRank">
+                    <span class="reviewInfo-labelBest">베스트</span>
+                    <span class="reviewInfo-labelRank">퍼플</span>
+                    <span class="reviewInfo-userName" data-user-name="김*진">김*범</span>
+                  </div>
+                  <div class="reviewInfo-detail">
+                    <span class="reviewInfo--product-name" data-product-name="[풀무원] 탱탱쫄면 (4개입)">[풀무원] 탱탱쫄면 (4개입)</span>
+                    <p class="reviewInfo-description">
+                      너무 맛있어여~ <br>
+                      면이 쫄깃하고 양념도 짱맛나요!!
+                    </p>
+                    <span class="reviewInfo-date">2022.11.10</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -331,23 +394,30 @@
       </div>
       <div class="product-inquiry__main">
         <!-- Swiper -->
-        <div class="swiper product-review__swiper">
+        <div class="swiper product-inquiry__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <table class="product-inquiry__table">
+                <caption class="a11yHidden">상품 문의</caption>
+                <colgroup class="inquiry-title"></colgroup>
+                <colgroup class="inquiry-writer"></colgroup>
+                <colgroup class="inquiry-date"></colgroup>
+                <colgroup class="inquiry-status"></colgroup>
                 <thead class="product-inquiry__thead">
                   <tr>
-                    <th class="product-inquiry__theadContent-title">제목</th>
-                    <th class="product-inquiry__theadContent-writer">작성자</th>
-                    <th class="product-inquiry__theadContent-date">작성일</th>
-                    <th class="product-inquiry__theadContent-status">답변상태</th>
+                    <th class="product-inquiry__theadContent-title" scope="col">제목</th>
+                    <th class="product-inquiry__theadContent-writer" scope="col">작성자</th>
+                    <th class="product-inquiry__theadContent-date" scope="col">작성일</th>
+                    <th class="product-inquiry__theadContent-status" scope="col">답변상태</th>
                   </tr>
                 </thead>
                 <tbody class="product-inquiry__tbody">
                   <tr class="product-inquiry__tr-notice">
                     <td class="product-inquiry__notice-title">
-                      <span class="product-inquiry__notice-label">공지</span>
-                      <span class="product-inquiry__notice-info">판매(일시)중단 제품 안내 (22.11.10 업데이트)</span>
+                      <button type="button" class="product-inquiry__button-notice">
+                        <span class="product-inquiry__notice-label">공지</span>
+                        <span class="product-inquiry__notice-info">판매(일시)중단 제품 안내 (22.11.10 업데이트)</span>
+                      </button>
                     </td>
                     <td class="product-inquiry__notice-writer">칼리</td>
                     <td class="product-inquiry__notice-date">2017.02.01</td>
@@ -355,7 +425,8 @@
                   </tr>
                   <tr class="product-inquiry__tr-issue">
                     <td class="product-inquiry__td-issue-title">
-                      <span>팩이 터져서 왔어요</span>
+                      <button type="button" class="product-inquiry__button-issue">팩이 터져서 왔어요</button>
+                      <span></span>
                     </td>
                     <td class="product-inquiry__td--issue-writer">김*식</td>
                     <td class="product-inquiry__td--issue-date">2022.11.11</td>
@@ -380,8 +451,7 @@
                             </clipPath>
                           </defs>
                         </svg>
-                        <span class="product-issueContent-question__content">
-                          스티로폼 박스도 손상되어 있어 포장이 터져 엉망이네요 <br>
+                        <span class="product-issueContent-question__content">스티로폼 박스도 손상되어 있어 포장이 터져 엉망이네요
                           환불 요청합니다.
                         </span>
                       </div>
@@ -403,14 +473,15 @@
                           </defs>
                         </svg>
                         <p>
-                          <span class="product-issueContent-answer__content">
-                            안녕하세요. 칼리입니다. <br>
-                            믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다. <br><br>
+                          <span class="product-issueContent-answer__content">안녕하세요. 칼리입니다.
+                            믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.
+                            
                             더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다.
-                            <br><br>
-                            다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다. <br><br>
+                            
+                            다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다.
+                            
                             불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다.
-                            <br><br>
+                            
                             칼리 드림.
                           </span>
                           <span class="product-issueContent-answerDate">2022.11.11</span>
@@ -420,7 +491,7 @@
                   </tr>
                   <tr class="product-inquiry__tr-secrete">
                     <td class="product-inquiry__td-secrete-title">
-                      <span>비밀글입니다.</span>
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
                       <i class="secrete__ico-secrete"></i>
                     </td>
                     <td class="product-inquiry__td-secrete-writer">김*진</td>
@@ -429,7 +500,7 @@
                   </tr>
                   <tr class="product-inquiry__tr-secrete">
                     <td class="product-inquiry__td-secrete-title">
-                      <span>비밀글입니다.</span>
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
                       <i class="secrete__ico-secrete"></i>
                     </td>
                     <td class="product-inquiry__td-secrete-writer">김*범</td>
@@ -438,7 +509,7 @@
                   </tr>
                   <tr class="product-inquiry__tr-secrete">
                     <td class="product-inquiry__td-secrete-title">
-                      <span>비밀글입니다.</span>
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
                       <i class="secrete__ico-secrete"></i>
                     </td>
                     <td class="product-inquiry__td-secrete-writer">심*범</td>
@@ -447,7 +518,7 @@
                   </tr>
                   <tr class="product-inquiry__tr-secrete">
                     <td class="product-inquiry__td-secrete-title">
-                      <span>비밀글입니다.</span>
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
                       <i class="secrete__ico-secrete"></i>
                     </td>
                     <td class="product-inquiry__td-secrete-writer">야*</td>
@@ -456,7 +527,7 @@
                   </tr>
                   <tr class="product-inquiry__tr-secrete">
                     <td class="product-inquiry__td-secrete-title">
-                      <span>비밀글입니다.</span>
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
                       <i class="secrete__ico-secrete"></i>
                     </td>
                     <td class="product-inquiry__td-secrete-writer">김**사</td>
@@ -466,21 +537,95 @@
                 </tbody>
               </table>
             </div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">
+              <table class="product-inquiry__table">
+                <caption class="a11yHidden">상품 문의</caption>
+                <colgroup class="inquiry-title"></colgroup>
+                <colgroup class="inquiry-writer"></colgroup>
+                <colgroup class="inquiry-date"></colgroup>
+                <colgroup class="inquiry-status"></colgroup>
+                <thead class="product-inquiry__thead">
+                  <tr>
+                    <th class="product-inquiry__theadContent-title" scope="col">제목</th>
+                    <th class="product-inquiry__theadContent-writer" scope="col">작성자</th>
+                    <th class="product-inquiry__theadContent-date" scope="col">작성일</th>
+                    <th class="product-inquiry__theadContent-status" scope="col">답변상태</th>
+                  </tr>
+                </thead>
+                <tbody class="product-inquiry__tbody">
+                  <tr class="product-inquiry__tr-notice">
+                    <td class="product-inquiry__notice-title">
+                      <button type="button" class="product-inquiry__button-notice">
+                        <span class="product-inquiry__notice-label">공지</span>
+                        <span class="product-inquiry__notice-info">판매(일시)중단 제품 안내 (22.11.10 업데이트)</span>
+                      </button>
+                    </td>
+                    <td class="product-inquiry__notice-writer">칼리</td>
+                    <td class="product-inquiry__notice-date">2017.02.01</td>
+                    <td class="product-inquiry__notice-status">-</td>
+                  </tr>
+                  <tr class="product-inquiry__tr-secrete">
+                    <td class="product-inquiry__td-secrete-title">
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
+                      <i class="secrete__ico-secrete"></i>
+                    </td>
+                    <td class="product-inquiry__td-secrete-writer">김*진</td>
+                    <td class="product-inquiry__td-secrete-date">2022.10.09</td>
+                    <td class="product-inquiry__td-secrete-status">답변대기</td>
+                  </tr>
+                  <tr class="product-inquiry__tr-secrete">
+                    <td class="product-inquiry__td-secrete-title">
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
+                      <i class="secrete__ico-secrete"></i>
+                    </td>
+                    <td class="product-inquiry__td-secrete-writer">김*범</td>
+                    <td class="product-inquiry__td-secrete-date">2022.10.13</td>
+                    <td class="product-inquiry__td-secrete-status-ok">답변완료</td>
+                  </tr>
+                  <tr class="product-inquiry__tr-secrete">
+                    <td class="product-inquiry__td-secrete-title">
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
+                      <i class="secrete__ico-secrete"></i>
+                    </td>
+                    <td class="product-inquiry__td-secrete-writer">심*범</td>
+                    <td class="product-inquiry__td-secrete-date">2022.08.30</td>
+                    <td class="product-inquiry__td-secrete-status-ok">답변완료</td>
+                  </tr>
+                  <tr class="product-inquiry__tr-secrete">
+                    <td class="product-inquiry__td-secrete-title">
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
+                      <i class="secrete__ico-secrete"></i>
+                    </td>
+                    <td class="product-inquiry__td-secrete-writer">야*</td>
+                    <td class="product-inquiry__td-secrete-date">2022.08.12</td>
+                    <td class="product-inquiry__td-secrete-status-ok">답변완료</td>
+                  </tr>
+                  <tr class="product-inquiry__tr-secrete">
+                    <td class="product-inquiry__td-secrete-title">
+                      <button type="button" class="product-inquiry__button-secrete">비밀글입니다.</button>
+                      <i class="secrete__ico-secrete"></i>
+                    </td>
+                    <td class="product-inquiry__td-secrete-writer">김**사</td>
+                    <td class="product-inquiry__td-secrete-date">2022.07.23</td>
+                    <td class="product-inquiry__td-secrete-status-ok">답변완료</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="product-inquiry__button">
-        <div class="product-inquiry__button-wrapper">
-          <div class="product-inquiry__button-prev">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
-            </svg>
-          </div>
-          <div class="product-inquiry__button-next">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
-            </svg>
+          <div class="product-inquiry__button">
+            <div class="product-inquiry__button-wrapper">
+              <div class="product-inquiry__button-prev">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 26L14 18L22 10" stroke="#E1E1E1" stroke-width="1.2" />
+                </svg>
+              </div>
+              <div class="product-inquiry__button-next">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 10L22 18L14 26" stroke="#5F0080" stroke-width="1.2" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -653,9 +798,5 @@
       <span>© KARLY CORP. ALL RIGHTS RESERVED</span>
     </div>
   </footer>
-  <!-- JS : SWIPER-PRODUCT-REVIEW : include/product_review.html -->
-  <script src="../js/include/swiper-product-review.js"></script>
-  <!-- JS : SWIPER-PRODUCT-INQUIRY : include/product_inquiry.html -->
-  <script src="../js/include/swiper-product-inquiry.js"></script>
 </body>
 </html>
