@@ -1,0 +1,142 @@
+.product-filter{
+  width:267px;
+}
+
+.product-filter__item, .product-filter__item--focused-title{
+  width:220px;
+  height:52px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid var(--gray-100);
+  cursor:pointer;
+}
+
+[class^="product-filter__button"], .product-filter__purpose {
+  flex-shrink: 0;
+  height: 24px;
+  border:none;
+  font-size:var(--text-base);
+  font-weight: 600;
+  color:var(--primary);
+}
+
+[class^="product-filter__button"]:focus-visible, .product-filter__purpose:focus-visible{
+  outline:2px solid var(--black);
+}
+
+.product-filter__purpose{
+  padding:1px 6px;
+  cursor:default;
+}
+
+.product-filter__button--reset{
+  width:40px;
+  height:var(--text-base);
+  font-size:10px;
+  color:#a6a6a6;
+  cursor:pointer;
+}
+
+.product-filter__category-cnt{
+  display:inline-block;
+  font-size:10px;
+  color:var(--gray-300);
+  padding-left:1px;
+}
+
+[class^="filter__icon"]{
+  width:18px;
+  height:18px;
+  padding:0 5px;
+  border:none;
+}
+
+[class^="filter__icon"]:focus-visible{
+  outline:2px solid(--black);
+}
+
+.product-filter__icon-open{
+  display:block;
+	background: url('../../assets/sprites.png') no-repeat -412px -190px;
+	width: 6px;
+	height: 10px; 
+  flex-shrink: 0;
+  transform:rotate(90deg);
+}
+
+.product-filter__icon-close{
+  display:block;
+	background: url('../../assets/sprites.png') no-repeat -412px -190px;
+	width: 6px;
+	height: 10px; 
+  flex-shrink: 0;
+  transform:rotate(-90deg);
+}
+
+.product-filter__item--focused-title{
+  border-bottom:none;
+}
+
+.product-filter__item--focused-title.is-active{
+  border-bottom:1px solid var(--gray-100);
+
+}
+
+.product-filter__item--focused-product.is-active{
+  display:none;
+}
+
+.product-filter__label-check{
+  width:220px;
+  height:50px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-items:start;
+  align-items:center;
+  cursor: pointer;
+}
+
+.product-filter__ico-check{
+  display: inline-block;
+  width: 24px;
+	height: 24px;
+  background: url("./../../assets/sprites.png") no-repeat -285px -226px;
+  margin-right:var(--spacing-xs);
+}
+
+input[type="checkbox"]:checked + .product-filter__ico-check {
+  background-position: -406px -10px;
+}
+
+input[type="checkbox"]:focus-visible + .product-filter__ico-check {
+  box-sizing:content-box;
+  border:2px solid var(--black);
+  border-radius:50%;
+}
+
+.product-filter__brandName--cnt{
+  display:inline-block;
+  font-size:10px;
+  color:var(--gray-300);
+  padding-left:var(--spacing-xxs);
+}
+
+.product-filter__item-more{
+  width:220px;
+  height:42px;
+  border:none;
+  border-bottom:1px solid var(--gray-100);
+  display:flex;
+  flex-flow:row nowrap;
+  padding:6px 68px 18px;
+  cursor:pointer;
+}
+
+.product-filter__item-more span{
+  height:18px;
+  font-size:var(--text-xs);
+  line-height:18px;
+  color:var(--gray-300);
+}
