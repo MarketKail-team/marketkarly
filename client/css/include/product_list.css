@@ -115,8 +115,21 @@
   position: relative;
 }
 
+.product--title+dd {
+  width: 249px;
+  height: 320px;
+  overflow: hidden;
+}
+
 .product-list__item img {
+  max-width: 100%;
+  transition: all 0.5s ease-in-out 0s;
   margin-bottom: 76px;
+}
+
+.product-list__item:hover img {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .product-list__item .product--title {
@@ -140,7 +153,7 @@
   font-size: 21.33px;
   font-weight: 600;
   line-height: 31.99px;
-  margin-bottom: var(--spacing-xs);
+  margin: 80px 0 var(--spacing-xs) 0;
 }
 
 .product-list__item .price--original::before {
