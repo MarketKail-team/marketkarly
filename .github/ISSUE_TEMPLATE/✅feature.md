@@ -12,9 +12,9 @@ assignees: sryung1225, jaesukpark77, chaewon0128, realldk, jeong-dev
 # 🗒️ Description
 설명을 작성하세요.
 
-# ✅ Todo 및 진행상
+# ✅ Todo 및 진행 상황
 - [ ] todo
 - [ ] todo
 
-## ETC
+# ETC
 기타 사항
