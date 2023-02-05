@@ -1,15 +1,23 @@
-const category = document.querySelector('.nav__item--category');
-const categoryBtn = category.querySelector('button');
-const categoryMap = category.querySelector('ul')
-function openCategoryMap(){
-  categoryMap.classList.replace('category__map', 'category__map--active');
-  categoryBtn.classList.replace('category__btn', 'category__btn--active');
+// 확인용으로 home.html에만 스크립트를 추가해둡니다
+// 추후 전체 페이지로 변경 예정입니다
+
+import {
+  getNode,
+  replaceClass
+} from '../../lib/index.js';
+
+const category = getNode('.nav__item--category');
+const categoryBtn = getNode('.nav__item--category button');
+const categoryMap = getNode('.nav__item--category ul')
+
+function openCategoryMap() {
+  replaceClass(categoryMap, 'category__map', 'category__map--active');
+  replaceClass(categoryBtn, 'category__btn', 'category__btn--active');
 }
 function closeCategoryMap(){
-  categoryMap.classList.replace('category__map--active', 'category__map');
-  categoryBtn.classList.replace('category__btn--active', 'category__btn');
+  replaceClass(categoryMap, 'category__map--active', 'category__map');
+  replaceClass(categoryBtn, 'category__btn--active', 'category__btn');
 }
 category.addEventListener('mouseover', openCategoryMap);
 category.addEventListener('mouseleave', closeCategoryMap);
-// 모듈함수 사용하며 보완 필요
-// 접근성 관련 추가 고려 필요 : tab키로 카테고리 버튼에 도달한 경우에도 메뉴가 열리도록 제어
+category.addEventListener('click', openCategoryMap);
