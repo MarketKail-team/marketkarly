@@ -1,7 +1,9 @@
 import {
+  checkSelected,
   clearContents,
   getNode,
   getNodes,
+  resetSelected,
   toggleClass
 } from './../../lib/index.js';
 
@@ -14,7 +16,6 @@ const filterPrices = getNodes('.product-filter__price>label')
 const filterSales = getNodes('.product-filter__sale>label')
 const filterTypes = getNodes('.product-filter__type>label')
 const filterExcepts = getNodes('.product-filter__except>label')
-
 const keyCnts = getNodes('.product-filter__key-cnt')
 const categoryCnt = getNode('.product-category-cnt');
 const brandCnt = getNode('.product-brand-cnt');
@@ -45,89 +46,19 @@ function resetHandler() {
     clearContents(keyCnt);
   })
 
-  categorys.forEach((category) => {
-    category.checked = false;
-  })
-
-  brands.forEach((brand) => {
-    brand.checked = false;
-  })
-
-  prices.forEach((price) => {
-    price.checked = false;
-  })
-
-  sales.forEach((sale) => {
-    sale.checked = false;
-  })
-
-  types.forEach((type) => {
-    type.checked = false;
-  })
-
-  excepts.forEach((except) => {
-    except.checked = false;
-  })
+  resetSelected(categorys);
+  resetSelected(brands);
+  resetSelected(prices);
+  resetSelected(sales);
+  resetSelected(types);
+  resetSelected(excepts);
 }
 
 resetButton.addEventListener('click', resetHandler)
 
-function categoryHandler() {
-  const inputCategory = getNodes('input[name="category"]:checked');
-  const selectedElementsCnt = inputCategory.length;
-  categoryCnt.innerText = selectedElementsCnt;
-}
-
-filterCategorys.forEach((filterCatalog) => {
-  filterCatalog.addEventListener('click', categoryHandler)
-})
-
-function brandHandler() {
-  const inputCategory = getNodes('input[name="brand"]:checked');
-  const selectedElementsCnt = inputCategory.length;
-  brandCnt.innerText = selectedElementsCnt;
-}
-
-filterBrands.forEach((filterBrand) => {
-  filterBrand.addEventListener('click', brandHandler)
-})
-
-function priceHandler() {
-  const inputCategory = getNodes('input[name="price"]:checked');
-  const selectedElementsCnt = inputCategory.length;
-  priceCnt.innerText = selectedElementsCnt;
-}
-
-filterPrices.forEach((filterPrice) => {
-  filterPrice.addEventListener('click', priceHandler)
-})
-
-function saleHandler() {
-  const inputCategory = getNodes('input[name="sale"]:checked');
-  const selectedElementsCnt = inputCategory.length;
-  saleCnt.innerText = selectedElementsCnt;
-}
-
-filterSales.forEach((filterSale) => {
-  filterSale.addEventListener('click', saleHandler)
-})
-
-function typeHandler() {
-  const inputCategory = getNodes('input[name="type"]:checked');
-  const selectedElementsCnt = inputCategory.length;
-  typeCnt.innerText = selectedElementsCnt;
-}
-
-filterTypes.forEach((filterType) => {
-  filterType.addEventListener('click', typeHandler)
-})
-
-function exceptHandler() {
-  const inputCategory = getNodes('input[name="except"]:checked');
-  const selectedElementsCnt = inputCategory.length;
-  exceptCnt.innerText = selectedElementsCnt;
-}
-
-filterExcepts.forEach((filterExcept) => {
-  filterExcept.addEventListener('click', exceptHandler)
-})
+checkSelected(filterCategorys, categoryCnt, 'category');
+checkSelected(filterBrands, brandCnt, 'brand');
+checkSelected(filterPrices, priceCnt, 'price');
+checkSelected(filterSales, saleCnt, 'sale');
+checkSelected(filterTypes, typeCnt, 'type');
+checkSelected(filterExcepts, exceptCnt, 'except');
