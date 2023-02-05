@@ -3,7 +3,9 @@
 
 import {
   getNode,
-  replaceClass
+  replaceClass,
+  addClass,
+  removeClass
 } from '../../lib/index.js';
 
 const category = getNode('.nav__item--category');
@@ -21,3 +23,16 @@ function closeCategoryMap(){
 category.addEventListener('mouseover', openCategoryMap);
 category.addEventListener('mouseleave', closeCategoryMap);
 category.addEventListener('click', openCategoryMap);
+
+const navigation = getNode('.nav');
+let sticky = navigation.offsetTop - 50;
+function toggleNavigation() {
+  if (window.pageYOffset > sticky) {
+    addClass(navigation, 'nav--sticky');
+  } else {
+    removeClass(navigation, 'nav--sticky');
+  }
+}
+window.onscroll = function () {
+  toggleNavigation();
+};

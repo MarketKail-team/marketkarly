@@ -145,3 +145,42 @@
 .delivery-notice--primary {
   color: var(--primary);
 }
+
+.nav__item--sticky {
+  display: none;
+}
+
+/* 최상단에 header가 붙었을 때 대처 */
+.nav--sticky {
+  position: sticky;
+  top: 0;
+}
+.nav--sticky .nav__item--noti {
+  display: none;
+}
+.nav--sticky .nav__item--sticky {
+  position: relative;
+  display: flex;
+  height: 36px;
+}
+.nav__item--sticky .nav__search-form {
+  position: relative;
+  margin-right: 8px;
+}
+.nav__item--sticky .search-form__input {
+  width: 194px;
+  height: 36px;
+  padding: 8px 50px 8px 20px;
+  font-size: var(--text-xs);
+}
+.nav__item--sticky .search-form__button {
+  right: 27px;
+}
+.nav__item--sticky .nav__my-menu li {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+.nav__item--sticky .nav__my-menu li + li {
+  margin-left: 10px;
+}
