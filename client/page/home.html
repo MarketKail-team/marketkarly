@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../js/main.js" type="module" defer></script>
+  <script src="../js/include/cart_modal.js" type="module" defer></script>
   <title>Karly : 마켓 칼리</title>
 </head>
 
@@ -124,7 +125,8 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner1.jpg" alt="뷰티컬리에서 산타마리아노벨라 특별EVENT 진행 중. 10% 할인 + 추가 10% 쿠폰 + 프레그런스 키트 증정. 1월 26일부터 2월 2일까지" />
+            <img src="../assets/banner/banner1.jpg"
+              alt="뷰티컬리에서 산타마리아노벨라 특별EVENT 진행 중. 10% 할인 + 추가 10% 쿠폰 + 프레그런스 키트 증정. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
@@ -134,7 +136,8 @@
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner3.jpg" alt="호텔 스파 이용권부터 프레그런스까지 최대 63% 할인하는 애프터케어 카테고리. 1월 25일부터 2월 2일까지" />
+            <img src="../assets/banner/banner3.jpg"
+              alt="호텔 스파 이용권부터 프레그런스까지 최대 63% 할인하는 애프터케어 카테고리. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
@@ -159,7 +162,8 @@
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner8.jpg" alt="명절 후 식단 관리. 클렌즈주스부터 닭가슴살, 샐러드까지 필수템 최대 45% 할인. 1월 25일부터 2월 2일까지" />
+            <img src="../assets/banner/banner8.jpg"
+              alt="명절 후 식단 관리. 클렌즈주스부터 닭가슴살, 샐러드까지 필수템 최대 45% 할인. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
@@ -775,7 +779,9 @@
               <span>대표이사 : 김슬아</span>
             </li>
             <li>
-              <span>입점문의 : <a href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform" target="_blank">입점문의하기</a></span>
+              <span>입점문의 : <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform"
+                  target="_blank">입점문의하기</a></span>
               <span>제휴문의 : <a href="mailto:business@karlycorp.com">business@karlycorp.com</a></span>
             </li>
             <li>
@@ -856,9 +862,41 @@
       <span>© KARLY CORP. ALL RIGHTS RESERVED</span>
     </div>
   </footer>
+  <!-- modal menu -->
+  <div class="modal__cart" hidden>
+    <p class="modal__cart--item-title">[풀무원] 탱탱쫄면 (4개입)</p>
+    <div class="modal__cart__price">
+      <div class="modal__cart--item-price"><span class="modal__cart-product-price">4,980</span>원</div>
+      <div class="modal__cart--item-count">
+        <button aria-label="감소 버튼" class="modal__cart--minus" type="submit"><svg width="10" height="2"
+            viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+          </svg>
+        </button>
+        <span class="modal__cart--count">1</span>
+        <button aria-label="증가 버튼" class="modal__cart--plus" type="submit"><svg width="10" height="10"
+            viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal__cart__sum">
+      <span class="modal__cart--text">합계</span>
+      <div class="modal__cart--total"><span class="modal__cart--total-price">4,980</span>원</div>
+      <span class="modal__cart--badge">적립</span>
+      <p>구매 시 5원 적립</p>
+    </div>
+    <div class="modal__cart__button-wrapper">
+      <button class="modal__cart--close" type="submit">취소</button>
+      <button class="modal__cart--in" type="submit">장바구니 담기</button>
+    </div>
+  </div>
+
   <!-- JS : NAVIGATION : include/navigaition.html -->
   <script src="../js/include/navigation.js"></script>
   <!-- JS : SWIPER-MAIN : include/main.html -->
   <script src="../js/include/swiper-main.js"></script>
 </body>
+
 </html>
