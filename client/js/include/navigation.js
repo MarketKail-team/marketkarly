@@ -1,6 +1,3 @@
-// 확인용으로 home.html에만 스크립트를 추가해둡니다
-// 추후 전체 페이지로 변경 예정입니다
-
 import {
   getNode,
   replaceClass,

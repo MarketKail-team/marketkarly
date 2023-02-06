@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../js/include/navigation.js" type="module" defer></script>
   <script src="../js/include/product_list_filter.js" type="module" defer></script>
   <script src="../js/main.js" type="module" defer></script>
   <title>베스트 - Karly : 마켓 칼리</title>
@@ -115,6 +116,21 @@
       <li class="nav__item"><a href="/" class="nav__link">특가/혜택</a></li>
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
+      </li>
+      <li class="nav__item--sticky">
+        <form action="/" method="GET" class="nav__search-form">
+          <fieldset>
+            <legend>검색</legend>
+            <label for="search" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+            <button class="search-form__button" type="submit"></button>
+          </fieldset>
+        </form>
+        <ul class="nav__my-menu">
+          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        </ul>
       </li>
     </ul>
   </nav>
