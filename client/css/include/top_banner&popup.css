@@ -41,7 +41,7 @@
 }
 
 /* .home__popup */
-.home__popup-wrap {
+#home__popup-wrap {
   position: fixed;
   top: 50%;
   left: 50%;
