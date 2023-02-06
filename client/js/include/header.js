@@ -26,12 +26,15 @@ shippingForm.addEventListener('mouseleave', closeShppingForm)
 // 검색창 clear 버튼 -  Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
 
 const clearButton = getNode('.search-form__clear-button');
-const searchForm = getNode('search-form__input');
+const searchForm = getNode('.search-form__input');
 
-function clearButtonShow() {
-  clearButton.removeAttribute('style')
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  searchForm.addEventListener('keyup', clearButtonShow)
-});
+searchForm.addEventListener('input', () => {
+  if (searchForm.value) {
+    clearButton.style.visibility = 'visible'
+  } else {
+    clearButton.style.visibility = 'hidden'
+  }
+})
+clearButton.addEventListener('click', () =>
+  clearButton.style.visibility = 'hidden'
+)
