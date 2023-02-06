@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../js/include/navigation.js" type="module" defer></script>
   <script src="../js/include/swiper_detail_product.js" type="module" defer></script>
   <script src="../js/include/review_inquiry.js" type="module" defer></script>
+  <script src="../js/include/pd_detail_info.js" type="module" defer></script>
   <script src="../js/main.js" type="module" defer></script>
   <title>상품 정보 - Karly : 마켓 칼리</title>
 </head>
@@ -117,13 +119,28 @@
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
       </li>
+      <li class="nav__item--sticky">
+        <form action="/" method="GET" class="nav__search-form">
+          <fieldset>
+            <legend>검색</legend>
+            <label for="search" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+            <button class="search-form__button" type="submit"></button>
+          </fieldset>
+        </form>
+        <ul class="nav__my-menu">
+          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <!-- PRODUCT-INFO : include/pd_detail_info.html -->
   <main class="main product_info">
     <section class="product">
       <h2 class="a11yHidden">탱탱쫄면 상품 상세 페이지</h2>
-      <img src="../assets/product_detail/tangtang/detail_view.jpg" alt="탱탱쫄면 상품 이미지" class="product__img">
+      <img src="../../assets/product_detail/tangtang/detail_view.jpg" alt="탱탱쫄면 상품 이미지" class="product__img">
       <div class="product__info">
         <p class="product__info--delivery">샛별배송</p>
         <h3 class="product__info--name">[풀무원] 탱탱쫄면 (4개입)</h2>
@@ -188,27 +205,25 @@
           총 상품금액: <span>4,980</span>원
         </p>
         <div class="btn-area">
-          <img src="../assets/icons/Icon/icon-heart-on.png" alt="관심 상품으로 등록되었습니다.">
-          <img src="../assets/icons/Icon/icon-alarm-off.png" alt="해당 상품의 재입고 알림을 받지 않는 상태입니다.">
+          <img src="../../assets/icons/Icon/icon-heart-on.png" alt="관심 상품으로 등록되어 있습니다.">
+          <img src="../../assets/icons/Icon/icon-alarm-off.png" alt="해당 상품의 재입고 알림을 받지 않는 상태입니다.">
           <p>장바구니 담기</p>
         </div>
       </div>
     </section>
-    <ul class="product-information-tab">
-      <li class="is-active">상품설명</li>
-      <li>상세정보</li>
-      <li>
-        후기<span>(1,000)</span>
-      </li>
-      <li>문의</li>
+    <ul class="product-information-tablist" role="tablist">
+      <li class="tab is-selected" role="tab" aria-selected="true" aria-controls="pd-desc" id="tab__pd-desc" onclick="scrollToPdDesc()">상품설명</li>
+      <li class="tab" role="tab" aria-selected="false" aria-controls="pd-detail-info" id="tab__pd-detail-info" onclick="scrollToPdDetailInfo()">상세정보</li>
+      <li class="tab" role="tab" aria-selected="false" aria-controls="pd-review" id="tab__pd-review">후기<span>(1,000)</span></li>
+      <li class="tab" role="tab" aria-selected="false" aria-controls="pd-inquiry" id="tab__pd-inquiry">문의</li>
     </ul>
-    <section class="product-description">
-      <h2 class="a11yHidden">상품 설명</h2>
-      <img src="../assets/product_detail/tangtang/detail_banner.png" alt="탱탱쫄면 상품 설명">
+    <section class="pd-desc tabpanel is-active" role="tabpanel" id="pd-desc" aria-labelledby="tab__pd-desc">
+      <h2 class="a11yHidden">탱탱쫄면 상품 설명</h2>
+      <img src="../../assets/product_detail/tangtang/detail_banner.png" alt="탱탱쫄면 상품 설명">
     </section>
-    <section class="product-detail">
-      <h2 class="a11yHidden">상세 정보</h2>
-      <img src="../assets/product_detail/tangtang/detail_info.png" alt="탱탱쫄면 상세 정보">
+    <section class="pd-detail-info tabpanel" role="tabpanel" id="pd-detail-info" aria-labelledby="tab__pd-detail-info">
+      <h2 class="a11yHidden">탱탱쫄면 상세 정보</h2>
+      <img src="../../assets/product_detail/tangtang/detail_info.png" alt="탱탱쫄면 상세 정보">
     </section>
     <!-- PRODUCT-REVIEW : include/product_review.html -->
     <section class="product-review">

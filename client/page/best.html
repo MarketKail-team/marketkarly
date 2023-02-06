@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +8,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../js/include/navigation.js" type="module" defer></script>
+  <script src="../js/include/product_list_filter.js" type="module" defer></script>
   <script src="../js/main.js" type="module" defer></script>
+  <script src="../js/include/product_list.js" type="module" defer></script>
+  <script src="../js/include/cart_modal.js" type="module" defer></script>
   <title>베스트 - Karly : 마켓 칼리</title>
 </head>
 
@@ -115,157 +120,274 @@
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
       </li>
+      <li class="nav__item--sticky">
+        <form action="/" method="GET" class="nav__search-form">
+          <fieldset>
+            <legend>검색</legend>
+            <label for="search" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+            <button class="search-form__button" type="submit"></button>
+          </fieldset>
+        </form>
+        <ul class="nav__my-menu">
+          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <main class="main">
     <section class="best">
-      <h2 class="best__title">베스트</h2>
+      <h2 class="a11yHidden">베스트 상품</h2>
+      <p class="product-list__title" aria-hidden="true">베스트</p>
       <div class="best__wrap">
         <!-- BEST-PRODUCT-FILTER : include/product_list_filter.html -->
         <div class="product-filter">
           <ul class="product-filter__list">
-            <li class="product-filter__item">
+            <li class="product-filter__item product-filter--main">
               <span class="product-filter__purpose">필터</span>
               <button type="button" class="product-filter__button product-filter__button--reset">초기화</button>
             </li>
             <li class="product-filter__item">
-              <div>
-                <button type="button" class="product-filter__button">카테고리</button>
-                <span class="product-filter__category-cnt" data-category="1">1</span>
-              </div>
-              <button class="filter__icon-open" aria-label="펼치기">
-                <i class="product-filter__icon-open"></i>
-              </button>
-            </li>
-            <li class="product-filter__item--focused">
-              <div class="product-filter__item--focused-title">
-                <button type="button" class="product-filter__button">브랜드</button>
-                <button class="filter__icon-close" aria-label="닫기">
+              <button type="button" class="product-filter__catalog">
+                <div class="product-filter__key">
+                  <span class="product-filter__key-name">카테고리</span>
+                  <span class="product-filter__key-cnt product-category-cnt">0</span>
+                </div>
+                <div role="button" aria-label="닫기">
                   <i class="product-filter__icon-close"></i>
-                </button>
-              </div>
-              <div class="product-filter__item--focused-product">
-                <form action="#" method="post" class="product-filter-form">
-                  <fieldset>
-                    <legend aria-describedby="filter-brand">브랜드 조건 항목</legend>
-                    <ul class="product-filter-form__list" id="filter-brand">
-                      <li class="product-filter-form__item">
-                        <label for="brand1" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand1" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gamjabat">감자밭</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand2" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand2" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gangnammyeonog">강남면옥</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand3" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand3" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gyeongnamjeyag">경남제약</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand4" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand4" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gyeongboggung">경복궁</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand5" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand5" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="golaesa">고래사</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand6" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand6" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gomegongbang">고메공방</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand7" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand7" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gooneodiet">고온어다이어트</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand8" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand8" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gyotomabeul">교토마블</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand9" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand9" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="geulaenollahouse">그래놀라 하우스</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                      <li class="product-filter-form__item">
-                        <label for="brand10" class="product-filter__label-check">
-                          <input type="checkbox" name="brand" id="brand10" class="a11yHidden">
-                          <i class="product-filter__ico-check"></i>
-                          <span class="product-filter__brandName" data-brandname="gritssignalram">그리츠 시그니처 램</span>
-                          <span class="product-filter__brandName--cnt" data-brand-cnt="1">1</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </form>
-                <button class="product-filter__item-more" aria-label="더보기">
-                  <span>브랜드 더보기</span>
-                  <i class="product-filter_ico-move">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
-                      <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
-                    </svg>
-                  </i>
-                </button>
-              </div>
+                </div>
+              </button>
             </li>
-            <li class="product-filter__item">
-              <button type="button" class="product-filter__button">가격</button>
-              <button class="filter__icon-open" aria-label="펼치기">
-                <i class="product-filter__icon-open"></i>
+            <li class="product-filter__value product-filter__category">
+              <label for="category1" class="product-filter__label-check">
+                <input type="checkbox" name="category" id="category1" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">샐러드•간편식</span>
+                <span class="product-filter__name--cnt" data-category-salad="1">1</span>
+              </label>
+              <label for="category2" class="product-filter__label-check">
+                <input type="checkbox" name="category" id="category2" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">국•반찬•메인요리</span>
+                <span class="product-filter__name--cnt" data-category-soup="1">1</span>
+              </label>
+              <label for="category3" class="product-filter__label-check">
+                <input type="checkbox" name="category" id="category3" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">정육•계란</span>
+                <span class="product-filter__name--cnt" data-category-meet="1">1</span>
+              </label>
+              <label for="category4" class="product-filter__label-check">
+                <input type="checkbox" name="category" id="category4" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">과일•견과•쌀</span>
+                <span class="product-filter__name--cnt" data-category-fruit="1">1</span>
+              </label>
+              <label for="category5" class="product-filter__label-check">
+                <input type="checkbox" name="category" id="category5" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">베이커리•치즈•델리</span>
+                <span class="product-filter__name--cnt" data-category-bread="1">1</span>
+              </label>
+              <button class="product-filter__item-more">
+                <span>카테고리 더보기</span>
+                <i class="product-filter_ico-move">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                    <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
+                  </svg>
+                </i>
               </button>
             </li>
             <li class="product-filter__item">
-              <button type="button" class="product-filter__button">혜택</button>
-              <button class="filter__icon-open" aria-label="펼치기">
-                <i class="product-filter__icon-open"></i>
+              <button type="button" class="product-filter__catalog">
+                <div class="product-filter__key">
+                  <span class="product-filter__key-name">브랜드</span>
+                  <span class="product-filter__key-cnt product-brand-cnt">0</span>
+                </div>
+                <div role="button" aria-label="닫기">
+                  <i class="product-filter__icon-close"></i>
+                </div>
+              </button>
+            </li>
+            <li class="product-filter__value product-filter__brand">
+              <label for="brand1" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand1" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">가농바이오</span>
+                <span class="product-filter__name--cnt" data-brand-ganong="1">1</span>
+              </label>
+              <label for="brand2" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand2" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">감자밭</span>
+                <span class="product-filter__name--cnt" data-brand-gamja="1">1</span>
+              </label>
+              <label for="brand3" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand3" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">강남면옥</span>
+                <span class="product-filter__name--cnt" data-brand-gangnam="1">1</span>
+              </label>
+              <label for="brand4" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand4" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">강창구찹쌀진순대</span>
+                <span class="product-filter__name--cnt" data-brand-gangchang="1">1</span>
+              </label>
+              <label for="brand5" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand5" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">거대곰탕</span>
+                <span class="product-filter__name--cnt" data-brand-gaude="1">1</span>
+              </label>
+              <label for="brand6" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand6" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">게방식당</span>
+                <span class="product-filter__name--cnt" data-brand-gaebang="1">1</span>
+              </label>
+              <label for="brand7" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand7" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">경복궁</span>
+                <span class="product-filter__name--cnt" data-brand-gungbok="1">1</span>
+              </label>
+              <label for="brand8" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand8" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">고기반찬</span>
+                <span class="product-filter__name--cnt" data-brand-gogea="1">1</span>
+              </label>
+              <label for="brand9" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand9" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">고온어다이어트</span>
+                <span class="product-filter__name--cnt" data-brand-goon="1">1</span>
+              </label>
+              <label for="brand10" class="product-filter__label-check">
+                <input type="checkbox" name="brand" id="brand10" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">교토마블</span>
+                <span class="product-filter__name--cnt" data-brand-gyutoe="1">1</span>
+              </label>
+              <button class="product-filter__item-more">
+                <span>브랜드 더보기</span>
+                <i class="product-filter_ico-move">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative" preserveAspectRatio="none">
+                    <path d="M7 5L11 9L7 13" stroke="#999999" stroke-width="1.2"></path>
+                  </svg>
+                </i>
               </button>
             </li>
             <li class="product-filter__item">
-              <button type="button" class="product-filter__button">유형</button>
-              <button class="filter__icon-open" aria-label="펼치기">
-                <i class="product-filter__icon-open"></i>
+              <button type="button" class="product-filter__catalog">
+                <div class="product-filter__key">
+                  <span class="product-filter__key-name">가격</span>
+                  <span class="product-filter__key-cnt product-price-cnt">0</span>
+                </div>
+                <div role="button" aria-label="닫기">
+                  <i class="product-filter__icon-close"></i>
+                </div>
               </button>
             </li>
+            <li class="product-filter__value product-filter__price">
+              <label for="price1" class="product-filter__label-check">
+                <input type="checkbox" name="price" id="price1" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">7,600원 미만</span>
+                <span class="product-filter__name--cnt" data-price-first="1">1</span>
+              </label>
+              <label for="price2" class="product-filter__label-check">
+                <input type="checkbox" name="price" id="price2" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">7,600원 ~ 11,600원</span>
+                <span class="product-filter__name--cnt" data-price-second="1">1</span>
+              </label>
+              <label for="price3" class="product-filter__label-check">
+                <input type="checkbox" name="price" id="price3" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">11,600원 ~ 17,900원</span>
+                <span class="product-filter__name--cnt" data-price-third="1">1</span>
+              </label>
+              <label for="price4" class="product-filter__label-check">
+                <input type="checkbox" name="price" id="price4" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">17,900원 이상</span>
+                <span class="product-filter__name--cnt" data-price-fourth="1">1</span>
+              </label>
+            </li>
             <li class="product-filter__item">
-              <button type="button" class="product-filter__button">특정상품 제외</button>
-              <button class="filter__icon-open" aria-label="펼치기">
-                <i class="product-filter__icon-open"></i>
+              <button type="button" class="product-filter__catalog">
+                <div class="product-filter__key">
+                  <span class="product-filter__key-name">혜택</span>
+                  <span class="product-filter__key-cnt product-sale-cnt">0</span>
+                </div>
+                <div role="button" aria-label="닫기">
+                  <i class="product-filter__icon-close"></i>
+                </div>
               </button>
+            </li>
+            <li class="product-filter__value product-filter__sale">
+              <label for="sale1" class="product-filter__label-check">
+                <input type="checkbox" name="sale" id="sale1" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">할인상품</span>
+                <span class="product-filter__name--cnt" data-sale-product="1">1</span>
+              </label>
+              <label for="sale2" class="product-filter__label-check">
+                <input type="checkbox" name="sale" id="sale2" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">한정수량</span>
+                <span class="product-filter__name--cnt" data-sale-amount="1">1</span>
+              </label>
+            </li>
+            <li class="product-filter__item">
+              <button type="button" class="product-filter__catalog">
+                <div class="product-filter__key">
+                  <span class="product-filter__key-name">유형</span>
+                  <span class="product-filter__key-cnt product-type-cnt"">0</span>
+                </div>
+                <div role="button" aria-label="닫기">
+                  <i class="product-filter__icon-close"></i>
+                </div>
+              </button>
+            </li>
+            <li class="product-filter__value product-filter__type">
+              <label for="type1" class="product-filter__label-check">
+                <input type="checkbox" name="type" id="type1" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">Karly Only</span>
+                <span class="product-filter__name--cnt" data-type-kurly="1">1</span>
+              </label>
+              <label for="type2" class="product-filter__label-check">
+                <input type="checkbox" name="type" id="type2" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">희소가치 프로젝트</span>
+                <span class="product-filter__name--cnt" data-type-priceless="1">1</span>
+              </label>
+            </li>
+            <li class="product-filter__item">
+              <button type="button" class="product-filter__catalog">
+                <div class="product-filter__key">
+                  <span class="product-filter__key-name">특정상품 제외</span>
+                  <span class="product-filter__key-cnt product-except-cnt">0</span>
+                </div>
+                <div role="button" aria-label="닫기">
+                  <i class="product-filter__icon-close"></i>
+                </div>
+              </button>
+            </li>
+            <li class="product-filter__value product-filter__except">
+              <label for="except1" class="product-filter__label-check">
+                <input type="checkbox" name="except" id="except1" class="a11yHidden">
+                <i class="product-filter__ico-check"></i>
+                <span class="product-filter__name">반려동물 상품</span>
+                <span class="product-filter__name--cnt" data-except-product="1">1</span>
+              </label>
             </li>
           </ul>
         </div>
@@ -274,14 +396,19 @@
           <div class="product-list__inner">
             <p class="product-list--sum">총 284건</p>
             <ul class="product-list__sort">
-              <li><a href="/">추천순<span class="circle-icon">
-                <svg class="question-icon" width="6" height="9" viewBox="0 0 6 9" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0.5 2.21081H1.77027C1.81351 1.55135 2.26216 1.12973 2.95946 1.12973C3.64054 1.12973 4.09459 1.53514 4.09459 2.0973C4.09459 2.58784 3.90383 2.86944 3.35576 3.22524L3.1973 3.32432C2.45135 3.76216 2.13784 4.24865 2.18649 5.05946L2.19189 5.42703H3.44595V5.11892C3.44595 4.58378 3.64595 4.30811 4.35405 3.89189C5.08919 3.45405 5.5 2.87568 5.5 2.04865C5.5 0.85405 4.51081 0 3.02973 0C1.42432 0 0.54324 0.92973 0.5 2.21081ZM2.87838 8.0054C2.33784 8.0054 1.98108 7.6649 1.98108 7.1459C1.98108 6.62162 2.33784 6.28108 2.87838 6.28108C3.42973 6.28108 3.77568 6.62162 3.77568 7.1459C3.77568 7.6649 3.42973 8.0054 2.87838 8.0054Z"
-                    fill="#CCCCCC" />
-                </svg>
-              </span></a></li>
+              <li><a class="question__mark" href="/">추천순
+                  <div class="circle-icon">
+                    <svg class="question-icon" width="6" height="9" viewBox="0 0 6 9" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0.5 2.21081H1.77027C1.81351 1.55135 2.26216 1.12973 2.95946 1.12973C3.64054 1.12973 4.09459 1.53514 4.09459 2.0973C4.09459 2.58784 3.90383 2.86944 3.35576 3.22524L3.1973 3.32432C2.45135 3.76216 2.13784 4.24865 2.18649 5.05946L2.19189 5.42703H3.44595V5.11892C3.44595 4.58378 3.64595 4.30811 4.35405 3.89189C5.08919 3.45405 5.5 2.87568 5.5 2.04865C5.5 0.85405 4.51081 0 3.02973 0C1.42432 0 0.54324 0.92973 0.5 2.21081ZM2.87838 8.0054C2.33784 8.0054 1.98108 7.6649 1.98108 7.1459C1.98108 6.62162 2.33784 6.28108 2.87838 6.28108C3.42973 6.28108 3.77568 6.62162 3.77568 7.1459C3.77568 7.6649 3.42973 8.0054 2.87838 8.0054Z"
+                        fill="#CCCCCC" />
+                    </svg>
+                  </div>
+                  <div class="hidden_info">소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요 적합성, 상품 운영상 필요 등을 종합적으로 고려한
+                    순서입니다.
+                  </div>
+                </a></li>
               <li><a href="/">신상품순</a></li>
               <li><a href="/">판매량순</a></li>
               <li><a href="/">혜택순</a></li>
@@ -290,10 +417,10 @@
             </ul>
           </div>
           <dl class="product-list__list-wrapper">
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" /></dd>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                </dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
@@ -301,164 +428,158 @@
               </a>
               <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" aria-labelledby="jyoleudi_sun_cushion" /></dd>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
+                </dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" aria-labelledby="baby_laundry_detergent" /></dd>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="" />
+                </dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" /></dd>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                </dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" aria-labelledby="jyoleudi_sun_cushion" /></dd>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
+                </dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" aria-labelledby="baby_laundry_detergent" /></dd>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="" />
+                </dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" /></dd>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                </dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" aria-labelledby="jyoleudi_sun_cushion" /></dd>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
+                </dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" aria-labelledby="baby_laundry_detergent" /></dd>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="" />
+                </dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" /></dd>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                </dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" aria-labelledby="jyoleudi_sun_cushion" /></dd>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
+                </dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" aria-labelledby="baby_laundry_detergent" /></dd>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="" />
+                </dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" aria-labelledby="tangtang_jjolmyeon" /></dd>
+                <dd><img src="../../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                </dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" aria-labelledby="jyoleudi_sun_cushion" /></dd>
+                <dd><img src="../../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
+                </dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
-            <div class="product-list__item">
-              <a href="#">
+            <div class="product-list__item"><a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" aria-labelledby="baby_laundry_detergent" /></dd>
+                <dd><img src="../../assets/product_list/baby_laundry_detergent.jpg" alt="" />
+                </dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a>
-              <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon"></button>
             </div>
           </dl>
           <div class="product-list__pagenation">
             <a href="#">
-              <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAHUlEQVR42mNgAIPi/8X/kWkwA8SE0UQIMJAsCKMBBzk27fqtkcYAAAAASUVORK5CYII=" alt="처음 페이지로 이동" />
+              <image
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAHUlEQVR42mNgAIPi/8X/kWkwA8SE0UQIMJAsCKMBBzk27fqtkcYAAAAASUVORK5CYII="
+                alt="처음 페이지로 이동" />
             </a>
             <a href="#">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC" alt="이전 페이지로 이동"></a>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"
+                alt="이전 페이지로 이동"></a>
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg==" alt="다음 페이지로 이동"></a>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg=="
+                alt="다음 페이지로 이동"></a>
             <a href="#">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAIElEQVR42mMo/l/8n4GBgQFGQ5kgDowmQZCwAMImhDkAb0k27Zcisn8AAAAASUVORK5CYII=" alt="마지막 페이지로 이동"></a>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAIElEQVR42mMo/l/8n4GBgQFGQ5kgDowmQZCwAMImhDkAb0k27Zcisn8AAAAASUVORK5CYII="
+                alt="마지막 페이지로 이동"></a>
           </div>
         </div>
       </div>
@@ -550,7 +671,9 @@
               <span>대표이사 : 김슬아</span>
             </li>
             <li>
-              <span>입점문의 : <a href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform" target="_blank">입점문의하기</a></span>
+              <span>입점문의 : <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform"
+                  target="_blank">입점문의하기</a></span>
               <span>제휴문의 : <a href="mailto:business@karlycorp.com">business@karlycorp.com</a></span>
             </li>
             <li>
@@ -631,5 +754,37 @@
       <span>© KARLY CORP. ALL RIGHTS RESERVED</span>
     </div>
   </footer>
+
+  <!-- modal menu -->
+  <div class="modal__cart" hidden>
+    <p class="modal__cart--item-title">[풀무원] 탱탱쫄면 (4개입)</p>
+    <div class="modal__cart__price">
+      <div class="modal__cart--item-price"><span class="modal__cart-product-price">4,980</span>원</div>
+      <div class="modal__cart--item-count">
+        <button aria-label="감소 버튼" class="modal__cart--minus" type="submit"><svg width="10" height="2"
+            viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+          </svg>
+        </button>
+        <span class="modal__cart--count">1</span>
+        <button aria-label="증가 버튼" class="modal__cart--plus" type="submit"><svg width="10" height="10"
+            viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z" fill="#333333" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal__cart__sum">
+      <span class="modal__cart--text">합계</span>
+      <div class="modal__cart--total"><span class="modal__cart--total-price">4,980</span>원</div>
+      <span class="modal__cart--badge">적립</span>
+      <p>구매 시 5원 적립</p>
+    </div>
+    <div class="modal__cart__button-wrapper">
+      <button class="modal__cart--close" type="submit">취소</button>
+      <button class="modal__cart--in" type="submit">장바구니 담기</button>
+    </div>
+  </div>
 </body>
+
 </html>
