@@ -156,7 +156,8 @@
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 112px;
+  top: 120px;
+  z-index: 490;
 }
 .product-information-tablist .tab {
   display: flex;
@@ -164,7 +165,7 @@
   background-color: var(--gray-50);
   width: 263.25px;
   height: 54px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid var(--gray-100);
   font-weight: 600;
   line-height: 54px;
   cursor: pointer;
