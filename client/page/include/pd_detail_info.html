@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/style.css">
+  <script type="module" src="../../js/include/pd_detail_info.js" defer></script>
   <title>product detail information</title>
 </head>
 <body>
@@ -76,25 +77,23 @@
           총 상품금액: <span>4,980</span>원
         </p>
         <div class="btn-area">
-          <img src="../../assets/icons/Icon/icon-heart-on.png" alt="관심 상품으로 등록되었습니다.">
+          <img src="../../assets/icons/Icon/icon-heart-on.png" alt="관심 상품으로 등록되어 있습니다.">
           <img src="../../assets/icons/Icon/icon-alarm-off.png" alt="해당 상품의 재입고 알림을 받지 않는 상태입니다.">
           <p>장바구니 담기</p>
         </div>
       </div>
     </section>
-    <ul class="product-information-tab">
-      <li class="is-active">상품설명</li>
-      <li>상세정보</li>
-      <li>
-        후기<span>(1,000)</span>
-      </li>
-      <li>문의</li>
+    <ul class="product-information-tablist" role="tablist">
+      <li class="tab is-selected" role="tab" aria-selected="true" aria-controls="pd-desc" id="tab__pd-desc" onclick="scrollToPdDesc()">상품설명</li>
+      <li class="tab" role="tab" aria-selected="false" aria-controls="pd-detail-info" id="tab__pd-detail-info" onclick="scrollToPdDetailInfo()">상세정보</li>
+      <li class="tab" role="tab" aria-selected="false" aria-controls="pd-review" id="tab__pd-review">후기<span>(1,000)</span></li>
+      <li class="tab" role="tab" aria-selected="false" aria-controls="pd-inquiry" id="tab__pd-inquiry">문의</li>
     </ul>
-    <section class="product-description">
+    <section class="pd-desc tabpanel is-active" role="tabpanel" id="pd-desc" aria-labelledby="tab__pd-desc">
       <h2 class="a11yHidden">탱탱쫄면 상품 설명</h2>
       <img src="../../assets/product_detail/tangtang/detail_banner.png" alt="탱탱쫄면 상품 설명">
     </section>
-    <section class="product-detail">
+    <section class="pd-detail-info tabpanel" role="tabpanel" id="pd-detail-info" aria-labelledby="tab__pd-detail-info">
       <h2 class="a11yHidden">탱탱쫄면 상세 정보</h2>
       <img src="../../assets/product_detail/tangtang/detail_info.png" alt="탱탱쫄면 상세 정보">
     </section>

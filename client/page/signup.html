@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/include/header.js" type="module" defer></script>
   <script src="../js/include/navigation.js" type="module" defer></script>
+  <script src="../js/main.js" type="module" defer></script>
+  <script src="../js/include/signup.js" type="module" defer></script>
   <title>회원가입 - Karly : 마켓 칼리</title>
 </head>
 
@@ -146,6 +148,21 @@
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
       </li>
+      <li class="nav__item--sticky">
+        <form action="/" method="GET" class="nav__search-form">
+          <fieldset>
+            <legend>검색</legend>
+            <label for="search" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+            <button class="search-form__button" type="submit"></button>
+          </fieldset>
+        </form>
+        <ul class="nav__my-menu">
+          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <main class="main">
@@ -249,7 +266,7 @@
             <span class="signup-form__title--required">이용약관동의</span>
             <div class="signup-form__check-terms">
               <label for="termsAll" class="signup-form__label-check check-all">
-                <input type="checkbox" id="termsAll" name="terms" class="signup-form__input-check">
+                <input type="checkbox" id="termsAll" name="termsAll" class="signup-form__input-check">
                 <i class="signup-form__ico-check"></i>
                 <p aria-labelledby="termsAll" class="signup-form__text-check--all">전체 동의합니다.
                   <span class="signup-form__text-terms-desc">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>

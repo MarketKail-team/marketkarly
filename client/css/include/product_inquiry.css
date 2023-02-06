@@ -22,6 +22,7 @@
   position: relative;
   margin-left: 12px;
 }
+
 .product-inquiry__header__item::before{
   content: "•";
   position: absolute;
@@ -82,12 +83,16 @@
 }
 
 .product-inquiry__notice-title{
+  padding:var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+}
+
+.product-inquiry__button-notice{
   display:flex;
   flex-flow:row nowrap;
   justify-content:start;
   align-items:center;
   gap:var(--spacing-md);
-  padding:var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+  border:none;
 }
 
 .product-inquiry__notice-label{
@@ -136,10 +141,11 @@
   padding:17px 0 17px 20px;
 }
 
-.product-inquiry__td-issue-title p{
+.product-inquiry__button-issue{
   font-size:var(--text-base);
   font-weight:600;
   line-height:var(--text-xl);
+  border:none;
 }
 
 .product-inquiry__td--issue-writer,
@@ -190,6 +196,7 @@
   font-size:var(--text-xs);
   font-weight:600;
   line-height:var(--text-md);
+  white-space:pre-line;
 }
 
 .product-issueContent-answer{
@@ -200,11 +207,13 @@
 }
 
 .product-issueContent-answer__content{
+  width:481px;
   font-size:var(--text-xs);
   font-weight:600;
   line-height:var(--text-md);
   margin-bottom:var(--spacing-sm);
   display:block;
+  white-space:pre-line;
 }
 
 .product-issueContent-answerDate{
@@ -224,11 +233,13 @@
   padding:17px 0 17px 20px;
 }
 
-.product-inquiry__td-secrete-title span{
+.product-inquiry__button-secrete{
   font-size:var(--text-base);
   font-weight:600;
   line-height:var(--text-xl);
   color:var(--gray-400);
+  border:none;
+  padding:0 2px;
 }
 
 .secrete__ico-secrete{
@@ -273,4 +284,5 @@
   flex-flow:row nowrap;
   justify-content:center;
   align-items:center;
+  cursor:pointer;
 }
