@@ -133,3 +133,9 @@ fieldset{
   background:var(--gray-100);
   color:var(--white);
 }
+
+.popupForm__button-enroll:focus,
+.popupForm__button-enroll:hover{
+  background:var(--primary);
+  color:var(--white);
+}

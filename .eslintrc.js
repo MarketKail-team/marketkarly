@@ -12,6 +12,7 @@ module.exports = {
     'sourceType': 'module'
   },
   'rules': {
+    'indent': ['error', 2],
     'no-unused-vars':'warn',
     'no-unused-expressions': ['error'],
     'no-unreachable-loop': ['error'],
@@ -19,10 +20,10 @@ module.exports = {
     'no-param-reassign': ['error'],
     'no-use-before-define': ['error'],
     'max-depth': [
-    'error',
-    {
-      max: 1,
-    },
+      'error',
+      {
+        max: 1,
+      },
     ],
     'padding-line-between-statements': [
       'error',

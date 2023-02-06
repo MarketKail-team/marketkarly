@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../js/include/navigation.js" type="module" defer></script>
   <script src="../js/main.js" type="module" defer></script>
   <title>Karly : 마켓 칼리</title>
 </head>
@@ -115,26 +117,44 @@
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
       </li>
+      <li class="nav__item--sticky">
+        <form action="/" method="GET" class="nav__search-form">
+          <fieldset>
+            <legend>검색</legend>
+            <label for="search" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+            <button class="search-form__button" type="submit"></button>
+          </fieldset>
+        </form>
+        <ul class="nav__my-menu">
+          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <!-- MAIN-BANNER : include/main-banner.html -->
   <section class="main-banner">
     <h2 class="a11yHidden">메인 배너</h2>
-    <div class="swiper">
+    <button type="button" class="main-banner__button-next"></button>
+    <div class="swiper main-banner-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="#">
-            <img src="../assets/banner/banner1.jpg" alt="뷰티컬리에서 산타마리아노벨라 특별EVENT 진행 중. 10% 할인 + 추가 10% 쿠폰 + 프레그런스 키트 증정. 1월 26일부터 2월 2일까지" />
+          <a href="../index.html">
+            <img src="../assets/banner/banner1.jpg"
+              alt="뷰티컬리에서 산타마리아노벨라 특별EVENT 진행 중. 10% 할인 + 추가 10% 쿠폰 + 프레그런스 키트 증정. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
-          <a href="#">
+          <a href="../index.html">
             <img src="../assets/banner/banner2.jpg" alt="불고기부터 인기 반찬까지 최대 20% 할인하는 오늘의 요리 카테고리. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner3.jpg" alt="호텔 스파 이용권부터 프레그런스까지 최대 63% 할인하는 애프터케어 카테고리. 1월 25일부터 2월 2일까지" />
+            <img src="../assets/banner/banner3.jpg"
+              alt="호텔 스파 이용권부터 프레그런스까지 최대 63% 할인하는 애프터케어 카테고리. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
@@ -159,7 +179,8 @@
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner8.jpg" alt="명절 후 식단 관리. 클렌즈주스부터 닭가슴살, 샐러드까지 필수템 최대 45% 할인. 1월 25일부터 2월 2일까지" />
+            <img src="../assets/banner/banner8.jpg"
+              alt="명절 후 식단 관리. 클렌즈주스부터 닭가슴살, 샐러드까지 필수템 최대 45% 할인. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
@@ -208,8 +229,7 @@
           </a>
         </div>
       </div>
-      <button type="button" class="a11yHidden main-banner__button-next"></button>
-      <button type="button" class="a11yHidden main-banner__button-prev"></button>
+      <button type="button" class="main-banner__button-prev"></button>
       <div class="main-banner__pagination"></div>
     </div>
   </section>
@@ -775,7 +795,9 @@
               <span>대표이사 : 김슬아</span>
             </li>
             <li>
-              <span>입점문의 : <a href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform" target="_blank">입점문의하기</a></span>
+              <span>입점문의 : <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScLB7YkGJwNRzpGpp0gbR1i4C1_uvTEFj43SFfJ_XEadTn3gQ/viewform"
+                  target="_blank">입점문의하기</a></span>
               <span>제휴문의 : <a href="mailto:business@karlycorp.com">business@karlycorp.com</a></span>
             </li>
             <li>
@@ -856,9 +878,9 @@
       <span>© KARLY CORP. ALL RIGHTS RESERVED</span>
     </div>
   </footer>
-  <!-- JS : NAVIGATION : include/navigaition.html -->
-  <script src="../js/navigation.js"></script>
   <!-- JS : SWIPER-MAIN : include/main.html -->
-  <script src="../js/swiper-main.js"></script>
+  <script src="../js/include/swiper-main.js"></script>
+  <script src="../js/include/swiper_main_banner.js" type="module"></script>
 </body>
+
 </html>

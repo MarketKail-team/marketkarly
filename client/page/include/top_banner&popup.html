@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../../css/common/font.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/include/top_banner&popup.css">
+  <script type="module" src="../../js/include/banner_and_popup.js"></script>
   <title>top banner & popup</title>
 </head>
 <body style="background-color: ghostwhite; height: 5000px;">
@@ -17,12 +18,12 @@
       <button type="button" class="home__top-banner--btn-close" aria-label="배너 닫기"></button>
     </div>
   </div>
-  <div class="home__popup-wrap">
+  <div id="home__popup-wrap">
     <div class="home__popup">
       <div class="popup--img"></div>
       <div class="popup--btn-area">
-        <button type="button" name="button" class="btn--close-for-today">오늘 하루 안 보기</button>
-        <button type="button" name="button" class="btn--close">닫기</button>
+        <button type="button" name="button" id="btn--close-for-today">오늘 하루 안 보기</button>
+        <button type="button" name="button" id="btn--close">닫기</button>
       </div>
     </div>
   </div>
