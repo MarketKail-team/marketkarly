@@ -1,8 +1,9 @@
 .main-banner {
   position: relative;
-  width: 100%;
+  width: 1900px;
   font-size: 0;
 }
+
 .main-banner .swiper {
   /* 메인배너를 위한 css 속성 추가로 작성하실 경우
   앞에 .main-banner 로 감싸주면서 css 속성 사용 부탁드립니다 */
