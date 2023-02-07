@@ -17,9 +17,7 @@
   <meta property="og:image" content="https://marketkarly-team.github.io/marketkarly-client/client/assets/Karly.png"> <!-- 대표 썸네일 이미지 -->
   <meta property="og:url" content="https://marketkarly-team.github.io/marketkarly-client/client/page/best.html"> <!-- 페이지 url 적용 -->
   <!-- Style sheet & Script -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/include/header.js" type="module" defer></script>
   <script src="../js/include/navigation.js" type="module" defer></script>
   <script src="../js/include/product_list_filter.js" type="module" defer></script>
@@ -63,8 +61,8 @@
       <form action="/" method="GET" class="search-form">
         <fieldset>
           <legend>검색창</legend>
-          <label for="search" class="a11yHidden search-form__label">검색폼</label>
-          <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+          <label for="searchKeyword" class="a11yHidden search-form__label">검색폼</label>
+          <input type="search" class="search-form__input" id="searchKeyword" name="searchKeyword" placeholder="검색어를 입력해주세요" />
           <button type="reset" aria-label="검색어 초기화 버튼" class="search-form__clear-button">
             <svg width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -92,7 +90,7 @@
           <span class="triangle"></span>
           <div class="shipping-form--hidden"><em>배송지를 등록하고</em> 구매 가능한 상품을 확인 하세요!
             <div class="shipping--button-wrapper">
-              <a class="shipping-form__button--login" href="">로그인</a>
+              <a class="shipping-form__button--login" href="#">로그인</a>
               <button class="shipping-form__button--search"> <svg width="20" height="20" viewBox="8 0 36 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_42_122)">
@@ -119,7 +117,7 @@
   <!-- NAVIGATION : include/navigation.html -->
   <nav class="nav">
     <h2 class="a11yHidden">메인 메뉴</h2>
-    <ul class="nav__list" role="tablist">
+    <ul class="nav__list">
       <li class="nav__item--category">
         <button class="category__btn" aria-label="카테고리 열기">
           <div class="category__burger">
@@ -458,169 +456,169 @@
             </ul>
           </div>
           <dl class="product-list__list-wrapper">
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/tangtang_jjolmyeon.webp" alt="[풀무원] 탱탱쫄면 (4개입)" width="240" height="320" /></dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
               </a>
-              <button type="button" class="modal--cart-icon"></button>
+              <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="[온더바디] 죠르디 시카 자석 선쿠션" width="240" height="320" /></dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/baby_laundry_detergent.webp" alt="[프로쉬] 베이비 세탁세제" width="240" height="320" /></dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/tangtang_jjolmyeon.webp" alt="[풀무원] 탱탱쫄면 (4개입)" width="240" height="320" /></dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="[온더바디] 죠르디 시카 자석 선쿠션" width="240" height="320" /></dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/baby_laundry_detergent.webp" alt="[프로쉬] 베이비 세탁세제" width="240" height="320" /></dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/tangtang_jjolmyeon.webp" alt="[풀무원] 탱탱쫄면 (4개입)" width="240" height="320" /></dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="[온더바디] 죠르디 시카 자석 선쿠션" width="240" height="320" /></dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/baby_laundry_detergent.webp" alt="[프로쉬] 베이비 세탁세제" width="240" height="320" /></dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/tangtang_jjolmyeon.webp" alt="[풀무원] 탱탱쫄면 (4개입)" width="240" height="320" /></dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="[온더바디] 죠르디 시카 자석 선쿠션" width="240" height="320" /></dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/baby_laundry_detergent.webp" alt="[프로쉬] 베이비 세탁세제" width="240" height="320" /></dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="tangtang_jjolmyeon" class="product--title">[풀무원] 탱탱쫄면 (4개입)</dt>
-                <dd><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/tangtang_jjolmyeon.webp" alt="[풀무원] 탱탱쫄면 (4개입)" width="240" height="320" /></dd>
                 <dd class="product--price">4,980원</dd>
                 <dd class="product--summary">튀기지 않아 부담없는 매콤함</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="jyoleudi_sun_cushion" class="product--title">[온더바디] 죠르디 시카 자석 선쿠션</dt>
-                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="[온더바디] 죠르디 시카 자석 선쿠션" width="240" height="320" /></dd>
                 <dd class="product--price">32,500원</dd>
                 <dd class="product--summary">끈적임 없이 보송한 무기자차 선쿠션</dd>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
-            <div class="product-list__item"><a href="#">
+            <div class="product-list__item">
+              <a href="#">
                 <dt id="baby_laundry_detergent" class="product--title">[프로쉬] 베이비 세탁세제</dt>
-                <dd><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </dd>
+                <dd><img src="../assets/product_list/baby_laundry_detergent.webp" alt="[프로쉬] 베이비 세탁세제" width="240" height="320" /></dd>
                 <dd class="product--price price--original">18,980원</dd>
                 <dd class="product--summary">성분을 꼼꼼히 다져 골라 더욱 편안한</dd>
                 <span class="karly-only">Karly Only</span>
                 <span class="limited--bedge">한정수량</span>
-              </a> <button type="button" class="modal--cart-icon"></button>
+              </a> <button type="button" class="modal--cart-icon" aria-label="장바구니에 담기"></button>
             </div>
           </dl>
           <div class="product-list__pagenation">
             <a href="#">
               <image
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAHUlEQVR42mNgAIPi/8X/kWkwA8SE0UQIMJAsCKMBBzk27fqtkcYAAAAASUVORK5CYII="
-                alt="처음 페이지로 이동" />
+                alt="처음 페이지로 이동" width="9" height="7"/>
             </a>
             <a href="#">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"
-                alt="이전 페이지로 이동"></a>
+                alt="이전 페이지로 이동" width="5" height="7"></a>
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg=="
-                alt="다음 페이지로 이동"></a>
+                alt="다음 페이지로 이동" width="5" height="7"></a>
             <a href="#">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAQAAABwkq/rAAAAIElEQVR42mMo/l/8n4GBgQFGQ5kgDowmQZCwAMImhDkAb0k27Zcisn8AAAAASUVORK5CYII="
-                alt="마지막 페이지로 이동"></a>
+                alt="마지막 페이지로 이동" width="9" height="7"></a>
           </div>
         </div>
       </div>
@@ -725,27 +723,27 @@
           <ul class="about-karly__social-media">
             <li>
               <a href="https://www.instagram.com/marketkurly/" target="_blank">
-                <img src="../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기">
+                <img src="../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/Marketkurly/" target="_blank">
-                <img src="../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기">
+                <img src="../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://blog.naver.com/marketkurly" target="_blank">
-                <img src="../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기">
+                <img src="../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://m.post.naver.com/marketkurly" target="_blank">
-                <img src="../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기">
+                <img src="../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" target="_blank">
-                <img src="../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기">
+                <img src="../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기" width="32" height="32">
               </a>
             </li>
           </ul>
@@ -754,7 +752,7 @@
       <!-- .footer-inner-top -->
       <div class="footer-inner-bottom">
         <button>
-          <img src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기">
+          <img src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기" width="34" height="34">
           <p>
             [인증범위] 컬리 쇼핑몰 서비스 개발·운영
             <br>(심사받지 않은 물리적 인프라 제외)
@@ -762,21 +760,21 @@
           </p>
         </button>
         <button>
-          <img src="../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기">
+          <img src="../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기" width="35" height="34">
           <p>
             개인정보보호 우수 웹 사이트·
             <br>개인정보처리시스템 인증 (ePRIVACY PLUS)
           </p>
         </button>
         <button>
-          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기">
+          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기" width="103" height="32">
           <p>
             토스페이먼츠 구매안전(에스크로)
             <br>서비스를 이용하실 수 있습니다.
           </p>
         </button>
         <button>
-          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기">
+          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기" width="34" height="34">
           <p>
             고객님이 현금으로 결제한 금액에 대해
             <br>우리은행과 채무지급보증 계약을 체결하여
