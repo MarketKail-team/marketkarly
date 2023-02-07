@@ -82,22 +82,19 @@
   border-bottom:1px solid var(--gray-100);
 }
 
-.product-filter__icon-close.product-filter__icon-open{
-  display:block;
-	background: url('../../assets/sprites.png') no-repeat -412px -190px;
-	width: 6px;
-	height: 10px; 
-  flex-shrink: 0;
-  transform:rotate(90deg);
-}
-
 .product-filter__icon-close{
   display:block;
 	background: url('../../assets/sprites.png') no-repeat -412px -190px;
 	width: 6px;
-	height: 10px; 
+	height: 10px;
   flex-shrink: 0;
   transform:rotate(-90deg);
+  text-indent: 6px;
+  overflow: hidden;
+}
+
+.product-filter__icon-close.product-filter__icon-open{
+  transform:rotate(90deg);
 }
 
 .product-filter__label-check{
