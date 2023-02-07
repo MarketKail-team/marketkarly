@@ -12,6 +12,10 @@ const mainSwiper = new Swiper('.swiper-recommend', {
     enabled: true,
     onlyInViewport: false,
   },
+  lazy: {
+    loadPrevNext: true // 이전, 다음 이미지는 미리 로딩
+  },
+
   a11y: {
     containerRoleDescriptionMessage: '추천 상품',
     nextSlideMessage: '다음 슬라이드 버튼 입니다',
@@ -29,6 +33,10 @@ const mainSwiper2 = new Swiper('.swiper-best-price', {
     nextEl: '.swiper-best-price-button-next',
     prevEl: '.swiper-best-price-button-prev'
   },
+  lazy: {
+    loadPrevNext: true
+  },
+
   a11y: {
     containerRoleDescriptionMessage: '가격 할인 상품',
     nextSlideMessage: '다음 슬라이드 버튼 입니다',
@@ -53,6 +61,10 @@ const asideSwiper = new Swiper('.aside-swiper', {
     nextEl: '.aside-swiper-button-next',
     prevEl: '.aside-swiper-button-prev',
   },
+  lazy: {
+    loadPrevNext: true
+  },
+
   a11y: {
     containerRoleDescriptionMessage: '최근 본 상품',
     nextSlideMessage: '다음 슬라이드 버튼 입니다',
