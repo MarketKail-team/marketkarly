@@ -15,6 +15,7 @@
 /* home.html */
 @import url(./include/main_banner.css);
 @import url(./include/main.css);
+@import url(./include/modal_cart.css);
 /* best.html */
 @import url(./include/best.css);
 @import url(./include/product_list_filter.css);
