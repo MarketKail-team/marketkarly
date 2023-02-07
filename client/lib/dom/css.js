@@ -44,7 +44,7 @@ function getCss(node, prop) {
   return getComputedStyle(node)[prop]
 }
 
-function setCss(node, prop, value) {
+export function setCss(node, prop, value) {
   if(isString(node)) node = getNode(node);
   if(!(prop in document.body.style)) syntaxError ('getCSS 함수의 두 번째 인자인 prop은 유효한 css 속성이 아닙니다.');
   if(!value) syntaxError('setCSS 함수의 세 번째 인자는 필수값 입니다.');

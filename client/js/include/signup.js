@@ -1,6 +1,8 @@
 import {
   getNode,
   getNodes,
+  visibleElement,
+  invisibleElement,
   karlyFetch
 } from '../../lib/index.js';
 
@@ -18,25 +20,31 @@ termsCheckAll.addEventListener('change', (e) => {
 let userPw = getNode('#userPw');
 let userPwCheck = getNode('#userPw2');
 let userEmail = getNode('#userEmail');
-
 // 이메일과 비밀번호의 유효성을 확인
 // - 이메일 조건 : 최소 `@`, `.` 포함
 // - 비밀번호 조건 : 8자 이상 입력
 function checkPw() {
-  if(userPw.value.length < 8) {
-    console.log('입력한 비밀번호가 8글자 이상이어야 합니다.');
+  if (userPw.value.length < 8) {
+    // throw new Error('입력한 비밀번호가 8글자 이상이어야 합니다.');
+    visibleElement(userPw.nextElementSibling);
+  } else {
+    invisibleElement(userPw.nextElementSibling);
   }
 }
 function checkPwSame() {
-  if(userPw.value != userPwCheck.value) {
-    console.log('비밀번호가 일치하지 않습니다.');
+  if (userPw.value != userPwCheck.value) {
+    // throw new Error('비밀번호가 일치하지 않습니다.');
+    visibleElement(userPwCheck.nextElementSibling);
   } else {
-    console.log('비밀번호가 일치합니다');
+    invisibleElement(userPwCheck.nextElementSibling);
   }
 }
 function checkEmail() {
-  if (!userEmail.includes('.') && !userEmail.includes('@')) {
-    console.log('이메일에는 최소 "@"와 "." 이 포함되어 있어야 합니다.');
+  if (!userEmail.value.includes('.') || !userEmail.value.includes('@')) {
+    //throw new Error('이메일에는 최소 "@"와 "." 이 포함되어 있어야 합니다.');
+    visibleElement(userEmail.nextElementSibling);
+  } else {
+    invisibleElement(userEmail.nextElementSibling);
   }
 }
 userPw.addEventListener('change', checkPw);
