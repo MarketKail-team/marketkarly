@@ -40,7 +40,6 @@ const mainSwiper2 = new Swiper('.swiper-best-price', {
     prevSlideMessage: '이전 슬라이드 버튼 입니다',
   }
 
-
 });
 
 
