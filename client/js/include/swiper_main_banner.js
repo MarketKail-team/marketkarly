@@ -1,7 +1,3 @@
-import { attr } from '../../lib/dom/attr.js';
-import { bindEvent } from '../../lib/dom/bindEvent.js';
-import { getNode } from '../../lib/dom/getNode.js';
-
 const swiper = new Swiper('.main-banner-swiper', {
   loop: true,
   autoplay: {
@@ -24,7 +20,3 @@ const swiper = new Swiper('.main-banner-swiper', {
     slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
   },
 });
-
-// .main-banner__button-next, main-banner__button-prev 작업중
-// bindEvent('.main-banner img', 'mouseenter', attr('.main-banner__button-next', 'class', 'a11yHidden'));
-// bindEvent('.main-banner img', 'mouseenter', attr('main-banner__button-prev', 'class', 'a11yHidden'));
