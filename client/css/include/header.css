@@ -186,6 +186,10 @@
   display: none;
 }
 
+.header__submenu a {
+  display: block;
+}
+
 .header__submenu.is-active {
   position: absolute;
   right: 0;
