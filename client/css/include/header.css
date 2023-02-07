@@ -189,7 +189,7 @@
 .header__submenu.is-active {
   position: absolute;
   right: 0;
-  z-index: 99;
+  z-index: 700;
   background-color: var(--white);
   width: 118.4px;
   height: 102px;
@@ -250,7 +250,7 @@
   position: absolute;
   top: 43px;
   width: 0;
-  z-index: 101;
+  z-index: 730;
 }
 
 .triangle {
@@ -263,7 +263,7 @@
   position: absolute;
   top: 42px;
   width: 0;
-  z-index: 100;
+  z-index: 720;
 }
 
 .shipping-form--hidden {
@@ -271,7 +271,7 @@
 }
 
 .shipping-form--hidden.is-active {
-  z-index: 99;
+  z-index: 710;
   padding: 20px;
   position: absolute;
   top: 50px;
