@@ -4,8 +4,6 @@ const mainSwiper = new Swiper('.swiper-recommend', {
   slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,
-  // observer: true,
-  // observeParents: true,
   navigation: {
     nextEl: '.swiper-recommend-button-next',
     prevEl: '.swiper-recommend-button-prev'
@@ -19,9 +17,6 @@ const mainSwiper = new Swiper('.swiper-recommend', {
     nextSlideMessage: '다음 슬라이드 버튼 입니다',
     prevSlideMessage: '이전 슬라이드 버튼 입니다',
   }
-});
-mainSwiper.on('reachBeginning', function () {
-  console.log('hi')
 });
 
 const mainSwiper2 = new Swiper('.swiper-best-price', {
