@@ -166,7 +166,12 @@
   margin-left: 8px;
 }
 
+.signup-form__term-wrap {
+  display: flex;
+}
+
 .signup-form__label-check {
+  flex-grow: 1;
   position: relative;
   display: flex;
   align-items: center;
