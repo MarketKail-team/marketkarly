@@ -17,18 +17,21 @@
   align-items: center;
   height: 56px;
   padding: 16px 0;
+  line-height: 36px;
 }
 
 .shopping-cart__select-all {
   display: flex;
+  flex-direction: row;
   gap: var(--spacing-sm);
   align-items: center;
   font-weight: 600;
   cursor: pointer;
 }
 
-.shopping-cart__select-all label {
+.shopping-cart__select-all i {
   cursor: pointer;
+  padding-left: 36px;
 }
 
 .shopping-cart__select-all::after {
@@ -50,22 +53,32 @@
   appearance: none;
 }
 
-.shopping-cart__select-button {
+.shopping-cart input[type="checkbox"] {
+  display: none;
+}
+
+.shopping-cart__check-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type=checkbox]+label i {
+  display: inline-block;
   background: url('../../assets/sprites.png') no-repeat -285px -226px;
   width: 24px;
   height: 24px;
   border: 0;
-  cursor: pointer;
 }
 
-.shopping-cart__select-button.is-checked {
+input[type=checkbox]:checked+label i {
+  display: inline-block;
   background: url('../../assets/sprites.png') no-repeat -406px -10px;
   width: 24px;
   height: 24px;
   border: 0;
-  margin-right: 12px;
-  cursor: pointer;
 }
+
 
 .shopping-cart__refrigerated-foods,
 .shopping-cart__frozen-food,
