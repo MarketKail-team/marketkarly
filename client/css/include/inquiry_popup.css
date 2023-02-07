@@ -1,4 +1,21 @@
 .product-inquiry-popup{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display:none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index:600;
+  position:fixed;
+}
+
+.product-inquiry-window{
   width:793px;
   height:630px;
   padding:32px;
@@ -129,6 +146,12 @@ input[type="checkbox"]:checked + .inquiry-popupForm__ico-check {
   background-position: -406px -10px;
 }
 
+input[type="checkbox"]:focus-visible + .inquiry-popupForm__ico-check {
+  box-sizing:content-box;
+  border:2px solid var(--black);
+  border-radius:50%;
+}
+
 .inquiry-popupForm__label-text{
   font-size:var(--text-xs);
   line-height:19.2px;
@@ -167,5 +190,11 @@ input[type="checkbox"]:checked + .inquiry-popupForm__ico-check {
 .inquiry-popupForm__button-enroll{
   border:none;
   background:var(--gray-100);
+  color:var(--white);
+}
+
+.inquiry-popupForm__button-enroll:focus,
+.inquiry-popupForm__button-enroll:hover{
+  background:var(--primary);
   color:var(--white);
 }
