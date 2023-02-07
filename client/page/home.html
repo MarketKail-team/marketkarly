@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/include/cart_modal.js" type="module" defer></script>
+  <script src="../js/include/home_main.js" type="module" defer></script>
   <title>Karly : 마켓 칼리</title>
 </head>
 
@@ -40,8 +41,8 @@
           </svg>
         </h1>
         <div class="switch">
-          <h2 class="switch--market"><a href="/">마켓칼리</a></h2>
-          <h2 class="switch--beauty"><a href="/">뷰티칼리</a></h2>
+          <h2 class="switch--market"><a href="http://localhost:5500/page/home.html">마켓칼리</a></h2>
+          <h2 class="switch--beauty"><a href="http://localhost:5500/page/home.html">뷰티칼리</a></h2>
         </div>
       </div>
       <form action="/" method="GET" class="search-form">
@@ -227,24 +228,22 @@
         <div class="swiper mySwiper swiper-recommend">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
-                </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
+              <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                <figure>
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                  <figcaption id="product1" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
               <button type="button" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption id="product2" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -253,11 +252,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption id="product3" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -265,11 +263,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent ">[프로쉬] 베이비 세탁세제
+                <figcaption id="product4" class="product__baby_laundry_detergent ">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -277,11 +274,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption id="product5" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -289,11 +285,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption id="product6" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -302,11 +297,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption id="product7" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -314,11 +308,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption id="product8" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -326,11 +319,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption id="product9" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -338,11 +330,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption id="product10" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -351,11 +342,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption id="product11" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -363,11 +353,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption id="product12" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -375,11 +364,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption id="product13" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -387,11 +375,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption id="product14" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -400,11 +387,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption id="product15" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -412,11 +398,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption id="product16" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -444,7 +429,7 @@
     <!-- WEEKLY-BANNER : include/main.html -->
     <section class="main__weeklybanner">
       <h2 class="a11yHidden">이 주의 광고</h2>
-      <img src="../assets/main/purple_banner.jpg" alt="쿠폰과 적립 혜택 이벤트" />
+      <a href="#"><img src="../assets/main/purple_banner.jpg" alt="더 풍성해진 10월의 퍼플 위크 적립률 UP + 3종 쿠폰팩" /></a>
     </section>
     <!-- BEST-PRICE : include/main.html -->
     <section class="main__best-price">
@@ -455,11 +440,10 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -467,11 +451,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -480,11 +463,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -492,11 +474,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -504,11 +485,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -516,11 +496,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -529,11 +508,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -541,11 +519,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -553,11 +530,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -565,11 +541,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -578,11 +553,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -590,11 +564,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -602,11 +575,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt=""
-                    aria-labelledby="product__tangtang_jjolmyeon" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
                 </a>
-                <figcaption id="product__tangtang_jjolmyeon" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                 </figcaption>
               </figure>
               <p>4,980원</p>
@@ -614,11 +586,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt=""
-                    aria-labelledby="product__jyoleudi_sun_cushion" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
                 </a>
-                <figcaption id="product__jyoleudi_sun_cushion" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
                   선쿠션
                 </figcaption>
               </figure>
@@ -627,11 +598,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt=""
-                    aria-labelledby="product__milkyqueen_brown_rice" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
                 </a>
-                <figcaption id="product__milkyqueen_brown_rice" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
                 </figcaption>
               </figure>
               <p>25,000원</p>
@@ -639,11 +609,10 @@
             </div>
             <div class="swiper-slide">
               <figure>
-                <a class="swiper-image" href="/">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt=""
-                    aria-labelledby="product__baby_laundry_detergent" />
+                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
                 </a>
-                <figcaption id="product__baby_laundry_detergent" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
                 </figcaption>
               </figure>
               <p class="price--sale">18,900원</p>
@@ -675,17 +644,17 @@
     <div class="swiper__container aside__recent">
       <p class="swiper__container--title">최근 본 상품</p>
       <div class="swiper mySwiper aside-swiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper view-current">
           <div class="swiper-slide"><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="풀무원 탱탱쫄면" /></div>
           <div class="swiper-slide"><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="프로쉬 아기세탁세제" />
           </div>
           <div class="swiper-slide"><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="죠르디 선쿠션" /></div>
-          <div class="swiper-slide"><img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div>
+          <!-- <div class="swiper-slide"><img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div>
           <div class="swiper-slide"><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="풀무원 탱탱쫄면" /></div>
           <div class="swiper-slide"><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="프로쉬 아기세탁세제" />
           </div>
           <div class="swiper-slide"><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="죠르디 선쿠션" /></div>
-          <div class="swiper-slide"><img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div>
+          <div class="swiper-slide"><img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div> -->
         </div>
       </div>
       <div class="aside-swiper-button-next"></div>
