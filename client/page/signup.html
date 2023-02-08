@@ -22,6 +22,7 @@
   <script src="../js/include/navigation.js" type="module"></script>
   <script src="../js/main.js" type="module"></script>
   <script src="../js/include/signup.js" type="module"></script>
+  <script src="../js/include/server.js" type="module"></script>
 </head>
 
 <body>
@@ -178,7 +179,8 @@
     <!-- SIGN-UP : include/signup.html  -->
     <section class="signup">
       <h2 class="signup__title">회원가입</h2>
-      <form class="signup__form" method="POST" action="#">
+      <form class="signup__form" id="signupForm" name="signupForm" method="POST" target="blankifrSignup"
+        action="http://localhost:3001/sign-up">
         <fieldset>
           <legend>신규 회원가입 폼</legend>
           <p class="signup-form__noti">필수입력사항</p>
@@ -321,6 +323,7 @@
           <button type="submit" class="signup-form__button--submit">가입하기</button>
         </fieldset>
       </form>
+      <iframe id="if" name="blankifrSignup" style="display:none;"></iframe>
     </section>
   </main>
   <!-- FOOTER : include/footer.html -->

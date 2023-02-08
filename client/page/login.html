@@ -21,6 +21,8 @@
   <script src="../js/include/header.js" type="module"></script>
   <script src="../js/include/navigation.js" type="module"></script>
   <script src="../js/main.js" type="module"></script>
+  <script src="../js/include/login.js" type="module"></script>
+  <script src="../js/include/server.js" type="module"></script>
 </head>
 
 <body>
@@ -177,7 +179,8 @@
     <!-- LOGIN : include/login.html -->
     <section class="login">
       <h2 class="login__title">로그인</h2>
-      <form class="login__form" method="POST" action="#">
+      <form id="loginForm" class="login__form" method="POST" target="blankifrLoginup"
+        action="http://localhost:3001/sign-in">
         <fieldset>
           <legend>회원 로그인 폼</legend>
           <ul class="login-form__list">
@@ -199,6 +202,7 @@
           <a href="https://marketkarly-team.github.io/marketkarly-client/client/page/signup.html" class="login-form__button--signup">회원가입</a>
         </fieldset>
       </form>
+      <iframe id="if" name="blankifrLoginup" style="display:none;"></iframe>
     </section>
   </main>
   <!-- FOOTER : include/footer.html -->

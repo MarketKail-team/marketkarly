@@ -3,7 +3,6 @@ import {
   getNodes,
   visibleElement,
   invisibleElement,
-  karlyFetch
 } from '../../lib/index.js';
 
 // 이용약관동의 전체 동의 체크 기능
@@ -67,4 +66,3 @@ userEmail.addEventListener('change', checkEmail);
 //   { id: 'ryung' },
 //   { name: '성령' }
 // );
-

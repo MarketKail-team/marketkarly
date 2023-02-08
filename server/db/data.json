@@ -81,26 +81,6 @@
       "stock": 13
     }
   ],
-  "users": [
-    {
-      "id": "faker",
-      "password": "t10987",
-      "name": "이상혁",
-      "email": "faker@t1.com",
-      "phoneNumber": "01012345678",
-      "address": "서울 강남구 선릉로 627",
-      "gender": "male",
-      "birthDate": "19960507"
-    },
-    {
-      "id": "chovy",
-      "password": "geng1234",
-      "name": "정지훈",
-      "email": "chovy@geng.com",
-      "phoneNumber": "01098765432",
-      "address": "서울 강남구 봉은사로49길 38",
-      "gender": "male",
-      "birthDate": "20010303"
-    }
-  ]
+  "sign-up": [],
+  "sign-in": []
 }
