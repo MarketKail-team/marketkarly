@@ -1,16 +1,18 @@
-import { getNode, addClass, removeClass } from '../../lib/index.js';
+import { getNode } from '../../lib/index.js';
 
 const hiddenInfo = getNode('.hidden_info');
 const questinMark = getNode('.question__mark');
 
-
-//유틸함수 왜 안되는지..?
-
-questinMark.addEventListener('mouseover', () => {
+function showHiddenInfo() {
   hiddenInfo.classList.add('is-active');
-});
-questinMark.addEventListener('mouseleave', () => {
+}
+function hideHiddenInfo() {
   hiddenInfo.classList.remove('is-active');
-});
+}
+
+
+questinMark.addEventListener('mouseover', showHiddenInfo);
+questinMark.addEventListener('mouseleave', hideHiddenInfo);
+questinMark.addEventListener('click', showHiddenInfo);
 
 

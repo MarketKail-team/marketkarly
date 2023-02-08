@@ -55,12 +55,12 @@
   padding: 1px 6px;
 }
 
-.product-filter__button--reset {
-  width: 40px;
-  height: var(--text-base);
-  font-size: 10px;
-  color: gray-500;
-  cursor: pointer;
+.product-filter__button--reset{
+  width:40px;
+  height:var(--text-base);
+  font-size:10px;
+  color:var(--gray-500);
+  cursor:pointer;
 }
 
 .product-filter__key-name {
@@ -82,19 +82,19 @@
   border-bottom: 1px solid var(--gray-100);
 }
 
-.product-filter__icon-close {
-  display: block;
-  background: url('../../assets/sprites.png') no-repeat -412px -190px;
-  width: 6px;
-  height: 10px;
+.product-filter__icon-close{
+  display:block;
+	background: url('../../assets/sprites.png') no-repeat -412px -190px;
+	width: 6px;
+	height: 10px;
   flex-shrink: 0;
-  transform: rotate(-90deg);
+  transform:rotate(-90deg);
   text-indent: 6px;
   overflow: hidden;
 }
 
-.product-filter__icon-close.product-filter__icon-open {
-  transform: rotate(90deg);
+.product-filter__icon-close.product-filter__icon-open{
+  transform:rotate(90deg);
 }
 
 .product-filter__label-check {

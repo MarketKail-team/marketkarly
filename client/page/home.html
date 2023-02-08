@@ -5,23 +5,38 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홈 - Karly : 마켓 칼리</title>
+  <link rel="canonical" href="https://marketkarly-team.github.io/marketkarly-client/client/page/home.html" />
+  <!-- 페이지 url 적용 -->
+  <meta name="description" content="Love Food, Love Life. 마켓칼리! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!">
+  <meta name="keywords" content="새벽배송, 조리음식, 다이어트, 식단, 요리, 밀키트">
+  <meta name="author" content="jaesukpark77, sryung1225, chaewon0128, jeong-dev, realldk">
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Karly : 마켓 칼리"> <!-- 공통 제목 -->
+  <meta property="og:title" content="홈 - Karly : 마켓 칼리"> <!-- 페이지 제목 -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://marketkarly-team.github.io/marketkarly-client/client/assets/Karly.png" />
+  <!-- 대표 썸네일 이미지 -->
+  <meta property="og:url" content="https://marketkarly-team.github.io/marketkarly-client/client/page/home.html" />
+  <!-- 페이지 url 적용 -->
+  <!-- Style sheet & Script -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../js/include/cart_modal.js" type="module" defer></script>
-  <script src="../js/include/home_main.js" type="module" defer></script>
-  <script src="../js/include/header.js" type="module" defer></script>
-  <script src="../js/include/navigation.js" type="module" defer></script>
+  <script src="../js/include/header.js" type="module"></script>
+  <script src="../js/include/navigation.js" type="module"></script>
+  <script src="../js/main.js" type="module"></script>
+  <script src="../js/include/cart_modal.js" type="module"></script>
+  <script src="../js/include/swiper-main.js" type="module"></script>
   <script src="../js/include/swiper_main_banner.js" type="module"></script>
-  <script src="../js/main.js" type="module" defer></script>
-  <title>Karly : 마켓 칼리</title>
 </head>
 
 <body>
   <!-- TOP-BANNER : include/top_banner&popup.html -->
   <div class="home__top-banner">
     <div class="home__top-banner-wrap">
-      <a href="/">지금 가입하고 인기 상품 <span>100원</span>에 받아가세요!</a>
+      <a href="https://marketkarly-team.github.io/marketkarly-client/client/page/signup.html">지금 가입하고 인기 상품
+        <span>100원</span>에 받아가세요!</a>
       <button type="button" class="home__top-banner--btn-close" aria-label="배너 닫기"></button>
     </div>
   </div>
@@ -45,8 +60,10 @@
           </svg>
         </h1>
         <div class="switch">
-          <h2 class="switch--market"><a href="http://localhost:5500/page/home.html">마켓칼리</a></h2>
-          <h2 class="switch--beauty"><a href="http://localhost:5500/page/home.html">뷰티칼리</a></h2>
+          <h2 class="switch--market"><a
+              href="https://marketkarly-team.github.io/marketkarly-client/client/page/home.html">마켓칼리</a></h2>
+          <h2 class="switch--beauty"><a
+              href="https://marketkarly-team.github.io/marketkarly-client/client/page/home.html">뷰티칼리</a></h2>
         </div>
       </div>
       <form action="/" method="GET" class="search-form">
@@ -65,23 +82,26 @@
         </fieldset>
       </form>
       <ul class="header__menu">
-        <li class="header__menu--item"><a href="/">회원가입</a></li>
-        <li class="header__menu--item"><a href="/">로그인</a></li>
-        <li class="header__menu--item help-center"><a href="/">고객센터</a>
+        <li class="header__menu--item"><a
+            href="https://marketkarly-team.github.io/marketkarly-client/client/page/signup.html">회원가입</a></li>
+        <li class="header__menu--item"><a
+            href="https://marketkarly-team.github.io/marketkarly-client/client/page/login.html">로그인</a></li>
+        <li class="header__menu--item help-center"><a href="#">고객센터</a>
           <ul class="header__submenu">
-            <li><a href="/">공지사항</a></li>
-            <li><a href="/">자주하는 질문</a></li>
-            <li><a href="/">1:1 문의</a></li>
-            <li><a href="/">대량주문 문의</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">대량주문 문의</a></li>
           </ul>
         </li>
       </ul>
       <ul class="header__list__wrapper">
-        <li><a class="list__shipping-form" href="/" aria-label="배송지"></a>
+        <li><a class="list__shipping-form" href="#" aria-label="배송지"></a>
           <span class="triangle"></span>
           <div class="shipping-form--hidden"><em>배송지를 등록하고</em> 구매 가능한 상품을 확인 하세요!
             <div class="shipping--button-wrapper">
-              <a class="shipping-form__button--login" href="">로그인</a>
+              <a class="shipping-form__button--login"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/login.html">로그인</a>
               <button class="shipping-form__button--search"> <svg width="20" height="20" viewBox="8 0 36 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_42_122)">
@@ -100,15 +120,17 @@
             </div>
           </div>
         </li>
-        <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
-        <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        <li><a class="list__favotite-product" href="#" aria-label="찜한 상품"></a></li>
+        <li><a class="list__shopping-cart"
+            href="https://marketkarly-team.github.io/marketkarly-client/client/page/cart.html" aria-label="장바구니"></a>
+        </li>
       </ul>
     </div>
   </header>
   <!-- NAVIGATION : include/navigation.html -->
   <nav class="nav">
     <h2 class="a11yHidden">메인 메뉴</h2>
-    <ul class="nav__list" role="tablist">
+    <ul class="nav__list">
       <li class="nav__item--category">
         <button class="category__btn" aria-label="카테고리 열기">
           <div class="category__burger">
@@ -119,34 +141,35 @@
           카테고리
         </button>
         <ul class="category__map">
-          <li><a href="/" class="category__link--gift">선물하기</a></li>
-          <li><a href="/" class="category__link--vege">채소</a></li>
-          <li><a href="/" class="category__link--fruit">과일・견과・쌀</a></li>
-          <li><a href="/" class="category__link--sea">수산・해산・건어물</a></li>
-          <li><a href="/" class="category__link--meet">정육・계란</a></li>
-          <li><a href="/" class="category__link--dish">국・반찬・메인요리</a></li>
-          <li><a href="/" class="category__link--salad">샐러드・간편식</a></li>
-          <li><a href="/" class="category__link--salt">면・양념・오일</a></li>
-          <li><a href="/" class="category__link--drink">생수・음료・우유・커피</a></li>
-          <li><a href="/" class="category__link--snack">간식・과자・떡</a></li>
-          <li><a href="/" class="category__link--bread">베이커리・치즈・델리</a></li>
-          <li><a href="/" class="category__link--health">건강식품</a></li>
-          <li><a href="/" class="category__link--wine">와인</a></li>
-          <li><a href="/" class="category__link--liq">전통주</a></li>
-          <li><a href="/" class="category__link--liv">생활용품・리빙・캠핑</a></li>
-          <li><a href="/" class="category__link--cos">스킨케어・메이크업</a></li>
-          <li><a href="/" class="category__link--hair">헤어・바디・구강</a></li>
-          <li><a href="/" class="category__link--kit">주방용품</a></li>
-          <li><a href="/" class="category__link--elec">가전제품</a></li>
-          <li><a href="/" class="category__link--pet">반려동물</a></li>
-          <li><a href="/" class="category__link--baby">베이비・키즈・완구</a></li>
-          <li><a href="/" class="category__link--tour">여행・티켓</a></li>
+          <li><a href="#" class="category__link--gift">선물하기</a></li>
+          <li><a href="#" class="category__link--vege">채소</a></li>
+          <li><a href="#" class="category__link--fruit">과일・견과・쌀</a></li>
+          <li><a href="#" class="category__link--sea">수산・해산・건어물</a></li>
+          <li><a href="#" class="category__link--meet">정육・계란</a></li>
+          <li><a href="#" class="category__link--dish">국・반찬・메인요리</a></li>
+          <li><a href="#" class="category__link--salad">샐러드・간편식</a></li>
+          <li><a href="#" class="category__link--salt">면・양념・오일</a></li>
+          <li><a href="#" class="category__link--drink">생수・음료・우유・커피</a></li>
+          <li><a href="#" class="category__link--snack">간식・과자・떡</a></li>
+          <li><a href="#" class="category__link--bread">베이커리・치즈・델리</a></li>
+          <li><a href="#" class="category__link--health">건강식품</a></li>
+          <li><a href="#" class="category__link--wine">와인</a></li>
+          <li><a href="#" class="category__link--liq">전통주</a></li>
+          <li><a href="#" class="category__link--liv">생활용품・리빙・캠핑</a></li>
+          <li><a href="#" class="category__link--cos">스킨케어・메이크업</a></li>
+          <li><a href="#" class="category__link--hair">헤어・바디・구강</a></li>
+          <li><a href="#" class="category__link--kit">주방용품</a></li>
+          <li><a href="#" class="category__link--elec">가전제품</a></li>
+          <li><a href="#" class="category__link--pet">반려동물</a></li>
+          <li><a href="#" class="category__link--baby">베이비・키즈・완구</a></li>
+          <li><a href="#" class="category__link--tour">여행・티켓</a></li>
         </ul>
       </li>
-      <li class="nav__item"><a href="/" class="nav__link">신상품</a></li>
-      <li class="nav__item"><a href="/" class="nav__link">베스트</a></li>
-      <li class="nav__item"><a href="/" class="nav__link">알뜰쇼핑</a></li>
-      <li class="nav__item"><a href="/" class="nav__link">특가/혜택</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">신상품</a></li>
+      <li class="nav__item"><a href="https://marketkarly-team.github.io/marketkarly-client/client/page/best.html"
+          class="nav__link">베스트</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">알뜰쇼핑</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">특가/혜택</a></li>
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
       </li>
@@ -154,15 +177,17 @@
         <form action="/" method="GET" class="nav__search-form">
           <fieldset>
             <legend>검색</legend>
-            <label for="search" class="a11yHidden search-form__label">검색어</label>
-            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
-            <button class="search-form__button" type="submit"></button>
+            <label for="nav__search" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="nav__search" name="search" placeholder="검색어를 입력해주세요" />
+            <button class="search-form__button" aria-label="검색 버튼" type="submit"></button>
           </fieldset>
         </form>
         <ul class="nav__my-menu">
-          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
-          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
-          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+          <li><a class="list__shipping-form" href="#" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="#" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart"
+              href="https://marketkarly-team.github.io/marketkarly-client/client/page/cart.html" aria-label="장바구니"></a>
+          </li>
         </ul>
       </li>
     </ul>
@@ -170,99 +195,113 @@
   <!-- MAIN-BANNER : include/main-banner.html -->
   <section class="main-banner">
     <h2 class="a11yHidden">메인 배너</h2>
-    <button type="button" class="main-banner__button-next"></button>
+    <button type="button" aria-label="다음 슬라이드 버튼" class="main-banner__button-next"></button>
     <div class="swiper main-banner-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner1.jpg"
+            <img width="1920" height="370" src="../assets/banner/banner1.webp"
               alt="뷰티컬리에서 산타마리아노벨라 특별EVENT 진행 중. 10% 할인 + 추가 10% 쿠폰 + 프레그런스 키트 증정. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner2.jpg" alt="불고기부터 인기 반찬까지 최대 20% 할인하는 오늘의 요리 카테고리. 1월 26일부터 2월 2일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner2.webp"
+              alt="불고기부터 인기 반찬까지 최대 20% 할인하는 오늘의 요리 카테고리. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner3.jpg"
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner3.webp"
               alt="호텔 스파 이용권부터 프레그런스까지 최대 63% 할인하는 애프터케어 카테고리. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner4.jpg" alt="KF365 아보카도 16% 할인한 가격 2,480원으로 최저가 도전. 1월 26일부터 2월 2일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner4.webp"
+              alt="KF365 아보카도 16% 할인한 가격 2,480원으로 최저가 도전. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner5.jpg" alt="산청 고종시부터 월하시까지 다채로운 곶감의 세계. 희소가치 프로젝트 상품 맛보기" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner5.webp"
+              alt="산청 고종시부터 월하시까지 다채로운 곶감의 세계. 희소가치 프로젝트 상품 맛보기" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner6.jpg" alt="오곡밥부터 나물까지 최대 20%할인하는 정월대보름 건강 밥상. 1월 25일부터 2월4일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner6.webp"
+              alt="오곡밥부터 나물까지 최대 20%할인하는 정월대보름 건강 밥상. 1월 25일부터 2월4일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner7.jpg" alt="모노키친 롱롱 돈까스 주말에만 20% 할인. 컬리 주말마트. 1월 27일부터 29일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner7.webp"
+              alt="모노키친 롱롱 돈까스 주말에만 20% 할인. 컬리 주말마트. 1월 27일부터 29일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner8.jpg"
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner8.webp"
               alt="명절 후 식단 관리. 클렌즈주스부터 닭가슴살, 샐러드까지 필수템 최대 45% 할인. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner9.jpg" alt="1월 카드 혜택. 1월 1일부터 31일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner9.webp"
+              alt="1월 카드 혜택. 1월 1일부터 31일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner10.jpg" alt="금주의 특가 파스타. 치즈룸부터 최현석의 쵸이닷까지 최대 25% 할인. 1월 26일부터 2월 2일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner10.webp"
+              alt="금주의 특가 파스타. 치즈룸부터 최현석의 쵸이닷까지 최대 25% 할인. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner11.jpg" alt="선물세트 정육, 수산부터 건강식품까지 최대 60% 할인" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner11.webp"
+              alt="선물세트 정육, 수산부터 건강식품까지 최대 60% 할인" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner12.jpg" alt="초대한 친구 가입시마다 친구도 나도 5천원씩 적립" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner12.webp"
+              alt="초대한 친구 가입시마다 친구도 나도 5천원씩 적립" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner13.jpg" alt="SNS에 컬리와 함께 한 일상 올리면 매일 적립금 5천원 드려요" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner13.webp"
+              alt="SNS에 컬리와 함께 한 일상 올리면 매일 적립금 5천원 드려요" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner14.jpg" alt="컬리 포차 OPEN. 간편 안주 & 전통주 최대 25% 할인. 1월 26일부터 2월 2일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner14.webp"
+              alt="컬리 포차 OPEN. 간편 안주 & 전통주 최대 25% 할인. 1월 26일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner15.jpg" alt="컬리 빵집. 도제 식빵부터 구움과자까지 최대 20% 할인. 1월 25일부터 2월 2일까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner15.webp"
+              alt="컬리 빵집. 도제 식빵부터 구움과자까지 최대 20% 할인. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner16.jpg" alt="더모코스메틱 인기 브랜드 최대 45% 할인과 선물까지" />
+            <img loading="lazy" width="1920" height="370" src="../assets/banner/banner16.webp"
+              alt="더모코스메틱 인기 브랜드 최대 45% 할인과 선물까지" />
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="../assets/banner/banner17.jpg" alt="추천 한 끼. 도시락부터 마라탕면까지 최대 25% 할인. 1월 25일부터 2월 2일까지" />
+            <img loading="lazy" width="1900" height="370" src="../assets/banner/banner17.webp"
+              alt="추천 한 끼. 도시락부터 마라탕면까지 최대 25% 할인. 1월 25일부터 2월 2일까지" />
           </a>
         </div>
       </div>
-      <button type="button" class="main-banner__button-prev"></button>
+      <button type="button" aria-label="이전 슬라이드 버튼" class="main-banner__button-prev"></button>
       <div class="main-banner__pagination"></div>
     </div>
   </section>
@@ -273,184 +312,226 @@
       <p class="main__recommend-product__title">이 상품 어때요?</p>
       <!-- Swiper -->
       <div class="swiper-container">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper swiper-recommend">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
                 <figure>
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
+                  <img width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp" alt="" />
                   <figcaption id="product1" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
                   </figcaption>
                 </figure>
                 <p>4,980원</p>
               </a>
-              <button type="button" class="modal--cart-icon"></button>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption id="product2" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="" />
+                  <figcaption id="product2" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption id="product3" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp" alt="" />
+                  <figcaption id="product3" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption id="product4" class="product__baby_laundry_detergent ">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp" alt="" />
+                  <figcaption id="product4" class="product__baby_laundry_detergent ">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption id="product5" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption id="product5" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption id="product6" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption id="product6" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption id="product7" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption id="product7" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption id="product8" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption id="product8" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption id="product9" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption id="product9" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption id="product10" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption id="product10" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption id="product11" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption id="product11" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption id="product12" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption id="product12" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption id="product13" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption id="product13" class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption id="product14" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption id="product14" class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption id="product15" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption id="product15" class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption id="product16" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption id="product16" class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
           </div>
         </div>
-        <div class="swiper-button-next" aria-label="다음 상품 보기 버튼">
+        <div class="swiper-button-next swiper-recommend-button-next">
           <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.284995 17.699C0.455221 17.8731 0.683135 17.9792 0.925979 17.9972C1.16882 18.0152 1.40991 17.9441 1.604 17.797L1.69899 17.715L9.69899 9.89799C9.87118 9.72976 9.97689 9.50506 9.99673 9.26515C10.0166 9.02524 9.9492 8.78623 9.80699 8.59199L9.72699 8.49599L2.004 0.313994C1.82947 0.128893 1.59095 0.0172706 1.33701 0.00185431C1.08307 -0.013562 0.832807 0.0683879 0.637168 0.231017C0.441529 0.393645 0.315228 0.624725 0.283984 0.877205C0.25274 1.12969 0.318903 1.38458 0.468997 1.58999L0.548995 1.686L7.598 9.15499L0.300994 16.285C0.126863 16.4552 0.0208302 16.6831 0.00278759 16.926C-0.015255 17.1688 0.055932 17.4099 0.202994 17.604L0.284995 17.699Z"
               fill="#333333" />
           </svg>
         </div>
-        <div class="swiper-button-prev" aria-label="이전 상품 보기 버튼">
+        <div class="swiper-button-prev swiper-recommend-button-prev">
           <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.71504 17.699C9.54482 17.8731 9.3169 17.9792 9.07406 17.9972C8.83122 18.0153 8.59013 17.9441 8.39604 17.797L8.30104 17.715L0.301043 9.89801C0.12886 9.72978 0.0231428 9.50507 0.00330353 9.26517C-0.0165358 9.02526 0.0508347 8.78624 0.193043 8.59201L0.273043 8.49601L7.99604 0.314009C8.17057 0.128908 8.40909 0.0172859 8.66303 0.00186956C8.91696 -0.0135467 9.16723 0.0684032 9.36287 0.231032C9.55851 0.39366 9.68481 0.62474 9.71605 0.877221C9.7473 1.1297 9.68114 1.3846 9.53104 1.59001L9.45104 1.68601L2.40204 9.15501L9.69904 16.285C9.87317 16.4552 9.97921 16.6831 9.99725 16.926C10.0153 17.1688 9.94411 17.4099 9.79704 17.604L9.71504 17.699Z"
@@ -463,7 +544,8 @@
     <!-- WEEKLY-BANNER : include/main.html -->
     <section class="main__weeklybanner">
       <h2 class="a11yHidden">이 주의 광고</h2>
-      <a href="#"><img src="../assets/main/purple_banner.jpg" alt="더 풍성해진 10월의 퍼플 위크 적립률 UP + 3종 쿠폰팩" /></a>
+      <a href="#"><img width="1050" height="139" src="../assets/main/purple_banner.webp"
+          alt="더 풍성해진 10월의 퍼플 위크 적립률 UP + 3종 쿠폰팩" /></a>
     </section>
     <!-- BEST-PRICE : include/main.html -->
     <section class="main__best-price">
@@ -473,184 +555,216 @@
         <div class="swiper mySwiper swiper-best-price">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="" />
-                </a>
-                <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
-                </figcaption>
-              </figure>
-              <p>4,980원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/tangtang_jjolmyeon.webp"
+                    alt="" />
+                  <figcaption class="product__tangtang_jjolmyeon">[풀무원] 탱탱쫄면 (4개입)
+                  </figcaption>
+                </figure>
+                <p>4,980원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="" />
-                </a>
-                <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
-                  선쿠션
-                </figcaption>
-              </figure>
-              <p>32,500원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/jyoleudi_sun_cushion.webp"
+                    alt="" />
+                  <figcaption class="product__jyoleudi_sun_cushion"> [온더바디] 죠르디 시카 자석
+                    선쿠션
+                  </figcaption>
+                </figure>
+                <p>32,500원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="" />
-                </a>
-                <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
-                </figcaption>
-              </figure>
-              <p>25,000원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/milkyqueen_brown_rice.webp"
+                    alt="" />
+                  <figcaption class="product__milkyqueen_brown_rice">유기농 밀키퀸 현미 4kg
+                  </figcaption>
+                </figure>
+                <p>25,000원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
             <div class="swiper-slide">
-              <figure>
-                <a class="swiper-image" href="http://localhost:5500/page/product_info.html">
-                  <img src="../assets/product_list/baby_laundry_detergent.jpg" alt="" />
-                </a>
-                <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
-                </figcaption>
-              </figure>
-              <p class="price--sale">18,900원</p>
-              <button type="button" class="modal--cart-icon"></button>
+              <a class="swiper-image"
+                href="https://marketkarly-team.github.io/marketkarly-client/client/page/product_info.html">
+                <figure>
+                  <img loading="lazy" width="249" height="320" src="../assets/product_list/baby_laundry_detergent.webp"
+                    alt="" />
+                  <figcaption class="product__baby_laundry_detergent">[프로쉬] 베이비 세탁세제
+                  </figcaption>
+                </figure>
+                <p class="price--sale">18,900원</p>
+              </a>
+              <button type="button" aria-label="장바구니 추가 버튼" class="modal--cart-icon"></button>
             </div>
           </div>
         </div>
@@ -679,16 +793,16 @@
       <p class="swiper__container--title">최근 본 상품</p>
       <div class="swiper mySwiper aside-swiper">
         <div class="swiper-wrapper view-current">
-          <div class="swiper-slide"><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="풀무원 탱탱쫄면" /></div>
-          <div class="swiper-slide"><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="프로쉬 아기세탁세제" />
+          <div class="swiper-slide"><img src="../assets/product_list/tangtang_jjolmyeon.webp" alt="풀무원 탱탱쫄면" /></div>
+          <div class="swiper-slide"><img src="../assets/product_list/baby_laundry_detergent.webp" alt="프로쉬 아기세탁세제" />
           </div>
-          <div class="swiper-slide"><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="죠르디 선쿠션" /></div>
-          <!-- <div class="swiper-slide"><img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div>
-          <div class="swiper-slide"><img src="../assets/product_list/tangtang_jjolmyeon.jpg" alt="풀무원 탱탱쫄면" /></div>
-          <div class="swiper-slide"><img src="../assets/product_list/baby_laundry_detergent.jpg" alt="프로쉬 아기세탁세제" />
+          <div class="swiper-slide"><img src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="죠르디 선쿠션" /></div>
+          <!-- <div class="swiper-slide"><img loading="lazy" src="../assets/product_list/milkyqueen_brown_rice.webp" alt="밀키퀸 현미" /></div>
+          <div class="swiper-slide"><img loading="lazy" src="../assets/product_list/tangtang_jjolmyeon.webp" alt="풀무원 탱탱쫄면" /></div>
+          <div class="swiper-slide"><img loading="lazy" src="../assets/product_list/baby_laundry_detergent.webp" alt="프로쉬 아기세탁세제" />
           </div>
-          <div class="swiper-slide"><img src="../assets/product_list/jyoleudi_sun_cushion.jpg" alt="죠르디 선쿠션" /></div>
-          <div class="swiper-slide"><img src="../assets/product_list/milkyqueen_brown_rice.jpg" alt="밀키퀸 현미" /></div> -->
+          <div class="swiper-slide"><img loading="lazy" src="../assets/product_list/jyoleudi_sun_cushion.webp" alt="죠르디 선쿠션" /></div>
+          <div class="swiper-slide"><img loading="lazy" src="../assets/product_list/milkyqueen_brown_rice.webp" alt="밀키퀸 현미" /></div> -->
         </div>
       </div>
       <div class="aside-swiper-button-next"></div>
@@ -708,7 +822,7 @@
               <span class="customer-center__contact-info">월~토요일 오전 7시 - 오후 6시</span>
             </li>
             <li class="customer-center__item">
-              <a href="/" class="customer-center__item-title">카카오톡 문의</a>
+              <a href="#" class="customer-center__item-title">카카오톡 문의</a>
               <div class="customer-center__item-info">
                 <p>
                   <span>월~토요일</span>
@@ -721,14 +835,14 @@
               </div>
             </li>
             <li class="customer-center__item">
-              <a href="/" class="customer-center__item-title">1:1 문의</a>
+              <a href="#" class="customer-center__item-title">1:1 문의</a>
               <div class="customer-center__item-info">
                 <p>365일</p>
                 <p>고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
               </div>
             </li>
             <li class="customer-center__item">
-              <a href="/" class="customer-center__item-title">대량주문 문의</a>
+              <a href="#" class="customer-center__item-title">대량주문 문의</a>
               <div class="customer-center__item-info">
                 <p>
                   <span>월~금요일</span>
@@ -795,27 +909,32 @@
           <ul class="about-karly__social-media">
             <li>
               <a href="https://www.instagram.com/marketkurly/" target="_blank">
-                <img src="../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기">
+                <img loading="lazy" width="30" height="30" src="../assets/icons/Icon/icon-Instagram.png"
+                  alt="마켓칼리 인스타그램 바로가기">
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/Marketkurly/" target="_blank">
-                <img src="../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기">
+                <img loading="lazy" width="30" height="30" src="../assets/icons/Icon/icon-FaceBook.png"
+                  alt="마켓칼리 페이스북 바로가기">
               </a>
             </li>
             <li>
               <a href="https://blog.naver.com/marketkurly" target="_blank">
-                <img src="../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기">
+                <img loading="lazy" width="30" height="30" src="../assets/icons/Icon/icon-Blog.png"
+                  alt="마켓칼리 네이버 블로그 바로가기">
               </a>
             </li>
             <li>
               <a href="https://m.post.naver.com/marketkurly" target="_blank">
-                <img src="../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기">
+                <img loading="lazy" width="30" height="30" src="../assets/icons/Icon/icon-NaverPost.png"
+                  alt="마켓칼리 네이버 포스트 바로가기">
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" target="_blank">
-                <img src="../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기">
+                <img loading="lazy" width="30" height="30" src="../assets/icons/Icon/icon-Youtube.png"
+                  alt="마켓칼리 유튜브 바로가기">
               </a>
             </li>
           </ul>
@@ -823,35 +942,30 @@
       </div>
       <!-- .footer-inner-top -->
       <div class="footer-inner-bottom">
-        <button>
-          <img src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기">
-          <p>
-            [인증범위] 컬리 쇼핑몰 서비스 개발·운영
-            <br>(심사받지 않은 물리적 인프라 제외)
-            <br>[유효기간]2022.01.19~2025.01.18
-          </p>
+        <button type="button">
+          <img loading="lazy" width="34" height="34" src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기">
+          [인증범위] 컬리 쇼핑몰 서비스 개발·운영
+          <br>(심사받지 않은 물리적 인프라 제외)
+          <br>[유효기간]2022.01.19~2025.01.18
         </button>
-        <button>
-          <img src="../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기">
-          <p>
-            개인정보보호 우수 웹 사이트·
-            <br>개인정보처리시스템 인증 (ePRIVACY PLUS)
-          </p>
+        <button type="button">
+          <img loading="lazy" width="34" height="34" src="../assets/icons/Icon/logo_privacy.png"
+            alt="ePRIVACY PLUS 인증서 보기">
+          개인정보보호 우수 웹 사이트·
+          <br>개인정보처리시스템 인증 (ePRIVACY PLUS)
         </button>
-        <button>
-          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기">
-          <p>
-            토스페이먼츠 구매안전(에스크로)
-            <br>서비스를 이용하실 수 있습니다.
-          </p>
+        <button type="button">
+          <img loading="lazy" width="34" height="34" src="../assets/icons/Icon/logo_tosspayments.png"
+            alt="토스 페이먼츠 정보 보기">
+          토스페이먼츠 구매안전(에스크로)
+          <br>서비스를 이용하실 수 있습니다.
         </button>
-        <button>
-          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기">
-          <p>
-            고객님이 현금으로 결제한 금액에 대해
-            <br>우리은행과 채무지급보증 계약을 체결하여
-            <br>안전거래를 보장하고 있습니다.
-          </p>
+        <button type="button">
+          <img loading="lazy" width="34" height="34" src="../assets/icons/Icon/logo_wooriBank.png"
+            alt="우리은행 채무지급보증서 보기">
+          고객님이 현금으로 결제한 금액에 대해
+          <br>우리은행과 채무지급보증 계약을 체결하여
+          <br>안전거래를 보장하고 있습니다.
         </button>
       </div>
     </div>
@@ -895,9 +1009,6 @@
       <button class="modal__cart--in" type="submit">장바구니 담기</button>
     </div>
   </div>
-
-  <!-- JS : SWIPER-MAIN : include/main.html -->
-  <script src="../js/include/swiper-main.js"></script>
 </body>
 
 </html>
