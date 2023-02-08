@@ -7,7 +7,7 @@
   --white: #ffffff;
   --primary: #5f0080;
   --content: #333333;
-  --accent-yellow: #fa622f;
+  --accent-yellow: #DA3A06;
   --info-error: #f03f40;
 
   --gray-50: #f9f9f9;
@@ -32,20 +32,34 @@
   --blue-900: #001433;
 
   /* Size */
-  --spacing-xxs: 0.25rem; /* 4px */
-  --spacing-xs: 0.5rem; /* 8px */
-  --spacing-sm: 0.75rem; /* 12px */
-  --spacing-base: 1rem; /* 16px */
-  --spacing-md: 1.25rem; /* 20px */
-  --spacing-lg: 1.5rem; /* 24px */
-  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxs: 0.25rem;
+  /* 4px */
+  --spacing-xs: 0.5rem;
+  /* 8px */
+  --spacing-sm: 0.75rem;
+  /* 12px */
+  --spacing-base: 1rem;
+  /* 16px */
+  --spacing-md: 1.25rem;
+  /* 20px */
+  --spacing-lg: 1.5rem;
+  /* 24px */
+  --spacing-xl: 2rem;
+  /* 32px */
 
-  --text-xs: 0.75rem; /* 12px */
-  --text-sm: 0.875rem; /* 14px */
-  --text-base: 1rem; /* 16px */
-  --text-md: 1.125rem; /* 18px */
-  --text-lg: 1.25rem; /* 20px */
-  --text-xl: 1.5rem; /* 24px */
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-base: 1rem;
+  /* 16px */
+  --text-md: 1.125rem;
+  /* 18px */
+  --text-lg: 1.25rem;
+  /* 20px */
+  --text-xl: 1.5rem;
+  /* 24px */
 
-  --container-width: 65.625rem; /* 1050px */
+  --container-width: 65.625rem;
+  /* 1050px */
 }
