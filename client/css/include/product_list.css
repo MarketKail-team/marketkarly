@@ -3,8 +3,7 @@
 }
 
 .product-list__title {
-  font-weight: 600
-  font-size: 21.328px;
+  font-weight: 600 font-size: 21.328px;
   line-height: 150%;
   text-align: center;
 }
@@ -37,7 +36,7 @@
 }
 
 .product-list__sort {
-  color: var(--gray-300);
+  color: var(--gray-500);
 }
 
 .product-list__sort a {
@@ -178,7 +177,7 @@
   font-size: var(--text-sm);
   font-weight: 400;
   line-height: 19.2px;
-  color: var(--gray-400);
+  color: var(--gray-500);
   margin-bottom: var(--spacing-xs);
 }
 
