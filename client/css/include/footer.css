@@ -3,6 +3,7 @@ footer {
   border-top: 1px solid var(--gray-100);
   color: var(--content);
 }
+
 /* ----- .footer-inner ----- */
 .footer-inner {
   width: var(--container-width);
@@ -22,26 +23,31 @@ footer {
   font-weight: 600;
   line-height: 140%;
 }
+
 .customer-center__contact {
   display: flex;
   align-items: center;
 }
+
 .customer-center__contact-tel {
   margin: var(--spacing-md) 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 140%;
 }
+
 .customer-center__contact-info {
   margin-left: var(--spacing-xs);
   line-height: 150%;
 }
+
 .customer-center__item {
   width: 477px;
   margin-bottom: var(--spacing-base);
   display: flex;
   align-items: center;
 }
+
 .customer-center__item-title {
   width: 140px;
   height: 40px;
@@ -51,6 +57,7 @@ footer {
   text-align: center;
   line-height: 40px;
 }
+
 .customer-center__item-info {
   width: 440px;
   margin-left: 8px;
@@ -58,6 +65,7 @@ footer {
   font-size: var(--text-sm);
   line-height: 150%;
 }
+
 .customer-center__item-info p span:nth-child(1)::after {
   display: inline-block;
   content: "";
@@ -66,13 +74,16 @@ footer {
   height: 10px;
   margin: 0 3px 0 7px;
 }
+
 .customer-center__item--non-member-inquiry {
   color: var(--gray-500);
   font-size: var(--text-xs);
 }
+
 .customer-center__item--non-member-inquiry p:nth-child(1) {
   margin-bottom: 5px;
 }
+
 .customer-center__item--non-member-inquiry a {
   color: var(--primary);
 }
@@ -84,21 +95,26 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 .about-karly__link li {
   margin-right: var(--spacing-base);
 }
+
 .about-karly__link li:last-child {
   margin-right: 0;
 }
+
 .about-karly__link li:nth-child(5) {
   font-weight: 500;
 }
+
 .about-karly__info {
   margin-bottom: var(--spacing-xl);
   color: var(--gray-500);
   font-size: var(--text-xs);
   line-height: 140%;
 }
+
 .about-karly__info li span:nth-child(1):after {
   display: inline-block;
   content: "";
@@ -107,17 +123,22 @@ footer {
   height: 10px;
   margin: 0 2px -1px 5px;
 }
+
 .about-karly__info a {
   color: var(--primary);
 }
+
 .about-karly__social-media {
   display: flex;
 }
+
 .about-karly__social-media li {
   margin-right: 10px;
 }
+
 .about-karly__social-media li a img {
   width: 32px;
+  height: 32px;
 }
 
 /* --- .footer-inner-bottom --- */
@@ -128,6 +149,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-inner-bottom button {
   display: flex;
   align-items: center;
@@ -138,8 +160,13 @@ footer {
   line-height: 140%;
   text-align: left;
 }
+
 .footer-inner-bottom button img {
   margin-right: var(--spacing-sm);
+}
+
+.footer-inner-bottom:first-child img {
+  width: 100px;
 }
 
 /* ----- .footer-bottom ----- */
@@ -151,6 +178,7 @@ footer {
   line-height: 140%;
   text-align: center;
 }
+
 .footer-bottom p {
   margin-bottom: var(--spacing-xs);
 }
