@@ -54,7 +54,7 @@ footer {
 .customer-center__item-info {
   width: 440px;
   margin-left: 8px;
-  color: var(--gray-400);
+  color: var(--gray-500);
   font-size: var(--text-sm);
   line-height: 150%;
 }
@@ -67,7 +67,7 @@ footer {
   margin: 0 3px 0 7px;
 }
 .customer-center__item--non-member-inquiry {
-  color: var(--gray-400);
+  color: var(--gray-500);
   font-size: var(--text-xs);
 }
 .customer-center__item--non-member-inquiry p:nth-child(1) {
@@ -95,7 +95,7 @@ footer {
 }
 .about-karly__info {
   margin-bottom: var(--spacing-xl);
-  color: var(--gray-400);
+  color: var(--gray-500);
   font-size: var(--text-xs);
   line-height: 140%;
 }
@@ -133,7 +133,7 @@ footer {
   align-items: center;
   background-color: transparent;
   border: none;
-  color: var(--gray-400);
+  color: var(--gray-500);
   font-size: 10px;
   line-height: 140%;
   text-align: left;
@@ -146,7 +146,7 @@ footer {
 .footer-bottom {
   padding: var(--spacing-lg);
   background-color: var(--gray-50);
-  color: var(--gray-400);
+  color: var(--gray-500);
   font-size: 10px;
   line-height: 140%;
   text-align: center;
