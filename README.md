@@ -1,7 +1,7 @@
 # 🍇 Market Karly
 
 ![image](./karly_readme.jpg)
-![project_start](https://img.shields.io/badge/Project%20Start-2023--01--27-green) ![project_end](https://img.shields.io/badge/Project%20Start-2023--02--09-orange) <br>
+![project_start](https://img.shields.io/badge/Project%20Start-2023--01--27-green) ![project_end](https://img.shields.io/badge/Project%20end-2023--02--09-orange) <br>
 마켓 컬리(Market Kurly) 사이트를 클론코딩하는 팀 프로젝트입니다
 
 > 🚩 URL : https://marketkarly-team.github.io/marketkarly-client/client/page/home.html
