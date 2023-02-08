@@ -7,7 +7,8 @@ const modalProductPrice = getNode('.modal__cart-product-price')
 const totalPrice = getNode('.modal__cart--total-price')
 const closeModal = getNode('.modal__cart--close')
 const recommend = getNode('.swiper-recommend');
-const bestPrice = getNode('.main__best-price')
+const bestPrice = getNode('.main__best-price');
+const productList = getNode('.product-list__list-wrapper');
 
 // 갯수 증가 & 감소 & 합계 & 천의자리 콤마
 let currentValue = modalCartCount.innerText;
@@ -49,9 +50,16 @@ function showModal(event) {
     document.body.style.overflow = 'hidden';
   }
 }
-recommend.addEventListener('click', showModal);
-bestPrice.addEventListener('click', showModal);
 
+if (recommend) {
+  recommend.addEventListener('click', showModal);
+}
+if (bestPrice) {
+  bestPrice.addEventListener('click', showModal);
+}
+if (productList) {
+  productList.addEventListener('click', showModal);
+}
 // modal 창 닫기 버튼
 function closeModalCart() {
   modalCart.hidden = true;
