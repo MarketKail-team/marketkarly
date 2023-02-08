@@ -49,6 +49,14 @@ karlyFetch.put = (url, body, options) => {
     ...options
   })
 }
+karlyFetch.patch = (url, body, options) => {
+  return karlyFetch({
+    method: 'PATCH',
+    url,
+    body: JSON.stringify(body),
+    ...options
+  })
+}
 
 karlyFetch.delete = (url, options) => {
   return karlyFetch({

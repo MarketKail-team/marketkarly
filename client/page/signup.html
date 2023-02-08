@@ -12,6 +12,7 @@
   <script src="../js/include/navigation.js" type="module" defer></script>
   <script src="../js/main.js" type="module" defer></script>
   <script src="../js/include/signup.js" type="module" defer></script>
+  <script src="../js/include/server.js" type="module" defer></script>
   <title>회원가입 - Karly : 마켓 칼리</title>
 </head>
 
@@ -169,7 +170,8 @@
     <!-- SIGN-UP : include/signup.html  -->
     <section class="signup">
       <h2 class="signup__title">회원가입</h2>
-      <form class="signup__form" method="POST" action="">
+      <form class="signup__form" id="signupForm" name="signupForm" method="POST" target="blankifrSignup"
+        action="http://localhost:3001/sign-up">
         <fieldset>
           <legend>신규 회원가입 폼</legend>
           <p class="signup-form__noti">필수입력사항</p>
@@ -182,13 +184,19 @@
             </li>
             <li class="signup-form__item">
               <label for="userPw" class="signup-form__title--required">비밀번호</label>
-              <input type="text" id="userPw" name="userPw" class="signup-form__input" placeholder="비밀번호를 입력해주세요"
-                required>
+              <div>
+                <input type="password" id="userPw" name="userPw" class="signup-form__input" placeholder="비밀번호를 입력해주세요"
+                  required>
+                <p class="signup-form__valid" hidden="true">최소 8자 이상 입력</p>
+              </div>
             </li>
             <li class="signup-form__item">
               <label for="userPw2" class="signup-form__title--required">비밀번호 확인</label>
-              <input type="text" id="userPw2" name="userPw2" class="signup-form__input" placeholder="비밀번호를 한번 더 입력해주세요"
-                required>
+              <div>
+                <input type="password" id="userPw2" name="userPw2" class="signup-form__input"
+                  placeholder="비밀번호를 한번 더 입력해주세요" required>
+                <p class="signup-form__valid" hidden="true">동일한 비밀번호를 입력</p>
+              </div>
             </li>
             <li class="signup-form__item">
               <label for="userName" class="signup-form__title--required">이름</label>
@@ -197,8 +205,11 @@
             </li>
             <li class="signup-form__item">
               <label for="userEmail" class="signup-form__title--required">이메일</label>
-              <input type="text" id="userEmail" name="userEmail" class="signup-form__input"
-                placeholder="예) marketkarly@karly.com" required>
+              <div>
+                <input type="text" id="userEmail" name="userEmail" class="signup-form__input"
+                  placeholder="예) marketkarly@karly.com" required>
+                <p class="signup-form__valid" hidden="true">최소 "@"와 "." 을 포함하여 입력</p>
+              </div>
               <button type="button" class="signup-form__button">중복확인</button>
             </li>
             <li class="signup-form__item">
@@ -236,16 +247,13 @@
               <span class="signup-form__title">생년월일</span>
               <div class="signup-form__input">
                 <label for="userBirthYear" class="signup-form__label-birth">년</label>
-                <input type="text" id="userBirthYear" name="userBirthYear" class="signup-form__input-birth"
-                  placeholder="YYYY">
+                <input type="number" id="userBirthYear" name="userBirthYear" class="signup-form__input-birth" placeholder="YYYY" max="2023">
                 <span aria-hidden="true">/</span>
                 <label for="userBirthMonth" class="signup-form__label-birth">월</label>
-                <input type="text" id="userBirthMonth" name="userBirthMonth" class="signup-form__input-birth"
-                  placeholder="MM">
+                <input type="number" id="userBirthMonth" name="userBirthMonth" class="signup-form__input-birth" placeholder="MM" min="1" max="12"> 
                 <span aria-hidden="true">/</span>
                 <label for="userBirthDay" class="signup-form__label-birth">일</label>
-                <input type="text" id="userBirthDay" name="userBirthDay" class="signup-form__input-birth"
-                  placeholder="DD">
+                <input type="number" id="userBirthDay" name="userBirthDay" class="signup-form__input-birth" placeholder="DD" min="1" max="31">
               </div>
             </li>
             <li class="signup-form__item">
@@ -301,6 +309,7 @@
           <button type="submit" class="signup-form__button--submit">가입하기</button>
         </fieldset>
       </form>
+      <iframe id="if" name="blankifrSignup" style="display:none;"></iframe>
     </section>
   </main>
   <!-- FOOTER : include/footer.html -->
