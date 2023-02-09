@@ -36,8 +36,7 @@
 }
 
 .signup-form__item {
-  display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 8px;
   flex-wrap: wrap;
   min-height: 84px;
@@ -49,7 +48,7 @@
   flex-shrink: 0;
   width: 139px;
   font-weight: 700;
-  line-height:44px;
+  line-height: 44px;
   cursor: pointer;
 }
 
@@ -166,7 +165,12 @@
   margin-left: 8px;
 }
 
+.signup-form__term-wrap {
+  display: flex;
+}
+
 .signup-form__label-check {
+  flex-grow: 1;
   position: relative;
   display: flex;
   align-items: center;

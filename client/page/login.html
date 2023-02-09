@@ -2,25 +2,34 @@
 <html lang="ko-KR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 - Karly : 마켓 칼리</title>
+  <link rel="canonical" href="https://marketkarly-team.github.io/marketkarly-client/client/page/login.html"> <!-- 페이지 url 적용 -->
+  <meta name="description" content="Love Food, Love Life. 마켓칼리! 당일 수확 채소, 과일, 맛집 음식까지 내일 아침 문 앞에서 만나요!">
+  <meta name="keywords" content="새벽배송, 조리음식, 다이어트, 식단, 요리, 밀키트">
+  <meta name="author" content="jaesukpark77, sryung1225, chaewon0128, jeong-dev, realldk">
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Karly : 마켓 칼리"> <!-- 공통 제목 -->
+  <meta property="og:title" content="로그인 - Karly : 마켓 칼리"> <!-- 페이지 제목 -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://marketkarly-team.github.io/marketkarly-client/client/assets/Karly.png"> <!-- 대표 썸네일 이미지 -->
+  <meta property="og:url" content="https://marketkarly-team.github.io/marketkarly-client/client/page/login.html"> <!-- 페이지 url 적용 -->
+  <!-- Style sheet & Script -->
+  <link rel="stylesheet" href="../css/style.css">
   <script src="../js/include/header.js" type="module"></script>
   <script src="../js/include/navigation.js" type="module"></script>
-  <script src="../js/include/login.js" type="module"></script>
   <script src="../js/main.js" type="module"></script>
+  <script src="../js/include/login.js" type="module"></script>
   <script src="../js/include/server.js" type="module"></script>
-  <title>로그인 - Karly : 마켓 칼리</title>
 </head>
 
 <body>
   <!-- TOP-BANNER : include/top_banner&popup.html -->
   <div class="home__top-banner">
     <div class="home__top-banner-wrap">
-      <a href="/">지금 가입하고 인기 상품 <span>100원</span>에 받아가세요!</a>
+      <a href="https://marketkarly-team.github.io/marketkarly-client/client/page/signup.html">지금 가입하고 인기 상품 <span>100원</span>에 받아가세요!</a>
       <button type="button" class="home__top-banner--btn-close" aria-label="배너 닫기"></button>
     </div>
   </div>
@@ -44,15 +53,15 @@
           </svg>
         </h1>
         <div class="switch">
-          <h2 class="switch--market"><a href="/">마켓칼리</a></h2>
-          <h2 class="switch--beauty"><a href="/">뷰티칼리</a></h2>
+          <h2 class="switch--market"><a href="https://marketkarly-team.github.io/marketkarly-client/client/page/home.html">마켓칼리</a></h2>
+          <h2 class="switch--beauty"><a href="https://marketkarly-team.github.io/marketkarly-client/client/page/home.html">뷰티칼리</a></h2>
         </div>
       </div>
       <form action="/" method="GET" class="search-form">
         <fieldset>
           <legend>검색창</legend>
           <label for="search" class="a11yHidden search-form__label">검색폼</label>
-          <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+          <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요">
           <button type="reset" aria-label="검색어 초기화 버튼" class="search-form__clear-button">
             <svg width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -64,23 +73,23 @@
         </fieldset>
       </form>
       <ul class="header__menu">
-        <li class="header__menu--item"><a href="/">회원가입</a></li>
-        <li class="header__menu--item"><a href="/">로그인</a></li>
-        <li class="header__menu--item help-center"><a href="/">고객센터</a>
+        <li class="header__menu--item"><a href="https://marketkarly-team.github.io/marketkarly-client/client/page/signup.html">회원가입</a></li>
+        <li class="header__menu--item"><a href="https://marketkarly-team.github.io/marketkarly-client/client/page/login.html">로그인</a></li>
+        <li class="header__menu--item help-center"><a href="#">고객센터</a>
           <ul class="header__submenu">
-            <li><a href="/">공지사항</a></li>
-            <li><a href="/">자주하는 질문</a></li>
-            <li><a href="/">1:1 문의</a></li>
-            <li><a href="/">대량주문 문의</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">대량주문 문의</a></li>
           </ul>
         </li>
       </ul>
       <ul class="header__list__wrapper">
-        <li><a class="list__shipping-form" href="/" aria-label="배송지"></a>
+        <li><a class="list__shipping-form" href="#" aria-label="배송지"></a>
           <span class="triangle"></span>
           <div class="shipping-form--hidden"><em>배송지를 등록하고</em> 구매 가능한 상품을 확인 하세요!
             <div class="shipping--button-wrapper">
-              <a class="shipping-form__button--login" href="">로그인</a>
+              <a class="shipping-form__button--login" href="https://marketkarly-team.github.io/marketkarly-client/client/page/login.html">로그인</a>
               <button class="shipping-form__button--search"> <svg width="20" height="20" viewBox="8 0 36 36" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_42_122)">
@@ -99,53 +108,53 @@
             </div>
           </div>
         </li>
-        <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
-        <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+        <li><a class="list__favotite-product" href="#" aria-label="찜한 상품"></a></li>
+        <li><a class="list__shopping-cart" href="https://marketkarly-team.github.io/marketkarly-client/client/page/cart.html" aria-label="장바구니"></a></li>
       </ul>
     </div>
   </header>
   <!-- NAVIGATION : include/navigation.html -->
   <nav class="nav">
     <h2 class="a11yHidden">메인 메뉴</h2>
-    <ul class="nav__list" role="tablist">
+    <ul class="nav__list">
       <li class="nav__item--category">
         <button class="category__btn" aria-label="카테고리 열기">
-          <div class="category__burger">
+          <span class="category__burger">
             <span class="category__burger--top"></span>
             <span class="category__burger--mid"></span>
             <span class="category__burger--bot"></span>
-          </div>
+          </span>
           카테고리
         </button>
         <ul class="category__map">
-          <li><a href="/" class="category__link--gift">선물하기</a></li>
-          <li><a href="/" class="category__link--vege">채소</a></li>
-          <li><a href="/" class="category__link--fruit">과일・견과・쌀</a></li>
-          <li><a href="/" class="category__link--sea">수산・해산・건어물</a></li>
-          <li><a href="/" class="category__link--meet">정육・계란</a></li>
-          <li><a href="/" class="category__link--dish">국・반찬・메인요리</a></li>
-          <li><a href="/" class="category__link--salad">샐러드・간편식</a></li>
-          <li><a href="/" class="category__link--salt">면・양념・오일</a></li>
-          <li><a href="/" class="category__link--drink">생수・음료・우유・커피</a></li>
-          <li><a href="/" class="category__link--snack">간식・과자・떡</a></li>
-          <li><a href="/" class="category__link--bread">베이커리・치즈・델리</a></li>
-          <li><a href="/" class="category__link--health">건강식품</a></li>
-          <li><a href="/" class="category__link--wine">와인</a></li>
-          <li><a href="/" class="category__link--liq">전통주</a></li>
-          <li><a href="/" class="category__link--liv">생활용품・리빙・캠핑</a></li>
-          <li><a href="/" class="category__link--cos">스킨케어・메이크업</a></li>
-          <li><a href="/" class="category__link--hair">헤어・바디・구강</a></li>
-          <li><a href="/" class="category__link--kit">주방용품</a></li>
-          <li><a href="/" class="category__link--elec">가전제품</a></li>
-          <li><a href="/" class="category__link--pet">반려동물</a></li>
-          <li><a href="/" class="category__link--baby">베이비・키즈・완구</a></li>
-          <li><a href="/" class="category__link--tour">여행・티켓</a></li>
+          <li><a href="#" class="category__link--gift">선물하기</a></li>
+          <li><a href="#" class="category__link--vege">채소</a></li>
+          <li><a href="#" class="category__link--fruit">과일・견과・쌀</a></li>
+          <li><a href="#" class="category__link--sea">수산・해산・건어물</a></li>
+          <li><a href="#" class="category__link--meet">정육・계란</a></li>
+          <li><a href="#" class="category__link--dish">국・반찬・메인요리</a></li>
+          <li><a href="#" class="category__link--salad">샐러드・간편식</a></li>
+          <li><a href="#" class="category__link--salt">면・양념・오일</a></li>
+          <li><a href="#" class="category__link--drink">생수・음료・우유・커피</a></li>
+          <li><a href="#" class="category__link--snack">간식・과자・떡</a></li>
+          <li><a href="#" class="category__link--bread">베이커리・치즈・델리</a></li>
+          <li><a href="#" class="category__link--health">건강식품</a></li>
+          <li><a href="#" class="category__link--wine">와인</a></li>
+          <li><a href="#" class="category__link--liq">전통주</a></li>
+          <li><a href="#" class="category__link--liv">생활용품・리빙・캠핑</a></li>
+          <li><a href="#" class="category__link--cos">스킨케어・메이크업</a></li>
+          <li><a href="#" class="category__link--hair">헤어・바디・구강</a></li>
+          <li><a href="#" class="category__link--kit">주방용품</a></li>
+          <li><a href="#" class="category__link--elec">가전제품</a></li>
+          <li><a href="#" class="category__link--pet">반려동물</a></li>
+          <li><a href="#" class="category__link--baby">베이비・키즈・완구</a></li>
+          <li><a href="#" class="category__link--tour">여행・티켓</a></li>
         </ul>
       </li>
-      <li class="nav__item"><a href="/" class="nav__link">신상품</a></li>
-      <li class="nav__item"><a href="/" class="nav__link">베스트</a></li>
-      <li class="nav__item"><a href="/" class="nav__link">알뜰쇼핑</a></li>
-      <li class="nav__item"><a href="/" class="nav__link">특가/혜택</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">신상품</a></li>
+      <li class="nav__item"><a href="https://marketkarly-team.github.io/marketkarly-client/client/page/best.html" class="nav__link">베스트</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">알뜰쇼핑</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">특가/혜택</a></li>
       <li class="nav__item--noti">
         <a href="#" class="delivery-notice"><span class="delivery-notice--primary">샛별・낮</span> 배송안내</a>
       </li>
@@ -153,15 +162,15 @@
         <form action="/" method="GET" class="nav__search-form">
           <fieldset>
             <legend>검색</legend>
-            <label for="search" class="a11yHidden search-form__label">검색어</label>
-            <input type="search" class="search-form__input" id="search" name="search" placeholder="검색어를 입력해주세요" />
+            <label for="search-mini" class="a11yHidden search-form__label">검색어</label>
+            <input type="search" class="search-form__input" id="search-mini" name="search" placeholder="검색어를 입력해주세요">
             <button class="search-form__button" type="submit"></button>
           </fieldset>
         </form>
         <ul class="nav__my-menu">
-          <li><a class="list__shipping-address" href="/" aria-label="배송지"></a></li>
-          <li><a class="list__favotite-product" href="/" aria-label="찜한 상품"></a></li>
-          <li><a class="list__shopping-cart" href="/" aria-label="장바구니"></a></li>
+          <li><a class="list__shipping-form" href="#" aria-label="배송지"></a></li>
+          <li><a class="list__favotite-product" href="#" aria-label="찜한 상품"></a></li>
+          <li><a class="list__shopping-cart" href="https://marketkarly-team.github.io/marketkarly-client/client/page/cart.html" aria-label="장바구니"></a></li>
         </ul>
       </li>
     </ul>
@@ -186,11 +195,11 @@
             </li>
           </ul>
           <ul class="login-form__account-find">
-            <li><a href="/">아이디 찾기</a></li>
-            <li><a href="/">비밀번호 찾기</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
           </ul>
           <button type="submit" class="login-form__button--login">로그인</button>
-          <a href="/" class="login-form__button--signup">회원가입</a>
+          <a href="https://marketkarly-team.github.io/marketkarly-client/client/page/signup.html" class="login-form__button--signup">회원가입</a>
         </fieldset>
       </form>
       <iframe id="if" name="blankifrLoginup" style="display:none;"></iframe>
@@ -208,7 +217,7 @@
               <span class="customer-center__contact-info">월~토요일 오전 7시 - 오후 6시</span>
             </li>
             <li class="customer-center__item">
-              <a href="/" class="customer-center__item-title">카카오톡 문의</a>
+              <a href="#" class="customer-center__item-title">카카오톡 문의</a>
               <div class="customer-center__item-info">
                 <p>
                   <span>월~토요일</span>
@@ -221,14 +230,14 @@
               </div>
             </li>
             <li class="customer-center__item">
-              <a href="/" class="customer-center__item-title">1:1 문의</a>
+              <a href="#" class="customer-center__item-title">1:1 문의</a>
               <div class="customer-center__item-info">
                 <p>365일</p>
                 <p>고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
               </div>
             </li>
             <li class="customer-center__item">
-              <a href="/" class="customer-center__item-title">대량주문 문의</a>
+              <a href="#" class="customer-center__item-title">대량주문 문의</a>
               <div class="customer-center__item-info">
                 <p>
                   <span>월~금요일</span>
@@ -295,27 +304,27 @@
           <ul class="about-karly__social-media">
             <li>
               <a href="https://www.instagram.com/marketkurly/" target="_blank">
-                <img src="../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기">
+                <img src="../assets/icons/Icon/icon-Instagram.png" alt="마켓칼리 인스타그램 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/Marketkurly/" target="_blank">
-                <img src="../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기">
+                <img src="../assets/icons/Icon/icon-FaceBook.png" alt="마켓칼리 페이스북 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://blog.naver.com/marketkurly" target="_blank">
-                <img src="../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기">
+                <img src="../assets/icons/Icon/icon-Blog.png" alt="마켓칼리 네이버 블로그 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://m.post.naver.com/marketkurly" target="_blank">
-                <img src="../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기">
+                <img src="../assets/icons/Icon/icon-NaverPost.png" alt="마켓칼리 네이버 포스트 바로가기" width="32" height="32">
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg" target="_blank">
-                <img src="../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기">
+                <img src="../assets/icons/Icon/icon-Youtube.png" alt="마켓칼리 유튜브 바로가기" width="32" height="32">
               </a>
             </li>
           </ul>
@@ -324,34 +333,26 @@
       <!-- .footer-inner-top -->
       <div class="footer-inner-bottom">
         <button>
-          <img src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기">
-          <p>
-            [인증범위] 컬리 쇼핑몰 서비스 개발·운영
-            <br>(심사받지 않은 물리적 인프라 제외)
-            <br>[유효기간]2022.01.19~2025.01.18
-          </p>
+          <img src="../assets/icons/Icon/logo_isms.png" alt="정보보호 관리체계 인증서 보기" width="34" height="34">
+          [인증범위] 컬리 쇼핑몰 서비스 개발·운영
+          <br>(심사받지 않은 물리적 인프라 제외)
+          <br>[유효기간]2022.01.19~2025.01.18
         </button>
         <button>
-          <img src="../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기">
-          <p>
-            개인정보보호 우수 웹 사이트·
-            <br>개인정보처리시스템 인증 (ePRIVACY PLUS)
-          </p>
+          <img src="../assets/icons/Icon/logo_privacy.png" alt="ePRIVACY PLUS 인증서 보기" width="35" height="34">
+          개인정보보호 우수 웹 사이트·
+          <br>개인정보처리시스템 인증 (ePRIVACY PLUS)
         </button>
         <button>
-          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기">
-          <p>
-            토스페이먼츠 구매안전(에스크로)
-            <br>서비스를 이용하실 수 있습니다.
-          </p>
+          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 정보 보기" width="103" height="32">
+          토스페이먼츠 구매안전(에스크로)
+          <br>서비스를 이용하실 수 있습니다.
         </button>
         <button>
-          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기">
-          <p>
-            고객님이 현금으로 결제한 금액에 대해
-            <br>우리은행과 채무지급보증 계약을 체결하여
-            <br>안전거래를 보장하고 있습니다.
-          </p>
+          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 채무지급보증서 보기" width="34" height="34">
+          고객님이 현금으로 결제한 금액에 대해
+          <br>우리은행과 채무지급보증 계약을 체결하여
+          <br>안전거래를 보장하고 있습니다.
         </button>
       </div>
     </div>

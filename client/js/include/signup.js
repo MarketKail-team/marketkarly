@@ -20,7 +20,7 @@ let userPw = getNode('#userPw');
 let userPwCheck = getNode('#userPw2');
 let userEmail = getNode('#userEmail');
 // 이메일과 비밀번호의 유효성을 확인
-// - 이메일 조건 : 최소 `@`,`.` 포함
+// - 이메일 조건 : 최소 `@`, `.` 포함
 // - 비밀번호 조건 : 8자 이상 입력
 function checkPw() {
   if (userPw.value.length < 8) {
