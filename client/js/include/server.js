@@ -10,7 +10,7 @@ async function request() {
       method: 'GET',
     });
   const data = await response.json();
-  saveStorage('uniquesignId', data.slice(-1)[0].id);
+  saveStorage('uniqueId', data.slice(-1)[0].id);
 }
 
 

@@ -36,6 +36,7 @@
 }
 
 .signup-form__item {
+  display: flex;
   align-items: flex-start;
   gap: 8px;
   flex-wrap: wrap;
