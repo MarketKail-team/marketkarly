@@ -1,7 +1,7 @@
 # 🍇 Market Karly
 
 ![image](./karly_readme.jpg)
-![project_start](https://img.shields.io/badge/Project%20Start-2023--01--27-green) ![project_end](https://img.shields.io/badge/Project%20end-2023--02--09-orange) <br>
+![project_start](https://img.shields.io/badge/Project%20start-2023--01--27-green) ![project_end](https://img.shields.io/badge/Project%20end-2023--02--09-orange) <br>
 마켓 컬리(Market Kurly) 사이트를 클론코딩하는 팀 프로젝트입니다
 
 > 🚩 URL : https://marketkarly-team.github.io/marketkarly-client/client/page/home.html
@@ -12,7 +12,7 @@
 
 ### Skill
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white) ![ESlint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white) ![ESlint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-FF7262?style=flat-square&logo=Figma&logoColor=white)
 
 ### Communication
 
